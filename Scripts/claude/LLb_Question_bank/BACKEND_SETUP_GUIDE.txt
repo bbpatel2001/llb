@@ -1,0 +1,427 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║                  LLB QUESTION BANK - BACKEND SETUP GUIDE                      ║
+║                                                                                ║
+║ This guide will help you set up and run the complete FastAPI backend          ║
+║ for the LLB Question Bank platform locally on Windows.                        ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 0: DOWNLOAD AND EXTRACT FILES
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. Download all files from the outputs folder
+2. Create a project folder: C:\Users\<YourName>\llb_question_bank
+3. Extract all files there
+
+Your folder structure should look like:
+```
+C:\Users\<YourName>\llb_question_bank\
+├── 1_app_main.py
+├── 2_config.py
+├── 3_database.py
+├── 4_models.py
+├── 5_routes_questions.py
+├── 6_routes_study.py
+├── 7_routes_flashcards.py
+├── 8_routes_progress.py
+├── 9_routes_admin.py
+├── requirements.txt
+├── .env.example
+├── Dockerfile
+├── docker-compose.yml
+└── BACKEND_SETUP_GUIDE.txt (this file)
+```
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 1: CREATE PROJECT STRUCTURE
+═══════════════════════════════════════════════════════════════════════════════════
+
+Windows PowerShell (Run as Administrator):
+
+```
+cd C:\Users\<YourName>\llb_question_bank
+
+# Create the app directory structure
+mkdir app
+mkdir app\routes
+mkdir uploads
+
+# Move main.py to app folder and rename
+mv 1_app_main.py app\main.py
+
+# Move config and database to app folder
+mv 2_config.py app\config.py
+mv 3_database.py app\database.py
+mv 4_models.py app\models.py
+
+# Move routes to app\routes folder
+mv 5_routes_questions.py app\routes\questions.py
+mv 6_routes_study.py app\routes\study.py
+mv 7_routes_flashcards.py app\routes\flashcards.py
+mv 8_routes_progress.py app\routes\progress.py
+mv 9_routes_admin.py app\routes\admin.py
+
+# Create __init__.py files
+type nul > app\__init__.py
+type nul > app\routes\__init__.py
+```
+
+Final structure:
+```
+llb_question_bank/
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── config.py
+│   ├── database.py
+│   ├── models.py
+│   └── routes/
+│       ├── __init__.py
+│       ├── questions.py
+│       ├── study.py
+│       ├── flashcards.py
+│       ├── progress.py
+│       └── admin.py
+├── uploads/
+├── requirements.txt
+├── .env.example
+├── Dockerfile
+└── docker-compose.yml
+```
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 2: INSTALL MONGODB (Choose one method)
+═══════════════════════════════════════════════════════════════════════════════════
+
+METHOD A: Using Docker (Recommended - Easiest)
+──────────────────────────────────────────────
+
+1. Install Docker Desktop from https://www.docker.com/products/docker-desktop/
+
+2. Run MongoDB in Docker:
+```
+docker run -d `
+  --name llb_mongodb `
+  -e MONGO_INITDB_ROOT_USERNAME=root `
+  -e MONGO_INITDB_ROOT_PASSWORD=password `
+  -p 27017:27017 `
+  mongo:7.0
+```
+
+3. Verify MongoDB is running:
+```
+docker logs llb_mongodb
+```
+
+You should see: "Waiting for connections"
+
+
+METHOD B: Install MongoDB Locally
+──────────────────────────────────
+
+1. Download MongoDB Community Edition from https://www.mongodb.com/try/download/community
+
+2. Run the installer and follow setup wizard
+
+3. MongoDB will run as a Windows service (automatic startup)
+
+4. Verify installation:
+   - Open Command Prompt
+   - Run: mongosh
+   - You should see the MongoDB shell
+
+5. Create root user (if needed):
+```
+use admin
+db.createUser({
+  user: "root",
+  pwd: "password",
+  roles: ["root"]
+})
+```
+
+
+METHOD C: Use MongoDB Atlas (Cloud)
+────────────────────────────────────
+
+1. Go to https://www.mongodb.com/cloud/atlas
+
+2. Create free account
+
+3. Create cluster
+
+4. Get connection string: mongodb+srv://username:password@cluster.mongodb.net/
+
+5. Update in .env:
+```
+MONGODB_URL=mongodb+srv://root:password@cluster.mongodb.net/llb_question_bank
+```
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 3: SETUP PYTHON ENVIRONMENT
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. Open PowerShell in your project folder:
+```
+cd C:\Users\<YourName>\llb_question_bank
+```
+
+2. Create virtual environment:
+```
+python -m venv venv
+```
+
+3. Activate virtual environment:
+```
+venv\Scripts\Activate.ps1
+```
+
+   If you get an error about execution policy, run:
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+4. Install dependencies:
+```
+pip install -r requirements.txt
+```
+
+   This will install:
+   - FastAPI
+   - Uvicorn
+   - Motor (async MongoDB driver)
+   - PyMongo
+   - Pydantic
+   - python-dotenv
+   - And other required packages
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 4: CONFIGURE ENVIRONMENT VARIABLES
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. Copy .env.example to .env:
+```
+copy .env.example .env
+```
+
+2. Open .env and update:
+
+For LOCAL MongoDB:
+```
+MONGODB_URL=mongodb://root:password@localhost:27017
+DATABASE_NAME=llb_question_bank
+```
+
+For Docker MongoDB:
+```
+MONGODB_URL=mongodb://root:password@localhost:27017
+DATABASE_NAME=llb_question_bank
+```
+
+For MongoDB Atlas (Cloud):
+```
+MONGODB_URL=mongodb+srv://root:password@cluster.mongodb.net/llb_question_bank
+```
+
+Save the file.
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 5: RUN THE BACKEND SERVER
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. Make sure virtual environment is activated:
+```
+venv\Scripts\Activate.ps1
+```
+
+2. Start the FastAPI server:
+```
+python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+   Or simply:
+```
+python app/main.py
+```
+
+3. You should see:
+```
+╔════════════════════════════════════════════════════════════════╗
+║       LLB QUESTION BANK - FASTAPI BACKEND                      ║
+║                                                                ║
+║  Starting server on http://localhost:8000                     ║
+║  API Documentation: http://localhost:8000/docs                ║
+║  Alternative Docs: http://localhost:8000/redoc               ║
+╚════════════════════════════════════════════════════════════════╝
+
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+```
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 6: TEST THE API
+═══════════════════════════════════════════════════════════════════════════════════
+
+Open your browser and visit:
+
+1. http://localhost:8000/
+   Should return: {"message": "Welcome to LLB Question Bank API", ...}
+
+2. http://localhost:8000/health
+   Should return: {"status": "healthy", "database": "connected", ...}
+
+3. http://localhost:8000/docs
+   Interactive Swagger UI - Test all endpoints here!
+
+4. http://localhost:8000/redoc
+   Alternative API documentation
+
+5. http://localhost:8000/stats
+   Database statistics
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 7: IMPORT SAMPLE DATA
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. Go to http://localhost:8000/docs
+
+2. Scroll down to "admin" section
+
+3. Click on: POST /api/admin/import/questions
+
+4. Click "Try it out"
+
+5. Upload your extracted_questions.json file
+
+6. Click "Execute"
+
+7. Repeat for study_materials.json:
+   POST /api/admin/import/study-materials
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 8: COMMON ENDPOINTS TO TEST
+═══════════════════════════════════════════════════════════════════════════════════
+
+GET /api/questions/
+  - Get all questions with pagination
+
+GET /api/questions/subjects/list
+  - Get all available subjects
+
+GET /api/questions/years/list
+  - Get all available years
+
+GET /api/questions/{question_id}
+  - Get single question
+
+GET /api/study/{question_id}
+  - Get all study materials for a question
+
+GET /api/progress/dashboard/{student_id}
+  - Get student dashboard
+
+GET /api/stats
+  - Get system statistics
+
+═══════════════════════════════════════════════════════════════════════════════════
+TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════════════
+
+ERROR: "ModuleNotFoundError: No module named 'fastapi'"
+SOLUTION:
+  - Make sure virtual environment is activated
+  - Run: pip install -r requirements.txt
+  - Restart PowerShell
+
+ERROR: "Connection to MongoDB failed"
+SOLUTION:
+  - Verify MongoDB is running
+  - Check .env MONGODB_URL
+  - Test connection: mongosh mongodb://root:password@localhost:27017
+  - If using Docker: docker ps (should show llb_mongodb running)
+
+ERROR: "Port 8000 already in use"
+SOLUTION:
+  - Run on different port: uvicorn app.main:app --port 8001
+  - Or kill process using port 8000
+
+ERROR: "Permission denied" when activating venv
+SOLUTION:
+  - Run PowerShell as Administrator
+  - Execute: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+═══════════════════════════════════════════════════════════════════════════════════
+DOCKER COMPOSE METHOD (All-in-One)
+═══════════════════════════════════════════════════════════════════════════════════
+
+If you have Docker Desktop installed, you can run everything with one command:
+
+```
+docker-compose up -d
+```
+
+This will:
+  ✓ Start MongoDB automatically
+  ✓ Start FastAPI backend on http://localhost:8000
+  ✓ Start Mongo Express UI on http://localhost:8081 (optional)
+
+To stop:
+```
+docker-compose down
+```
+
+═══════════════════════════════════════════════════════════════════════════════════
+NEXT STEPS
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. ✓ Backend is running on http://localhost:8000
+
+2. Next: Build React Frontend
+   - Clone or download React UI components
+   - Run: npm install
+   - Run: npm start (on port 3000)
+
+3. Update React API URL:
+   - In React: .env or axios config
+   - Set: REACT_APP_API_URL=http://localhost:8000
+
+4. Test full integration:
+   - Open http://localhost:3000
+   - Load questions
+   - Take a quiz
+   - Track progress
+
+═══════════════════════════════════════════════════════════════════════════════════
+USEFUL COMMANDS
+═══════════════════════════════════════════════════════════════════════════════════
+
+Activate virtual environment:
+  venv\Scripts\Activate.ps1
+
+Deactivate virtual environment:
+  deactivate
+
+Install dependencies:
+  pip install -r requirements.txt
+
+Run server with auto-reload:
+  uvicorn app.main:app --reload
+
+Run server on specific port:
+  uvicorn app.main:app --port 8001
+
+Check MongoDB connection:
+  mongosh mongodb://root:password@localhost:27017
+
+View logs:
+  uvicorn app.main:app --log-level info
+
+═══════════════════════════════════════════════════════════════════════════════════
+SUPPORT & DOCUMENTATION
+═══════════════════════════════════════════════════════════════════════════════════
+
+FastAPI Documentation: https://fastapi.tiangolo.com/
+MongoDB Documentation: https://docs.mongodb.com/
+Motor (Async MongoDB): https://motor.readthedocs.io/
+Pydantic: https://docs.pydantic.dev/
+
+═══════════════════════════════════════════════════════════════════════════════════

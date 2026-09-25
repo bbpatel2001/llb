@@ -1,0 +1,13 @@
+Category,SubCategory,Keywords,Priority,ProcessWithAI,GenerateMCQ,GenerateFlashcards,GenerateSummary,Enabled
+Syllabus,Semester Syllabus,"syllabus,curriculum,course structure",100,Yes,No,Yes,Yes
+Question Paper,University Exam,"question paper,previous paper,old paper",100,Yes,Yes,Yes,Yes
+Question Paper,Internal Exam,"internal exam,mid sem",90,Yes,Yes,Yes,Yes
+Question Paper,Model Paper,"model paper,sample paper",80,Yes,Yes,Yes,Yes
+Practical,Practical Manual,"practical,viva,record book",70,Yes,Yes,Yes,Yes
+Acts,Bare Act,"act,bare act,statute",100,Yes,Yes,Yes,Yes
+Rules,Rules,"rules,regulations",90,Yes,Yes,Yes,Yes
+Case Law,Judgment,"judgment,case law",90,Yes,Yes,Yes,Yes
+Notes,Study Material,"notes,study material",80,Yes,Yes,Yes,Yes
+Assignment,Assignment,"assignment,tutorial",70,Yes,Yes,Yes,Yes
+Presentation,PPT,"ppt,presentation",50,Yes,No,Yes,Yes
+Notice,Notification,"notice,circular",30,No,No,No,Yes

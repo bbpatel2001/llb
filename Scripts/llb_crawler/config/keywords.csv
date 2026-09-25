@@ -1,0 +1,40 @@
+Category,Keyword,Weight,Enabled
+Law,llb,100,Yes
+Law,b.a.llb,100,Yes
+Law,bcom llb,100,Yes
+Law,law,90,Yes
+Law,faculty of law,100,Yes
+Law,school of law,100,Yes
+Law,legal studies,80,Yes
+Syllabus,syllabus,100,Yes
+Syllabus,curriculum,90,Yes
+Syllabus,course structure,90,Yes
+Syllabus,scheme,80,Yes
+Syllabus,programme structure,80,Yes
+Syllabus,semester,70,Yes
+Syllabus,cbcs,60,Yes
+QuestionPaper,question paper,100,Yes
+QuestionPaper,old paper,100,Yes
+QuestionPaper,previous paper,100,Yes
+QuestionPaper,past paper,90,Yes
+QuestionPaper,paper solution,40,Yes
+QuestionPaper,sample paper,60,Yes
+QuestionPaper,model paper,60,Yes
+Exam,examination,100,Yes
+Exam,exam,90,Yes
+Exam,controller of examination,100,Yes
+Exam,coe,80,Yes
+Exam,result,30,Yes
+Exam,timetable,30,Yes
+Exam,downloads,90,Yes
+Exam,documents,70,Yes
+Exam,notifications,60,Yes
+Files,pdf,100,Yes
+Files,doc,80,Yes
+Files,docx,80,Yes
+Files,zip,60,Yes
+Files,rar,40,Yes
+Files,xls,30,Yes
+Files,xlsx,30,Yes
+Files,ppt,20,Yes
+Files,pptx,20,Yes

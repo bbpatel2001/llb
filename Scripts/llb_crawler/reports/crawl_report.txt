@@ -1,0 +1,13 @@
+======================================================================
+LLB KNOWLEDGE PLATFORM
+CRAWLER REPORT
+======================================================================
+
+pages_crawled             : 1
+pages_failed              : 0
+documents_found           : 0
+urls_discovered           : 206
+queue_remaining           : 0
+visited_urls              : 1
+downloaded_files          : 292
+downloaded_bytes          : 82438853

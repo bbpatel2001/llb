@@ -1,0 +1,2530 @@
+[
+  {
+    "questionNumber": "1",
+    "questionText": "1. \ue315\ue32f\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue339\ue341. \ue315\ue339\ue32e\ue326\ue436\ue335\ue32f \ue315\ue32f\ue339\ue32f\ue328\ue339 \ue305\ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339 \ue400\ue315\ue32f\ue339.\ue341 25\ni\n.\n\ue307\ue325\ue332\ue339\nr\ni\n(A) \ue307\ue332\ue341\ue31c \ue307\ue341\ue31f\ue330 \ue341\ue333\ue33c\ue305 ? \ue307\ue332\ue341\ue31c \ue332\ue317\ue32f\ue328\ue33b \ue335\ue32d\ue31c\ue324\ue445 \ue33b \ue32f\ue326\ue32b\ue339\ue324\ue330 \ue31b\ue341. \ue307\ue339 \ue33a\ue332\ue327\ue339\ue328 \ue307\ue329\ue332\ue339\ue326\ue339\ue341 \ue335\ue33a\ue336\ue324 \ue335\ue32d\ue3c8\ue332\ue339.\ue341 15\ns\n(B) \ue335\ue32d\ue3c8\ue332\ue339\ue341 \ue306 \ue33a\ue328\ue387\ue32a\ue331\ue324\ue339\ue328\ue339 \ue341\ue33a\ue335\ue3e6\ue339\ue324\ue305 l 10\na\ne",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. \ue335\ue32d\ue3c8\ue332\ue339\ue341 \ue306\nR\n(A) \ue33a\ue332\ue33a\ue333\ue387\ue31f \ue326\ue339\ue326\ue328\ue339 \ue3a3\ue315\ue339\ue32f \ue307\ue328 \ue341\ue32d\ue331\ue332\ue339\ue328\ue339 \ue335\ue305\ue3c8\ue317\ue341 \ue339\ue341. 15\n.\nw\n(B) \ue33a\ue332\ue33a\ue333\ue387\ue31f \ue326\ue339\ue326 \ue307\ue33a\ue327\ue33a\ue328\ue32e\ue32d\ue328\ue339 \ue32d\ue36a\ue33c \ue32e \ue330\ue3fb\ue323\ue339.\ue341 10\n\ue307\ue325\ue332\ue339\nw\n\ue335\ue305\ue32d\ue33a\ue324\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue339.\ue341 \ue335\ue32d\ue305 \ue33a\ue324 \ue369\ue32e\ue339\ue32f\ue341 \ue32d\ue33c\ue369\ue324 \ue335\ue305\ue32d\ue33a\ue324 \ue315\ue336\ue341\ue332\ue339\ue32e ? \ue32d\ue369\ue33c \ue324 \ue335\ue305\ue32d\ue33a\ue324\ue328\ue33b \ue317\ue32f\ue341 \ue336\ue339\ue31c\ue32f\ue33b\ue32d\ue339\ue305 \ue315\ue32f\ue339\ue32f\ue328\ue33b\nw\n\ue315\ue339\ue32e\ue326\ue335\ue436 \ue32f\ue324\ue339 \ue329\ue32f \ue329\ue321\ue324\ue33b \ue307\ue335\ue32f\ue339 \ue341\ue335\ue32d\ue3c8\ue332\ue339\ue341. 25",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \ue315\ue32f\ue339\ue32f\ue32c\ue339\ue335 \ue307\ue31f\ue341 \ue330\ue341 \ue333\ue33c\ue305 ? \ue315\ue32f\ue339\ue32f\ue32c\ue339\ue335\ue328\ue33b \ue3cb\ue387\ue31f\ue339\ue305\ue324 \ue335\ue339\ue325 \ue341\ue335\ue32d\ue31c\ue445\ue324\ue33b \ue307\ue339\ue329\ue339.\ue341 25\n\ue307\ue325\ue332\ue339\n(A) \ue315\ue32f\ue339\ue32f\ue32d\ue339\ue325\ue305 \ue33b \ue32d\ue369\ue33c \ue324 \ue325\ue332\ue339\ue328\ue33b \ue33a\ue332\ue33a\ue332\ue327 \ue32f\ue33b\ue324\ue339\ue341 \ue30b\ue326\ue339\ue336\ue32f\ue323\ue339\ue341 \ue335\ue339\ue325\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341. 15\n(B) \ue335\ue32d\ue3c8\ue332\ue339\ue341 \ue306 \ue32e\ue325\ue339 \ue329\ue404\ue32f\ue3ac\ue32d\ue328\ue339 \ue341\ue33a\ue335\ue3e6\ue339\ue324\ue305 10\nNG-105 1 P.T.O.\nInstagram : @GRealsir",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. \ue31f\ue445\ue441\ue315\ue328\ue339\ue327\ue341 \ue330\ue316\ue339\ue341 \ue306 (\ue317\ue32d\ue341 \ue324\ue341 \ue39e\ue323) 15\n(A) (1) \ue328\ue332\ue339 \ue341\ue315\ue32f\ue339\ue32f\n(2) \ue31c\ue444\ue317\ue339\ue32f\ue33b \ue315\ue32f\ue339\ue32f\ue339\ue341\n(3) \ue329\ue33d\ue332\ue339\ue400\ue329\ue341\ue3fb\ue33b\ue324 \ue315\ue32f\ue339\ue32f\ue32c\ue317\ue305\n(4) \ue326\ue436\ue332\ue339\ue328\ue33b \ue31a\ue33d\ue315\ue332\ue323\ue33b\ue328\ue339 \ue341\ue33a\ue335\ue3e6\ue339\ue324\ue305\n(5) \ue326\ue441\ue321\ue339\ue378\ue32d\ue315 \ue328\ue315\ue33c \ue333\ue339\ue328 \ue332\ue331\ue324\ue32f\n(B) \ue335\ue32d\ue3c8\ue332\ue339\ue341 \ue306 (\ue317\ue32d\ue341 \ue324\ue341 \ue32b \ue341\ue315\ue335\ue436 -\ue330\ue339\ue340) 10\no\n(1) \ue32a\ue339\ue341\ue335 \ue33a\ue332. \ue336\ue339\ue32f\ue32b\ue339\ue341\ue31f\ue330\nf\n(2) \ue330\ue339\ue330\ue32d\ue328\ue341 \ue33a\ue332. \ue317\ue339\ue32f\ue342 \ue33b\ue326\ue3e1 n\n(3) \ue336\ue321\ue341 \ue330\ue33b \ue33a\ue332. \ue32b\ue315\ue335\ue328 \ue321\ue330\ue436 i\n.\n__________ r\ni\ns\nl\na\ne\nR\n.\nw\nw\nw\nNG-105 2\nInstagram : @GRealsir\nSeat No. : _______________\nNG-105\nNovember-2018\nLL.B., Sem.-I\n104 \u2013 Law of Contract & Sp. Relief Act\nTime : 2:30 Hours] [Max. Marks : 100\no\nInstruction : Figures to the righ",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define contract and discuss essential elements of valid contract. 25\ni\nOR .\nr\n(a) Define \u201cConsideration\u201d. \u201cAn agreement withoiut consideration is void.\u201d Discuss\nthis statement. State exception to this rule in sthe Indian Contract Act. 15\nl\n(b) Explain the doctrine of frustration. 10\na\ne",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Discuss :\nR\n(a) Kinds of specific relief and circumstances for getting it. 15\n.\n(b) Salient features ofw specific relief. 10\nOR\nw\nDefine consent. When consent is said to be free consent ? Explain the effect on the\nvalidity ofw contract in absence of free consent. 25",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. What is Quasi Contract ? Explain quasi contract with illustrations. 25\nOR\n(a) Explain with illustrations the different methods of discharge of contract. 15\n(b) Explain : Doctrine of Quantum Merit. 10\nNG-105 3 P.T.O.\nInstagram : @GRealsir",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. Write short note : (Any three) 15\n(a) (1) Novatio\n(2) Wagering Agreements.\n(3) Anticipatory breach of contract.\n(4) Appropriation of payment of debt.\n(5) Penal damages compensation.\n(b) Explain : Any two case law of the following : 10\n(1) Foss V/s Harbottle o\n(2) Lalmen V/s Gauridutt f\nn\n(3) Hadley V/s Baxandale\ni\n__________\n.\nr\ni\ns\nl\na\ne\nR\n.\nw\nw\nw\nNG-105 4\nInstagram : @GRealsir",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. \ue307\ue341\ue31c\ue37c\ue335\ue33b \ue307\ue31f\ue341 \ue330 \ue341 \ue333\ue305 \ue33c ? \ue324\ue328\ue341 \ue339 \ue32d\ue336\ue38e\ue332\ue328\ue339 \ue324\ue38e\ue332\ue339 \ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341. \ue307\ue341\ue31c\ue37c\ue335\ue33b\ue328\ue339 \ue335r\ue305\ue32b\ue305\ue327\ue339\ue328\ue341 \ue339 \ue341 \ue329\ue3fb\ue315\ue339\ue32f\ue339\ue328\ue341 \ue339 \ue315\ue449\ue378\ue32e\ue339\ue341 \ue307\ue328 \ue341 \ue315\ue339\ue32e\ue326\ue339\n\ue3e4\ue339\ue32f\ue339 \ue315\ue436\ue332\ue33b \ue32f\ue33b\ue324 \ue341\ue307\ue305\ue324 \ue330\ue339\ue332\ue33b \ue333\ue315\ue339\ue32e ? i 25\ns\n\ue307\ue325\ue332\ue339\n(A) \ue335\ue32d\ue3c8\ue332\ue339\ue341 : \ue316\ue32f\ue33b\ue326\ue328\ue339\ue32f \ue335\ue339\ue332\ue327\ue339\ue328 l 15\na\n(B) \ue335\ue32d\ue3c8\ue332\ue339\ue341 : \ue333\ue32f\ue324\ue339 \ue341\ue307\ue328 \ue341\ue316\ue339\ue324\ue32f\ue33b\ue307\ue339\ue341 10\ne",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \ue307\ue323 \ue31a\ue33c\ue315\ue385\ue32e\ue339\ue341 \ue332\ue31a\ue341 \ue328\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue339 \ue341\ue307\ue328 \ue341\ue307\ue323 \ue31a\ue33c\ue315\ue385\ue32e\ue339 \ue332\ue341\ue31a\ue328\ue339\ue32f\ue328\ue339 \ue307\ue33a\ue327\ue315\ue339\ue32f\ue339\ue341 \ue335\ue32d\ue3c8\ue332\ue339.\ue341 25\n\ue307R\ue325\ue332\ue339\n(A) \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b \ue324\ue341\ue328\ue339 \ue3a3\ue315\ue339\ue32f\ue339\ue341\ue328\ue33b \ue335\ue33a\ue332\ue388\ue324\ue339\ue32f \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339.\ue341 15\n(B) \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue33a\ue332\ue335\ue31c\ue442\ue328\ue328\ue33b \ue31c.\ue444\ue326\ue33b-\ue31c\ue326\ue444 \ue33b \ue32f\ue33b\ue324\ue339\ue328\ue341 \ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339.\ue341 10\nw",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. (A) \ue31f\ue445\ue441\ue315\ue328\ue339\ue327\ue3b0 \ue330\ue316\ue339\ue341 \ue306 (\ue315\ue339\ue30a\ue341 \ue329\ue323 \ue39e\ue323) 15\n(1) \ue335\ue317\ue33b\ue32f w\ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\n(2) \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue339\ue328\ue341 \ue339 \ue336\ue3cc\ue339\ue341 \ue307\ue328 \ue341\ue32a\ue32f\ue3c8\ue341\n(3) w\ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue329\ue322\ue341 \ue33b\ue328\ue33b \ue33a\ue32b\ue328-\ue328\ue339\ue327\ue3b0 \ue323\ue33b\ue328\ue33b \ue307\ue335\ue32f\ue339 \ue341\n(4) \ue332\ue341\ue31a\ue339\ue323 \ue307\ue328 \ue341\ue332\ue31a\ue341 \ue339\ue323 \ue335\ue32d\ue31c\ue445\ue324\ue33b\n(5) \ue33a\ue328\ue3fb\ue329\ue341 \ue328\ue339 \ue315\ue32f\ue339\ue32f\n(6) \ue33a\ue330\ue32e\ue328\ue328\ue339 \ue3a3\ue315\ue339\ue32f\ue339\ue341\n(B) \ue328\ue33b\ue31a\ue328\ue341 \ue339 \ue33a\ue332\ue327\ue339\ue328\ue339\ue341 \ue316\ue32f\ue339 \ue31b\ue341 \ue315\ue436 \ue316\ue339\ue341\ue31f\ue339 \ue324\ue341 \ue315\ue339\ue32e\ue326\ue339\ue315\ue33b\ue32e \ue315\ue339\ue32f\ue323 \ue307\ue339\ue329\ue33b \ue335\ue32d\ue3c8\ue332\ue339\ue341 \ue306 (\ue315\ue339\ue30a\ue341 \ue329\ue323 \ue32b\ue341) 10\n(1) \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue329\ue322\ue341 \ue33b\ue32d\ue339\ue325\ue305 \ue33b \ue328\ue32a\ue339 \ue341\ue32d\ue331\ue341 \ue332\ue328\ue339\ue32f \ue385\ue32e\ue405\ue369\ue324 \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f \ue336\ue339\ue341\ue32e \ue31c \ue324\ue341 \ue31c\ue3ca\ue32f\ue33b \ue328\ue325\ue33b.\n(2) \ue316\ue32f\ue33b\ue326\ue328\ue339\ue32f \ue332\ue31a\ue341 \ue328\ue339\ue32f \ue315\ue32f\ue324\ue339 \ue336\ue32d\ue305 \ue341\ue333\ue339 \ue335\ue339\ue32f\ue305 \ue33c\ue31f\ue339\ue30a\ue31f\ue330 \ue307\ue339\ue329\ue33b \ue333\ue315.\ue436\n(3) \ue307\ue341\ue31c\ue37c\ue31f \ue436\ue315\ue32f\ue330\ue341 \ue339 \ue32b\ue327\ue339 \ue315\ue339\ue32e\ue339\ue3b1 \ue32d\ue339\ue31f\ue436 \ue32d\ue339\ue33a\ue330\ue315 \ue31c\ue332\ue339\ue32b\ue326\ue339\ue32f \ue320\ue32f \ue341\ue31b\ue341.\n(4) \ue335\ue317\ue33b\ue32f \ue315\ue339\ue30a\ue341 \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue329\ue322\ue341 \ue33b\ue32d\ue339\ue305 \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. What is agency ? State its essential elements. Explain horw agency can be terminated by\nact of parties and by law. i 25\nOR s\n(A) Explain : Rule of Caveat Emptor 15\nl\n(B) Explain : Conditions and Warranties 10\na",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Define an \"Unpaid seller\". Discuss thee rights of unpaid seller. 25\nOR\nR\n(A) Define Partnership and explain in detail various types of partnership. 15\n(B) State the various modes of dissolution of partnership. 10\n.\nw",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "partnership"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. (A) Write short notes on any Three of the following : 15\n(1) Minor Partner\nw\n(2) Rights and duties of Partners\n(3) Effect of non-registration of partnership firm\nw\n(4) Contract of sale and agreement to sell\n(5) Contract of Bailment\n(6) Types of Lien\n(B) State with reasons whether following statements are true or false. (any two) 10\n(1) A person who receives the profits from Partnership firm is not necessarily a\npartner.\n(2) Buyer can always give better title from the seller.\n(3) Principal is",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "sale",
+      "contract",
+      "registration",
+      "partnership",
+      "agreement",
+      "bailment"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. 20\nl\na\n\ue315\ue32f\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b, \ue315\ue32f\ue339\ue32f\ue328\ue339 \ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339 \ue400\ue315\ue32f\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. 20\ne\n\ue32d\ue33c\ue369\ue324-\ue335\ue305\ue32d\ue33a\ue324 \ue32d\ue339\ue37c\ue32e \ue315\ue32f\ue339\ue32f\ue328\ue33c\ue305 \ue307\ue317\ue378\ue32e\ue328\ue33c\ue305 \ue324\ue378\ue332 \ue31b.\ue341 \ue307\ue339 \ue33a\ue332\ue327\ue339\ue328\ue328\ue33b \ue33a\ue332\ue317\ue324\ue341 \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \u201c \u201d 20\nR\n\ue315\ue32f\ue339\ue32f \ue32c\ue339\ue335 \ue307\ue341\ue31f\ue330\ue341 \ue333\ue305 \ue33c? \ue315\ue32f\ue339\ue32f \ue32c\ue339\ue335\ue328\ue33b \ue3cb\ue3f1\ue339\ue305\ue324\ue339\ue341 \ue335\ue33a\ue336\ue324 \ue335\ue32d\ue31c\ue445\ue324\ue33b \ue307\ue339\ue329\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. 20\n.\n\ue315\ue32f\ue339\ue32f\ue32d\ue339\ue305\ue325\ue33b \ue32d\ue369\ue33c \ue324 \ue325\ue332\ue339\ue328\ue33b \ue33a\ue332\ue33a\ue332\ue327w \ue32f\ue33b\ue324\ue339\ue341 \ue30b\ue326\ue339\ue336\ue32f\ue323\ue339\ue341 \ue335\ue339\ue325\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. 20\n\ue33a\ue332\ue33a\ue333\ue3f1 \ue326\ue339\ue326 \ue307\ue341\ue31f\ue330\ue341 \ue333\ue305 \ue33c? \ue30b\ue326\ue339\ue336\ue32f\ue323\ue339\ue341 \ue335\ue339\ue325\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "6",
+    "questionText": "6. w 20\n___________\nw\nMD-101 1 P.T.O.\nwww.Realsir.in Instagram : @GRealsir\nSeat No. : _______________\nMD-101\nMarch-2021\nLL.B., Sem.-I\n104 : Law of Contract & Sp. Relief Act\nTime : 2 Hours] [Max. Marks : 60\nn\nInstructions : (1) Figures to the right indicate full marks.\ni\n(2) Cite cases in support of yours answer.\n.\n(3) Attempt any three questions from the following.\nr\ni",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define Acceptance. Discuss the essential elements of thes lawful acceptance. 20\nl",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Definecontract and discuss the essential elements of contract. 20\na",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \u201cFree Consent\u201d is the essential element of a valid contract. Discuss this statement in\ne\ndetail. 20\nR",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. What is quasi contract ? Explain quasi contract with illustration. 20\n.\nw",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. Discuss the various modes of Discharge of Contract. 20",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "6",
+    "questionText": "6. Discuss about Spwecific Relief with illustrations. 20\n___________\nw\nMD-101 2\nwww.Realsir.in Instagram : @GRealsir",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. l\na",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. e\n25\nR",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. 25\n.\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. 25\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. 25\nw\n3 25",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. 25\n(1) y\n(2) As6 RR\n(3) l sR12\n(4) rRN RLsid\nJT-126 1 P.T.0.\nwww.Realsir.in www.Instagram.com/grealsir/\nSeat No. :\nJT-126\nJanuary-2026\nLL.B., Sem.-I\n104 : Law of Contract & Specific Relief Act-I\nTime : 2:30H ours] [Max. Marks : 100\nn\nInstructions : (1) All questions carry equal marks.\ni\n(2) Cite decided cases in support of your answer.\n.\nr\ni\nDefine contract and discuss the essential elements of contract. 25",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1.\ns\nOR\nl\nDefine consent. When consent is said to be free consent ? Explain the effect on the",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1.\na\nvalidity of contract in absence of free consent. 25\ne",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. What is Quasi-Contract ? Explain QuRasi Contract with illustrations. 25\nOR\n.\nDiscuss various modes of discharge of contract and its effects thereof.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. 25\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Explain the Doctr wine of Frustration with its exceptions and illustrations in detail. 25\nOR",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Discuss iwn detail the main features of Specific Relief Act. 25\n4 Write short note : (any Two) 25\n(1) Anticipatory Breach of Contract\n(2) Contingent Contract\n(3) Wagering Agreements\n(4) Doctrine of Quantum Merit\nJT-126\nwww.Realsir.in www.Instagram.com/grealsir/",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. \u201c \u201d \u201c \u201d\n\ue315\ue436\ue335 \ue330\ue339\ue340 \ue335\ue33a\ue336\ue324 \ue335\ue32d\ue3c8\ue332\ue339\ue341. e\nR\n\ue33a\ue328\ue3fb\ue341\ue329 (\ue32b\ue341\ue30a\ue330\ue32d\ue37c\ue341 \ue31f) \ue307\ue328\ue341 \ue31c\ue317\ue441 \ue32d \ue33a\ue32d\ue330\ue315\ue324\ue328\ue339 \ue315\ue32b\ue3c8\ue317\ue33b\ue32f\ue339\ue341\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b \ue324\ue341\ue328\ue339 \ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341\ue328 \ue341",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2.\n\ue30b\ue326\ue339\ue336\ue32f\ue323\ue339\ue341 \ue324\ue325\ue339 \ue315\ue436\ue335 \ue330\ue339\ue340 \ue335\ue33a\ue336\ue324 \ue335\ue32d.\ue3c8\ue332\ue339\ue341.\nw\n\ue3c8\ue32d\ue33b\ue328\ue328\ue339 \ue336\ue315\ue339\ue341 \ue307\ue328\ue341 \ue31c\ue332\ue339\ue32b\ue326\ue339\ue32f\ue33b\ue307\ue339\ue341\ue328\ue341 \ue30b\ue326\ue339\ue336\ue32f\ue323\ue339\ue341 \ue324\ue325\ue339 \ue315\ue436\ue335 \ue330\ue339\ue340 \ue335\ue339\ue325\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3.\nw\n\ue31a\ue339\ue330 \ue33c\ue3c8\ue32d\ue33b\ue328\ue317\ue33b\ue32f\ue33b \ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b \ue307\ue339 \ue315\ue32f\ue339\ue32f\ue328\ue339\ue341 \ue307\ue305\ue324 \ue315\ue30a \ue32f\ue33b\ue324\ue341 \ue307\ue339\ue332\ue341 \ue31b \ue341\ue324\ue341 \ue30b\ue326\ue339\ue336\ue32f\ue323\ue339\ue341 \ue335\ue339\ue325\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. \u201c \u201d\nw\n\ue33a\ue32b\ue328 \ue31a\ue33d\ue315\ue332\ue341\ue330 \ue332\ue341\ue31a\ue328\ue339\ue32f \ue328\ue339 \ue341\ue307\ue325\ue400 \ue335\ue32d\ue3c8\ue332\ue33b \ue324\ue341\ue328\ue339 \ue307\ue33a\ue327\ue315\ue339\ue32f\ue339\ue341\ue328\ue341 \ue33a\ue332\ue317\ue324\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. \u201c \u201d\n\ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue329\ue341\ue322\ue33b \ue328\ue339 \ue33a\ue332\ue335\ue31c\ue442\ue328\ue328\ue33b \ue31c\ue444\ue326\ue33b-\ue31c\ue444\ue326\ue33b \ue32f\ue33b\ue324\ue339 \ue341\ue31c\ue323\ue339\ue332\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "6",
+    "questionText": "6. \u201c \u201d\n____________\nME-101 1 P.T.O.\nwww.Realsir.in Instagram : @GRealsir\nSeat No. : _______________\nME-101\nMarch-2021\nLL.B., Sem.-I\n105 : Special Contract\nn\nTime : 2 Hours] [Max. Marks : 60\nNote : (1) All questions carry equal marks. i\n.\n(2) State same question number in your answer book which is stated in the\nr\nquestion paper.\ni\n(3) Cite authorities in support of your answers.\ns\n(4) Attempt any three questions.\nl\na",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define \u201cContract of Indemnity\u201d and \u201cContract of Guarantee\u201d and state their essential\nelements with illustrations and case laws.\ne\nR",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Define \u201cContract of Bailment\u201d and \u201cContract of Pledge\u201d and state their essential\nelements with illustrations and case laws.\n.\nw",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "bailment"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Explain the rights and liabilities of surety with case laws and illustrations.\nw",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. Define contract of \u201cContinue Guarantee\u201d and state with illustration how contract of\ncontinue guarantee extinguish.\nw",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. Explain the meaning of \u201cAn Unpaid Seller\u201d and state his rights in detail.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "6",
+    "questionText": "6. State the various modes of \u201cDissolution of Partnership firm\u201d.\n____________\nME-101 2\nwww.Realsir.in Instagram : @GRealsir",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "partnership"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1.\n25\nl\na",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1.\ne\n25\nR",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2.\n25\n.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2.\n25\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3.\nw 25",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3.\nw\n25",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. 15\n(a) sIel sRI l\n(b) l-l aaua\n10\nJU-110 1 PT.0.\nwww.Realsir.in www.Instagram.com/grealsir/\nSeat No.:\nJU-110\nJanuary-2026\nLLB., Sem.-I\nCC-105: Special Contract\nTime : 2:30 Hours] [Max. Marks : 100\nn\nInstructions : () Marks indicated at right hand side is full marks of the question.\n(2) Cite case laws in support of your answer. i\n.\nr\nDefine Contract of Indemnity. Explain the nature and extent of liability of the\n1\ni\nindemnifier and discuss when such liability commences. 25\ns\nOR",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define Bailment. Explain the rights and duties ofl bailor and bailee under the Indian\nContract Act, 1872. a 25\ne",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "bailment"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Define Agency. Explain the modes of creation of agency and the various kinds of\nagents. 25\nR\nOR",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. In which circumstances the Contract of Guarantee can be terminated ? Explain. 25\n.\nw",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. No seller can give better title than what he himself is having.\" Explain this statement\nwith exceptions.\n25\nw OR",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Define Partnership. Discuss the nature and scope of partnership and explain the\nliabilities of partners.\nw 25",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "partnership"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. (A) Explain any two of the following : 15\n(a) Agency by ratification\n(b) Termination of Agency\n(c) Rights of an unpaid seller\n(d) Doctrine of Holding Out\n(B) Distinguish any one : 10\n(a) Indemnity and Guarantee.\n(b) Sub-agent and Substituted agent.\n(c) Passing of property and Passing of risk.\nJU-110 2\nwww.Realsir.in www.Instagram.com/grealsir/",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "property",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. \u203a\u00db\u00be\u00db\u00e0\u00b6\u00db\u2022\u00db\u00e0\u00c1\u00f5\u00e0\u00b6\u00db\u00db \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u00a9\u00db\u00b6\u00e9 \u00db\u00db \u2026\u00db\u00c8\u00db\u00c9\u00fd\u00db\u00ef\u00f5 \u00a9\u00db\u00ab\u00c8\u00db\u00db\u00b6\u00e9 \u00db\u00e0 \u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00efi\u00f5\u00c1\u00f5\u00db.\u00e9 20\n.\n\u2026\u00ac\u00db\u00c8\u00db\u00db\nr\n\u201c\u00db\u00dc\u00a9\u00db\u00b8\u00db\u00dc\u00e6 \u00a9\u00db\u00b6\u00d9 \u00db\u00db \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u00a9\u00db\u00b6\u00e9 \u00db\u00db \u2026\u00db\u00c8\u00db\u00c9\u00fd\u00db\u00ef\u00f5 \u00a9\u00db\u00ab\u00c8\u00db\u00db\u00b6\u00e9 \u00db\u00e0 i\u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db.\u00e9\ns",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. \u2026\u203a\u00e9 \u00f7\u00b6\u00cd\u00db\u00e0\u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u2026\u203a\u00e9 \u00f7\u00b6\u00cd\u00db\u00e0 \u00c1\u00f5\u00fe\u00f9 \u00ac\u00db\u00c8\u00db\u00db\u00b6\u00db\u00e0 \u00b8\u00db\u00b1\u00f9\u00dc\u00a9\u00db\u2026\u00db \u00e9 \u203a\u00f7\u00a8\u00db\u00db\u00c8\u00db\u00db.\u00e9 20\nl\n\u2026\u00ac\u00db\u00c8\u00db\u00db a\n\u201c\u00dc\u00b6\u00db\u201c\u00db\u00b8\u00e9 \u00db\u201d \u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u00a9\u00db\u00b6\u00e9 \u00db\u00db \u2026\u00db\u00c8\u00db\u00c9\u00fd\u00db\u00ef\u00f5 e\u00a9\u00db\u00ab\u00c8\u00db\u00db \u00e9 \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db.\u00e9\nR",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \u2026\u00a8\u00db\u02dc\u00db\u00ef\u00e6 \u00f5\u00c8\u00fd\u00db\u00db \u00e9 \u00c8\u00db\u02dc\u00e9 \u00db\u00b6\u00db\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u2026\u00a8\u00db\u02dc\u00db\u00ef\u00e6 \u00f5\u00c8\u00fd\u00db\u00db \u00c8\u00db\u02dc\u00e9 \u00db\u00b6\u00db\u00db\u00c1\u00f5\u00b6\u00db\u00db \u2026\u00dc\u00b5\u00db\u00ef\u00f5\u00db\u00c1\u00f5\u00db\u00b6\u00e9 \u00db\u00e0 \u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db.\u00e9 20\n\u2026\u00ac\u00db\u00c8\u00db\u00db\n.\n\u201c\u00ef\u00f5\u00db\u02c6\u00e9 \u00b8\u00db\u00a8\u00db \u00c8\u00db\u02dc\u00e9 \u00db\u00b6\u00db\u00db\u00c1\u00f5 \u00b8\u00db\u00db\u00a9\u00e9 \u00db\u00db\u00b6\u00db\u00db w\u00ef\u00f5\u00c1\u00f5\u00a9\u00db\u00db \u00d7 \u00c8\u00db\u00b5\u00db\u00db\u00c1\u00f5\u00e9 \u00cd\u00db\u00db\u00c1\u00f5\u00db \u00e9 \u00be\u00db\u00db\u00dc\u00c5\u00db\u00ef\u00f5\u00e0 \u00d0\u00fc\u2018\u00f5 \u201d\u00db\u00c1\u00f5\u00e0\u00fe\u00f9\u00b6\u00db\u00db\u00c1\u00f5\u00b6\u00db \u00e9 \u2026\u00db\u00b8\u00db\u00e0 \u00c9\u00db\u00ef\u00f5\u00e9 \u00b6\u00db\u00d0\u00fc\u00e1.\u201d \u2026\u00db\n\u00dc\u00c8\u00db\u00b5\u00db\u00db\u00b6\u00db \u2026\u00b8\u00db\u00c8\u00db\u00db\u00fe\u00f9\u00db \u00e9 \u00cd\u00db\u00db\u00ac\u00db \u00e9 \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db.\u00e9\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. \u00bd\u00db\u00db\u2022\u00db\u00e0\u00fe\u00f9\u00db\u00c1\u00f5\u00e0 \u00b8\u00db\u00a7\u00e9 \u00f8\u00e0\u00b6\u00db\u00e0 \u00dc\u00bc\u00db\u00b6\u00db\u00b6\u00db\u00db\u00b5\u00ea \u00db\u00a8\u00db\u00e0\u00b6\u00db\u00e0 \u2026\u00cd\u00db\u00c1\u00f5\u00db\u00b6\u00e9 \u00db\u00e0 \u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db.\u00e9 20\nw \u2026\u00ac\u00db\u00c8\u00db\u00db\n\u00bd\u00db\u00db\u2022\u00db\u00e0\u00fe\u00f9\u00db\u00c1\u00f5\u00e0\u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u00bd\u00db\u00db\u2022\u00db\u00e0\u00fe\u00f9\u00db\u00c1\u00f5\u00db\u00b6\u00e9 \u00db\u00db \u2026\u00dc\u00b5\u00db\u00ef\u00f5\u00db\u00c1\u00f5\u00db \u00e9 \u2026\u00b6\u00db \u00e9 \u203a\u00f7\u00c8\u00db\u00db\u00bc\u00db\u00fe\u00f9\u00db\u00c1\u00f5\u00e0\u2026\u00db \u00e9 \u00dc\u00c8\u00db\u2022\u00db\u00a9\u00db\u00c8\u00db\u00db\u00c1\u00f5 \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db.\u00e9",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. \u2022\u00db\u00be\u00db \u00e9 \u00a9\u00db \u00e9 \u00bc\u00db \u00e9 \u00dc\u00c8\u00db\u00cc\u00db \u00e9 \u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db \u00e9 : 20\n(1) \u00cd\u00db\u00d0\u00fc\u203a\u00db\u00be\u00db\u00e0\u00b6\u00db\u00b6\u00db\u00db \u00d7 \u00d0\u00fc\u00ef\u00f5\u00db \u00e9 \u2026\u00b6\u00db \u00e9 \u203a\u00f7\u00c8\u00db\u00db\u00bc\u00db\u00fe\u00f9\u00db\u00c1\u00f5\u00e0\u2026\u00db\u00e9\n(2) \u00a6\u00f8\u00e9\u00c5\u00db-\u2019\u00f5\u00e9\u00a6\u00f8\u00c1\u00f5 \u2026\u203a\u00e9 \u00f7\u00b6\u00a4\u00f8\n(3) \u00b8\u00db\u00dc\u00f3 \u00a9\u00db\u00bd\u00db\u00db\u00cd\u00db \u00bd\u00db\u00db\u2022\u00db\u00e0\u00fe\u00f9\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u203a\u00f7\u00c8\u00db\u00db\u00bc\u00db\u00fe\u00f9\u00db\u00c1\u00f5\u00e0\n(4) \u00be\u00db\u00db\u00c5\u00db\u00b6\u00db\u00e0 \u00cd\u00db\u00db\u00b8\u00ea \u00db\u00a8\u00db\u00e0 \u2026\u2022\u00d7 \u00db\u00b6\u00e9 \u00db\u00db \u00dc\u00b6\u00db\u00fd\u00db\u00be\u00db\u00db\u00e9\n_________\nN12-103 1 P.T.O.\nInstagram : @GRealsir www.Realsir.info\nSeat No. : _______________\nN12-103\nNovember-2014\nLL.B., Sem.-I\nCore Course 105 : Special Contract\nTime : 3 Hours] [Max. Marks : 100\nInstruction : Figures to the right indicate full marks of the questions.\no",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define contract of guarantee and discuss its essential elements. f 20\nOR n\nGive definition of contract of Indemnity and explain its essential elements.\ni\n.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Give definition of Agency and explain how agency termirnated. 20\nOR i\ns\nDefine \u201cBailment\u201d and explain its essential elements.\nl\na",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "bailment"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Define an \u201cunpaid seller\u201d. Discuss the rights of an unpaid seller. 20\nOR e\n\u201cNo seller can give to buyer a better title than what he himself has.\u201d Explain exceptions\nR\nto this statement.\n.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. Discuss in detail the effect of non-registration of partnership. 20\nw\nOR\nGive definition of partnership and explain in details the Rights and Liabilities of\nw\npartners.\nw",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "registration",
+      "partnership"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. Write notes on any two : 20\n(1) Rights and Liabilities of Co-sureties.\n(2) Del-creder Agent\n(3) Liability by holding out partner.\n(4) Rules as to Delivery of Goods.\n_________\nN12-103 2\nInstagram : @GRealsir www.Realsir.info",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u00ef\u00f5\u00db\u00fd\u00db\u00fe\u00f9\u00e9\u00cd\u00db\u00c1\u00f5 \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00db \u2026\u00db\u00c8\u00db\u00c9\u00fd\u00db\u00ef\u00f5 \u00a9\u00db\u00ab\u00c8\u00db\u00db \u00e9 \u203a\u00f7\u00a8\u00db\u00db\u00c8\u00db\u00db.\u00e9 o 20\n\u2026\u00ac\u00db\u00c8\u00db\u00db\nf\n\u2026\u00c8\u00db\u203a\u00e9 \u00f7 \u2026\u00a4\u00e9 \u00f8\u00c5\u00db \u00e9 \u00c9\u00db\u00e4 \u00d7 ? \u2018\u2026\u00c8\u00db\u203a\u00e9 \u00f7 \u00c8\u00db\u2022\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00cd\u00db\u00be\u00db\u203a\u00f7\u00e6\u00a9\u00db\u00e0 \u00c1\u00f5\u00fe\u00f9\u00bc\u00db\u00db\u00a9\u00db\u00c5\u00db \u2122\u00f6.\u00e9 \u2019 \u2026\u00db \u00dc\u00c8\u00db\u00b5\u00db\u00db\u00b6\u00db\u00b6\u00db\u00e0 \u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db.\u00e9 \u00bd\u00db\u00db\u00c1\u00f5\u00a9\u00db\u00e0\u00fd\u00db\nn\n\u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00db \u00ef\u00f5\u00db\u00fd\u00db\u00fe\u00f9\u00db\u00be\u00db\u00db \u00d7 \u2026\u00db \u00dc\u00b6\u00db\u00fd\u00db\u00be\u00db\u00db \u00e9 \u00cd\u00db\u00bc\u00d7 \u00db\u00b5\u00d7 \u00db\u00e0 \u203a\u00db \u00e9 \u00ef\u00f5\u00db\u02c6\u00e9 \u2026\u00b8\u00db\u00c8\u00db\u00db\u00fe\u00f9 \u00d0\u00fc\u00db\u00fd\u00e9 \u00db \u00a9\u00db\u00db \u00e9 \u203a\u00f7\u00a8\u00db\u00db\u00c8\u00db\u00db.\u00e9\ni",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. \u00be\u00db\u00d0\u00fc\u00db\u00c1\u00e9 \u00f5\u00e0\u00bc\u00db\u00e0\u00bc\u00db\u00e0 \u00dc\u00c8\u00db. \u00b5\u00db\u00c1\u00f5\u00be\u00db\u00fe\u00f9\u00db\u00cd\u00db \u2013\u00db\u00db\u00cc\u00e9 \u00db\u00b6\u00db\u00db \u00ef\u00f5\u00e9\u00cd\u00db\u00b6\u00db\u00db \u00e9 \u00dc\u00cd\u00db\u00b1\u00f9\u00db\u00a9\u00d7 \u00db \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00e0, \u00cd\u00db\u2022\u00db\u00e0\u00c1.\u00f5\u00b6\u00db\u00e0 \u00cd\u00db\u00be\u00db\u203a\u00f7\u00e6\u00a9\u00db\u00e0\u00b6\u00db\u00db \u00cd\u00db\u00fe\u00d7 \u00f9\u00bd\u00db\u00be\u00d9 \u00db\u00db \u00d7 \u00ef\u00f5\u00db\u00fd\u00db\u00fe\u00f9\u00db\u00b6\u00db\u00e0\n\u00b8\u00db\u00dc\u00c1\u00f5\u00dc\u00cd\u00ac\u00db\u00dc\u00a9\u00db\u00b6\u00db\u00e0 \u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db.\u00e9 r 20\n\u2026\u00ac\u00db\u00c8\u00db\u00db\ni\ns\n\u00bd\u00db\u00c5\u00e6 \u00db \u2026\u00a4\u00e9 \u00f8\u00c5\u00db \u00e9 \u00c9\u00db \u00d7\u00e4 ? \u00d0\u00fc\u00ef\u00f5\u00e0\u00ef\u00f5\u00a9\u00db\u00b6\u00db\u00e0 \u00bd\u00db\u00c5\u00e6 \u00db \u2026\u00b6\u00db \u00e9 \u00ef\u00f5\u00db\u00fd\u00db\u00fe\u00e9\u00f9\u00cd\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00bd\u00db\u00c5\u00e6 \u00db \u2026\u2022\u00d7 \u00db \u00e9 \u00bd\u00db\u00db\u00c1\u00f5\u00a9\u00db\u00e0\u00fd\u00db \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00db \u00ef\u00f5\u00db\u00fd\u00db\u00fe\u00f9\u00db\u00be\u00db\u00db \u00d7 \u00ef\u00f5\u00c1\u00f5\u00c8\u00db\u00db\u00be\u00db\u00db \u00d7\n\u2026\u00db\u00c8\u00db\u00c5\u00e9 \u00db\u00e0 \u203a\u00db\u2022\u00e9 \u00db\u00c8\u00db\u00db\u02c6\u2026\u00db \u00e9 \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db.\u00e9\nl\na",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5 \u00dc\u00c8\u00db\u00be\u00db\u00db\u02dc\u00e9 \u00db\u00b6\u00db (\u00be\u00db\u00dc\u00e4 \u00ee\u00a9\u00db)\u00b6\u00db\u00e0 \u00dc\u00c8\u00db\u00dc\u00c8\u00db\u00b5\u00db \u00c1\u00f5\u00e0\u00a9\u00db\u00db \u00e9 \u2026\u00b6\u00db \u00e9 \u00a9\u00db\u00b6\u00e9 \u00db\u00e0 \u2026\u00cd\u00db\u00c1\u00f5 \u00cd\u00db\u00dc\u00d7 \u201c\u00db\u00b8\u00a9\u00db\u00be\u00db\u00db \u00d7 \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db.\u00e9 20\n\u2026\u00ac\u00db\u00c8\u00db\u00db e\n\u201c\u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00dc\u00b6\u00db\u00cc\u00ba\u00f5\u00c7\u00a9\u00db\u00db\u201d \u00b6\u00db\u00db \u00e9 \u00dc\u00cd\u00db\u00b1\u00f9\u00db\u00a9\u00d7 \u00db \u00b4\u00f9\u00cc\u00a4\u00f8\u00db\u00a9\u00d7 \u00db\u00db \u00e9 \u00cd\u00db\u00dc\u00d0\u00fc\u00a9\u00db \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db.\u00e9 \u2026\u00db \u00dc\u00cd\u00db\u00b1\u00f9\u00db\u00a9\u00d7 \u00db\u00b6\u00db\u00db \u2026\u00b8\u00db\u00c8\u00db\u00db\u00fe\u00f9\u00db\u00b6\u00e9 \u00db\u00e0 \u00dc\u00c8\u00db\u2022\u00db\u00a9\u00db\u00c8\u00db\u00db\u00c1\u00f5\nR\n\u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db.\u00e9\n.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. \u00dc\u00c8\u00db\u00dc\u00c9\u00db\u00cc\u00a4\u00f8 \u00fe\u00f9\u00db\u00fe\u00f9\u00b6\u00db\u00db \u00b8\u00db\u00ef\u00f3 \u00f5\u00db\u00c1\u00f5\u00db \u00e9 \u203a\u00f7\u00a8 w\u00db\u00db\u00c8\u00db\u00db.\u00e9 \u00ef\u00f5\u00fd\u00db\u00db \u00cd\u00db\u203a\u00d7 \u00db\u2022\u00e9 \u00db\u00db\u00be\u00e9 \u00db\u00db \u00d7 \u2026\u00b6\u00db\u00e9 \u00ef\u00f5\u00fd\u00db\u00db \u00dc\u00cd\u00db\u00b1\u00f9\u00db\u00a9\u00d7 \u00db\u00b6\u00db\u00db \u2026\u00db\u00b5\u00db\u00db\u00c1\u00f5\u00e9 \u00c8\u00db\u00db\u00fe\u00f9\u00e0\u00b6\u00db \u00e9 \u00dc\u00c8\u00db\u00dc\u00c9\u00db\u00cc\u00a4\u00f8 \u00fe\u00f9\u00db\u00fe\u00f9\n\u00be\u00db\u00c7\u00e0 \u00c9\u00db\u00ef\u00f5\u00e9 ? 20\n\u2026\u00ac\u00db\u00c8\u00db\u00db\nw\n\u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db \u00e9 :\n(1) \u00cd\u00ac\u00db\u00db\u00c8\u00db\u00c1\u00f5 \u00dc\u00be\u00db\u00c5\u00db\u00ef\u00f5\u00a9\u00db\u00b6\u00db\u00e0 \u00b8\u00db\u00b6\u00e4 \u00db:\u00b8\u00db\u00db\u00f3 \u00dc\u00b8\u00a9\u00db\nw\n(2) \u00fe\u00f9\u00cd\u00a9\u00db\u00db\u00c8\u00db\u203a\u00e9 \u00f7\u00b6\u00db\u00e0 \u00cd\u00db\u00b5\u00e4 \u00db\u00db\u00c1\u00f5\u00a8\u00db\u00db\n(3) \u00dc\u00c1\u00f5\u00dc\u00cd\u00db\u00c8\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00dc\u00b6\u00db\u00be\u00db\u00a8\u00db\u00ef\u00e6 \u00f5",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db \u00e9 : (\u2022\u00db\u00be\u00db \u00e9 \u00a9\u00db \u00e9 \u00aa\u00db\u00a8\u00db) 20\n(1) \u00b8\u00db\u00c8\u00e6 \u00db\u00fd\u00d9 \u00db\u00dc\u00d7 \u00aa\u00db\u00a9\u00db \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00bd\u00db\u2022\u00d7 \u00db\n(2) \u203a\u00f7\u00e4\u2022\u00db\u00db\u00c1\u00f5\u00e0 \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00db\u00e9\n(3) \u2022\u00db\u00c1\u00e9 \u00f5\u00ef\u00f5\u00db\u00fd\u00db\u00fe\u00f9\u00e9\u00cd\u00db\u00c1\u00f5 \u00cd\u00db\u00be\u00db\u203a\u00f7\u00e6\u00a9\u00db\u00e0\n(4) \u00ef\u00f5\u00db\u00c5\u00db\u00db\u02c6\u00d9 \u00c5\u00db \u00dc\u00c8\u00db. \u00ef\u00f5\u00db\u00bc\u00db\u00db\u00dc\u00eb \u00c5\u00db\u00ef\u00f5 \u00cd\u00be\u00db\u00db\u00ef\u00e9 \u00f5 \u00bc\u00db\u00db\u00c5\u00e9 \u00db \u00ef\u00f5\u00d7\u00b8\u00db\u00b6\u00db\u00e0\n(5) \u00c5\u00db\u00db\u00c5\u00db\u00be\u00db\u00b6\u00e9 \u00db \u00dc\u00c8\u00db. \u2022\u00db\u00db\u00c1\u00e9\u00ed \u00f5\u00e0 \u00fe\u00f9\u00ab\u00db\n(6) \u00bc\u00db\u00c7\u203a\u00f7\u00bc\u00db\u00c1\u00f5\u00e0 \u2026\u00b6\u00db \u00e9 \u2026\u00fd\u00db\u00db\u2022\u00e9 \u00fd\u00db \u00c5\u00db\u00db\u2022\u00db\u00c8\u00db\u2022\u00db\n_________\nN11-103 1 P.T.O.\nInstagram : @GRealsir www.Realsir.info\nSeat No. : _______________\nN11-103\nNovember-2014\nLL.B., Sem.-I (CBCS)\nCore-Course 104 : Law of Contract\nPaper \u2013 I\nTime : 3 Hours] [Max. Marks : 100",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define contract and discuss the essential elements of valid contract. 20\no\nOR\nDefine consideration. \u2018An agreement without consideration is vfoid.\u2019 Discuss this\nstatement. State whether there are any exceptions to this rule in then Indian Contract Act.\ni",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Explain the principle in the case Mohoribibi V/s. Dharmdas Ghose and discuss fully the\n.\nlaw relations to minor\u2019s agreement. 20\nr\nOR\ni\nWhat is mistake ? Explain kinds of Fundamentals error mistake of fact and mistake of\nlaw under the Indian Contract Act.\nl\na",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Discuss the various mode of discharge of contract and effects thereof. 20\nOR e\nExplain \u201cDoctrine of Frustration\u201d with the help of illustrations. Discuss in detail\nR\nexceptions of this doctrine.\n.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. What are the kinds of specific relief ? In what circumstances and on what principles can\nw\nplaintiff get specific relief ? 20\nOR\nw\nExplain :\n(1) Possession of immovable property.\nw\n(2) Retification of Instrument.\n(3) Appointment of Receiver.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "property",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. Explain : (any three) 20\n(1) Anticipatory Breach of Contract.\n(2) Wagering contract.\n(3) Unlawfull Agreement.\n(4) Carllil V/s. Carbolic Smoke Balli.Co.\n(5) Lalman V/s. Gauri Dutt.\n(6) Coercion and undue influence\n_________\nN11-103 2\nInstagram : @GRealsir www.Realsir.info",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. \ue307\ue332\ue341\ue31c \ue307\ue31f\ue341 \ue330\ue341 \ue333\ue305 \ue33c ? \u201c\ue307\ue332\ue341\ue31c \ue332\ue317\ue32f\ue328\ue33b \ue335\ue32d\ue31c\ue324\ue445 \ue33b \ue32f\ue326\ue32b\ue339\ue324\ue330 \ue31b.\ue341 \u201d \u2013\ue307\ue339 \ue33a\ue332\ue327\ue339\ue328\ue328\ue33b \ue31a\ue31a\ue339\ue400 f\ue315\ue32f\ue339.\ue341 \ue32c\ue339\ue32f\ue324\ue33b\ue32e \ue315\ue32f\ue339\ue32f\ue328\ue339\n\ue315\ue339\ue32e\ue326\ue339\ue32d\ue339 \ue305\ue307\ue339 \ue33a\ue328\ue32e\ue32d \ue335\ue305\ue32b\ue305\ue327\ue33b \ue3c8 \ue341\ue315\ue339\ue341\ue30a \ue307\ue329\ue332\ue339\ue326\ue339\ue341 \ue336\ue339\ue32e\ue341 \ue324\ue339\ue341 \ue31c\ue323\ue339\ue332\ue339.\ue341 n 20\n\ue307\ue325\ue332\ue339\ni\n\u201c\ue32d\ue33c\ue369\ue324 \ue335\ue32d\ue305 \ue33a\ue324\u201d \ue32d\ue339\ue37c\ue32e \ue315\ue32f\ue339\ue32f\ue328\ue305 \ue33c\ue307\ue317\ue378\ue32e\ue328\ue305 \ue33c\ue324\ue38e\ue332 \ue31b\ue341. \ue307\ue339 \ue33a\ue332\ue327\ue339\ue328\ue328\ue33b \ue33a\ue332\ue317\ue324\ue341 \ue31a.\ue31a\ue339\ue400 \ue315\ue32f\ue339\ue341.\nr\ni",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. \ue32d\ue336\ue339\ue341\ue32f\ue33b\ue32b\ue33b\ue32b\ue33b \ue33a\ue332. \ue327\ue32d\ue326\ue400 \ue339\ue335 \ue318\ue339\ue341\ue334\ue328\ue339 \ue315\ue436\ue335\ue328\ue339 \ue341 \ue33a\ue335\ue3e6\ue339\ue324\ue305 \ue335\ue32d\ue3c8\ue332\ue33b, \ue335\ue317\ue33b\ue32f\ue328\ue33b \ue335\ue32d\ue31c\ue324\ue445 \ue33b\ue328\ue339 \ue335\ue326\ue305 \ue32c\ue32d\ue400 \ue339\ue305 \ue315\ue339\ue32e\ue326\ue339\ue328\ue33b\ns\n\ue329\ue404\ue32f\ue405\ue388\ue325\ue33a\ue324\ue328\ue33b \ue31a\ue31a\ue339 \ue400\ue315\ue32f\ue339.\ue341 20\nl\n\ue307\ue325\ue332\ue339\na\n\ue388\ue332\ue33b\ue315\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue339\ue341. \ue315\ue339\ue32e\ue326\ue436\ue335\ue32f\ue328\ue339 \ue388\ue332\ue33b\ue315\ue339\ue32f\ue328\ue339 \ue305\ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339.\ue341\ne",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \ue315\ue32f\ue339\ue32f\ue32c\ue339\ue335 (\ue307\ue327\ue315\ue400 \ue32f\ue339\ue32f) \ue307\ue341\ue31f\ue330\ue341 \ue333\ue33c\ue305 ? \ue315\ue32f\ue339\ue32fR\ue32c\ue339\ue335\ue328\ue33b \ue3cb\ue387\ue31f\ue339\ue324\ue305 \ue335\ue339\ue325 \ue341\ue335\ue32d\ue31c\ue445\ue324\ue33b \ue307\ue339\ue329\ue339.\ue341 20\n\ue307\ue325\ue332\ue339\n.\n\ue315\ue32f\ue339\ue32f\ue328\ue33b \ue33a\ue328\ue387\ue32a\ue331\ue324\ue339\ue328\ue339 \ue341\ue33a\ue335\ue3e6\ue339\ue324\ue305 \ue30b\ue326\ue339\ue336\ue32f\ue323 \ue335\ue33a\ue336\ue324 \ue335\ue32d\ue3c8\ue332\ue339\ue341. \ue307\ue339 \ue33a\ue335\ue3e6\ue339\ue324\ue305 \ue328\ue339 \ue307\ue329\ue332\ue339\ue326\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339\ue341.\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. \ue328\ue33a\ue342\ue32d\ue33a\ue324\ue315 \ue315\ue32f\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue339.\ue341 \ue328\ue33a\ue342\ue32d\ue33a\ue324\ue315 \ue315\ue32f\ue339\ue32f\ue328\ue305 \ue33c\ue329\ue339\ue330\ue328 \ue369\ue32e\ue339\ue32f\ue341 \ue315\ue32f\ue339\ue332\ue33b \ue333\ue315\ue339\ue32e \ue324 \ue341\ue30b\ue326\ue339\ue336\ue32f\ue323 \ue335\ue33a\ue336\ue324 \ue335\ue32d\ue3c8\ue332\ue339\ue341. 20\nw\n\ue307\ue325\ue332\ue339\n\ue33a\ue332\ue33a\ue333\ue387\ue31f\ue326\ue339\ue326\ue328\ue339 \ue3a3\ue315\ue339\ue32f\ue339\ue341 \ue307\ue328 \ue341\ue324\ue341 \ue32d\ue331\ue332\ue339\ue328\ue339 \ue335\ue305\ue3c8\ue317\ue341 \ue339\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. \ue31f\ue445\ue441\ue315\ue328\ue339\ue327\ue3b0 \ue330\ue316\ue339\ue341 \ue306 (\ue315\ue339\ue30a\ue341 \ue329\ue323 \ue32b)\ue341 20\n(1) \ue315\ue339\ue32d\ue31a\ue330\ue339\ue30b \ue32d\ue328\ue339\ue30a\ue41c\ue315\ue32d \ue307\ue328 \ue341\ue315\ue339\ue32e\ue32d\ue33b \ue32d\ue328\ue339\ue30a\ue41c\ue315\ue32d\n(2) \ue32e\ue325\ue339 \ue329\ue404\ue32f\ue3ac\ue32d\ue328\ue339\ue341 \ue33a\ue335\ue3e6\ue339\ue324\ue305\n(3) \ue385\ue32e\ue405\ue369\ue324\ue307\ue339\ue341 \ue31c\ue436\ue32d\ue328\ue339 \ue33a\ue332\ue3ca\ue3e6 \ue33a\ue332\ue33a\ue333\ue387\ue31f\ue326\ue339\ue326\ue328\ue339 \ue341\ue41c\ue315\ue32d \ue325\ue30a \ue333\ue315\ue436.\n(4) \ue329\ue33d\ue332\ue339\ue400\ue329\ue341\ue33a\ue3fb\ue324 \ue315\ue32f\ue339\ue32f\ue32c\ue317\ue305\n(5) \ue330\ue339\ue330\ue32d\ue328\ue341 \ue33a\ue332. \ue317\ue339\ue32f\ue342 \ue33b\ue326\ue3e1\n__________\nNN-115 1 P.T.O.\nInstagram : @GRealsir\nSeat No. : _______________\nNN-115\nNovember-2017\nLL.B., Sem.-I\n104 : Law of Contract, Paper-I\nTime : 3 Hours] [Max. Marks : 100\nInstructions : (1) All questions carry equal marks.\n(2) Cite decided cases in support of your answer.\no",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define Consideration. \u201cAn agreement without consideration is void.\u201d \u2013Discuss this\nf\nstatement. State whether there are any exception to this rule in the Indian Contract Act. 20\nn\nOR\n\u201cFree Consent\u201d is the essential element of a valid contract.i Discuss this statement in\n.\ndetail.\nr\ni",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Explain the Principle in case of Moharibibi V/s Dsharamdas Ghose and discuss fully the\nlaw relating to Minor's agreement. 20\nl\nOR\na\nDefine Acceptance. Discuss the essential elements of the lawful acceptance.\ne",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. What is Quasi-Contract ? Explain Quasi contract with illustrations. 20\nR\nOR\nExplain the Doctrine of Frustration with the help of illustrations. Discuss in detail\n.\nexceptions of this doctrine.\nw",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. Define Contingent Contract. Explain with illustrations as to when contingent contracts\nw\ncan be enforced. 20\nOR\nw\nDiscuss kinds of Specific Relief and circumstances for getting it.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. Write short note : (Any Two) 20\n(1) Temporary Injunction and Permanent Injunction.\n(2) Doctrine of Quantum Merit.\n(3) Persons against whom specific enforcement can be ordered.\n(4) Anticipatory breach of contract.\n(5) Lalmen V/s Gauridutt.\n__________\nNN-115 2\nInstagram : @GRealsir",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. \ue307\ue323\ue31a\ue315\ue33d \ue385\ue32e\ue339 \ue332\ue31a\ue341 \ue328\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b, \ue307\ue323\ue31a\ue315\ue33d \ue385\ue32e\ue339 \ue332\ue31a\ue341 \ue328\ue339\ue32f\ue328\ue339 \ue307\ue33a\ue327\ue315\ue339\ue32f\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32ff\ue339.\ue341 20\nn\n\ue307\ue325\ue332\ue339\n\u201c\ue315\ue339\ue341\ue30a\ue329\ue323 \ue332\ue31a\ue341 \ue328\ue339\ue32f \ue329\ue339\ue341\ue324\ue339\ue328\ue339 \ue315\ue32f\ue324\ue339\ue305 \ue332\ue327\ue339\ue32f \ue341\ue335\ue339\ue32f\ue339\ue341 \ue32d\ue339\ue33a\ue330\ue315\ue33b \ue336\ue3cc \ue316\ue32f\ue33b\ue326\ue328\ue339\ue32f\ue328 \ue341\ue307\ue339i\ue329\ue33b \ue333\ue315 \ue436\ue328\ue336\ue3b6.\u201d \ue307\ue339 \ue33a\ue332\ue327\ue339\ue328\n.\n\ue307\ue329\ue332\ue339\ue326\ue339\ue341 \ue335\ue339\ue325\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.\nr\ni",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue329\ue341\ue322\ue33b\ue328\ue33b \ue33a\ue32b\ue328\ue328\ue339\ue327\ue3b0 \ue323\ue33b\ue328\ue33b \ue307\ue335\ue32f\ue339\ue328\ue341 \ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339.\ue341 s 20\n\ue307\ue325\ue332\ue339\nl\na\n\ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b, \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue339\ue328\ue341 \ue339 \ue307\ue33a\ue327\ue315\ue339\ue32f\ue339\ue341 \ue307\ue328 \ue341\ue31c\ue332\ue339\ue32b\ue326\ue339\ue32f\ue33b\ue307\ue339\ue341 \ue33a\ue332\ue317\ue324\ue332\ue339\ue32f \ue335\ue32d\ue3c8\ue332\ue339\ue341.\ne",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \ue3c8\ue32d\ue33b\ue328\ue317\ue33b\ue32f\ue33b\ue328\ue339 \ue315\ue32f\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b, \ue324\ue328\ue341 \ue339 \ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339.\ue341 20\nR\n\ue307\ue325\ue332\ue339\n\ue307\ue341\ue31c\ue37c\ue335\ue33b \ue307\ue341\ue31f\ue330\ue341 \ue333\ue33c\ue305 ? \ue324\ue328\ue341 \ue339 \ue32d\ue336\ue38e.\ue332\ue328\ue339 \ue324\ue38e\ue332\ue339\ue341 \ue335\ue32d\ue3c8\ue332\ue339.\ue341 \ue307\ue31c\ue341 \ue37c\ue335\ue33b\ue328\ue339 \ue335\ue305\ue32b\ue305\ue327\ue339\ue328\ue341 \ue339 \ue329\ue3fb\ue315\ue339\ue32f\ue339\ue328\ue341 \ue339 \ue315\ue449\ue378\ue32e\ue339\ue341 \ue3e4\ue339\ue32f\ue339 \ue307\ue328 \ue341\nw\n\ue315\ue339\ue32e\ue326\ue339 \ue3e4\ue339\ue32f\ue339 \ue315\ue436\ue332\ue33b \ue32f\ue33b\ue324 \ue341\ue307\ue305\ue324 \ue330\ue339\ue332\ue33b \ue333\ue315\ue339\ue32e ?\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. \ue3fb\ue33a\ue324\ue329\ue33d\ue33a\ue324\ue328\ue400 \ue339 \ue315\ue32f\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b, \ue324\ue341\ue328\ue339 \ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339.\ue341 20\n\ue307\ue325\ue332\ue339\nw\n\u201c\ue33a\ue328\ue3fb\ue329\ue341 \u201d\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b \ue324\ue328\ue341 \ue339 \ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341 \ue335\ue32d\ue3c8\ue332\ue339.\ue341",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. \ue31f\ue445\ue441\ue315\ue328\ue339\ue327\ue3b0 \ue330\ue316\ue339\ue341 \ue306 (\ue315\ue339\ue30a\ue341 \ue329\ue323 \ue32b)\ue341 20\n(1) \ue32d\ue339\ue330 \ue335\ue339\ue329\ue3b0 \ue323\ue33b \ue307\ue305\ue317\ue328\ue341 \ue339 \ue33a\ue328\ue32e\ue32d\ue339\ue341\n(2) \ue332\ue341\ue31a\ue339\ue323 \ue307\ue328 \ue341\ue332\ue31a\ue341 \ue339\ue323\ue328\ue33b \ue335\ue32d\ue31c\ue445\ue324\ue33b\n(3) \ue307\ue326\ue339\ue330\ue324 \ue3e4\ue339\ue32f\ue339 \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue329\ue322\ue341 \ue33b\ue328\ue305 \ue33c\ue33a\ue332\ue335\ue31c\ue442\ue328\n(4) \ue321\ue436\ue330-\ue38f\ue436\ue321\ue32f \ue307\ue31c\ue341 \ue37c\ue31f\n__________\nNO-112 1 P.T.O.\nInstagram : @GRealsir\nSeat No. : _______________\nNO-112\nNovember-2017\nLL.B., Sem.-I\nCC-105 : Special Contract\nTime : 3 Hours] [Max. Marks : 100\nInstruction : All questions carry equal marks.\no",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define an \u201cUnpaid Seller.\u201d Discuss the rights of unpaid seller. f 20\nn\nOR\n\u201cNo seller can give to buyer a better title than what he himself has.\u201d Explain with\ni\n.\nexceptions to this rule.\nr\ni",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Discuss in detail the effect of non-registration of psartnership. 20\nOR\nl\nGive definition of partnership and explain ain details the rights and liabilities of partners.\ne",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "registration",
+      "partnership"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Define contract of guarantee and discuss its essential elements. 20\nR\nOR\nWhat is Agency ? State its essential elements. Explain how agency can be terminated\n.\nby act of parties and by wlaw.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. Give definition\now\nf Contract of Indemnity and explain its essential elements. 20\nOR\nDefine \u201cBwailment\u201d and explain its essential elements.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. Write short notes : (any two) 20\n(1) Rules as to Delivery of Goods.\n(2) Sale and Agreement of Sale.\n(3) Dissolution of Partnership firm by Court.\n(4) Del \u2013 Creder Agent\n__________\nNO-112 2\nInstagram : @GRealsir",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "sale",
+      "contract",
+      "partnership"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. \ue315\ue32f\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue339\ue341. \ue315\ue339\ue32e\ue326\ue436\ue335\ue32f \ue315\ue32f\ue339\ue32f\ue328\ue339 \ue305\ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339 \ue400\ue315\ue32f\ue339.\ue341 25\ni\n.\n\ue307\ue325\ue332\ue339\nr\ni\n(A) \ue307\ue332\ue341\ue31c \ue307\ue341\ue31f\ue330 \ue341\ue333\ue33c\ue305 ? \ue307\ue332\ue341\ue31c \ue332\ue317\ue32f\ue328\ue33b \ue335\ue32d\ue31c\ue324\ue445 \ue33b \ue32f\ue326\ue32b\ue339\ue324\ue330 \ue31b\ue341. \ue307\ue339 \ue33a\ue332\ue327\ue339\ue328 \ue307\ue329\ue332\ue339\ue326\ue339\ue341 \ue335\ue33a\ue336\ue324 \ue335\ue32d\ue3c8\ue332\ue339.\ue341 15\ns\n(B) \ue335\ue32d\ue3c8\ue332\ue339\ue341 \ue306 \ue33a\ue328\ue387\ue32a\ue331\ue324\ue339\ue328\ue339 \ue341\ue33a\ue335\ue3e6\ue339\ue324\ue305 l 10\na\ne",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. \ue335\ue32d\ue3c8\ue332\ue339\ue341 \ue306\nR\n(A) \ue33a\ue332\ue33a\ue333\ue387\ue31f \ue326\ue339\ue326\ue328\ue339 \ue3a3\ue315\ue339\ue32f \ue307\ue328 \ue341\ue32d\ue331\ue332\ue339\ue328\ue339 \ue335\ue305\ue3c8\ue317\ue341 \ue339\ue341. 15\n.\nw\n(B) \ue33a\ue332\ue33a\ue333\ue387\ue31f \ue326\ue339\ue326 \ue307\ue33a\ue327\ue33a\ue328\ue32e\ue32d\ue328\ue339 \ue32d\ue36a\ue33c \ue32e \ue330\ue3fb\ue323\ue339.\ue341 10\n\ue307\ue325\ue332\ue339\nw\n\ue335\ue305\ue32d\ue33a\ue324\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue339.\ue341 \ue335\ue32d\ue305 \ue33a\ue324 \ue369\ue32e\ue339\ue32f\ue341 \ue32d\ue33c\ue369\ue324 \ue335\ue305\ue32d\ue33a\ue324 \ue315\ue336\ue341\ue332\ue339\ue32e ? \ue32d\ue369\ue33c \ue324 \ue335\ue305\ue32d\ue33a\ue324\ue328\ue33b \ue317\ue32f\ue341 \ue336\ue339\ue31c\ue32f\ue33b\ue32d\ue339\ue305 \ue315\ue32f\ue339\ue32f\ue328\ue33b\nw\n\ue315\ue339\ue32e\ue326\ue335\ue436 \ue32f\ue324\ue339 \ue329\ue32f \ue329\ue321\ue324\ue33b \ue307\ue335\ue32f\ue339 \ue341\ue335\ue32d\ue3c8\ue332\ue339\ue341. 25",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \ue315\ue32f\ue339\ue32f\ue32c\ue339\ue335 \ue307\ue31f\ue341 \ue330\ue341 \ue333\ue33c\ue305 ? \ue315\ue32f\ue339\ue32f\ue32c\ue339\ue335\ue328\ue33b \ue3cb\ue387\ue31f\ue339\ue305\ue324 \ue335\ue339\ue325 \ue341\ue335\ue32d\ue31c\ue445\ue324\ue33b \ue307\ue339\ue329\ue339.\ue341 25\n\ue307\ue325\ue332\ue339\n(A) \ue315\ue32f\ue339\ue32f\ue32d\ue339\ue325\ue305 \ue33b \ue32d\ue369\ue33c \ue324 \ue325\ue332\ue339\ue328\ue33b \ue33a\ue332\ue33a\ue332\ue327 \ue32f\ue33b\ue324\ue339\ue341 \ue30b\ue326\ue339\ue336\ue32f\ue323\ue339\ue341 \ue335\ue339\ue325\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341. 15\n(B) \ue335\ue32d\ue3c8\ue332\ue339\ue341 \ue306 \ue32e\ue325\ue339 \ue329\ue404\ue32f\ue3ac\ue32d\ue328\ue339 \ue341\ue33a\ue335\ue3e6\ue339\ue324\ue305 10\nNG-105 1 P.T.O.\nInstagram : @GRealsir",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. \ue31f\ue445\ue441\ue315\ue328\ue339\ue327\ue341 \ue330\ue316\ue339\ue341 \ue306 (\ue317\ue32d\ue341 \ue324\ue341 \ue39e\ue323) 15\n(A) (1) \ue328\ue332\ue339 \ue341\ue315\ue32f\ue339\ue32f\n(2) \ue31c\ue444\ue317\ue339\ue32f\ue33b \ue315\ue32f\ue339\ue32f\ue339\ue341\n(3) \ue329\ue33d\ue332\ue339\ue400\ue329\ue341\ue3fb\ue33b\ue324 \ue315\ue32f\ue339\ue32f\ue32c\ue317\ue305\n(4) \ue326\ue436\ue332\ue339\ue328\ue33b \ue31a\ue33d\ue315\ue332\ue323\ue33b\ue328\ue339 \ue341\ue33a\ue335\ue3e6\ue339\ue324\ue305\n(5) \ue326\ue441\ue321\ue339\ue378\ue32d\ue315 \ue328\ue315\ue33c \ue333\ue339\ue328 \ue332\ue331\ue324\ue32f\n(B) \ue335\ue32d\ue3c8\ue332\ue339\ue341 \ue306 (\ue317\ue32d\ue341 \ue324\ue341 \ue32b \ue341\ue315\ue335\ue436 -\ue330\ue339\ue340) 10\no\n(1) \ue32a\ue339\ue341\ue335 \ue33a\ue332. \ue336\ue339\ue32f\ue32b\ue339\ue341\ue31f\ue330\nf\n(2) \ue330\ue339\ue330\ue32d\ue328\ue341 \ue33a\ue332. \ue317\ue339\ue32f\ue342 \ue33b\ue326\ue3e1 n\n(3) \ue336\ue321\ue341 \ue330\ue33b \ue33a\ue332. \ue32b\ue315\ue335\ue328 \ue321\ue330\ue436 i\n.\n__________ r\ni\ns\nl\na\ne\nR\n.\nw\nw\nw\nNG-105 2\nInstagram : @GRealsir\nSeat No. : _______________\nNG-105\nNovember-2018\nLL.B., Sem.-I\n104 \u2013 Law of Contract & Sp. Relief Act\nTime : 2:30 Hours] [Max. Marks : 100\no\nInstruction : Figures to the righ",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define contract and discuss essential elements of valid contract. 25\ni\nOR .\nr\n(a) Define \u201cConsideration\u201d. \u201cAn agreement withoiut consideration is void.\u201d Discuss\nthis statement. State exception to this rule in sthe Indian Contract Act. 15\nl\n(b) Explain the doctrine of frustration. 10\na\ne",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Discuss :\nR\n(a) Kinds of specific relief and circumstances for getting it. 15\n.\n(b) Salient features ofw specific relief. 10\nOR\nw\nDefine consent. When consent is said to be free consent ? Explain the effect on the\nvalidity ofw contract in absence of free consent. 25",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. What is Quasi Contract ? Explain quasi contract with illustrations. 25\nOR\n(a) Explain with illustrations the different methods of discharge of contract. 15\n(b) Explain : Doctrine of Quantum Merit. 10\nNG-105 3 P.T.O.\nInstagram : @GRealsir",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. Write short note : (Any three) 15\n(a) (1) Novatio\n(2) Wagering Agreements.\n(3) Anticipatory breach of contract.\n(4) Appropriation of payment of debt.\n(5) Penal damages compensation.\n(b) Explain : Any two case law of the following : 10\n(1) Foss V/s Harbottle o\n(2) Lalmen V/s Gauridutt f\nn\n(3) Hadley V/s Baxandale\ni\n__________\n.\nr\ni\ns\nl\na\ne\nR\n.\nw\nw\nw\nNG-105 4\nInstagram : @GRealsir",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. \ue307\ue341\ue31c\ue37c\ue335\ue33b \ue307\ue31f\ue341 \ue330 \ue341 \ue333\ue305 \ue33c ? \ue324\ue328\ue341 \ue339 \ue32d\ue336\ue38e\ue332\ue328\ue339 \ue324\ue38e\ue332\ue339 \ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341. \ue307\ue341\ue31c\ue37c\ue335\ue33b\ue328\ue339 \ue335r\ue305\ue32b\ue305\ue327\ue339\ue328\ue341 \ue339 \ue341 \ue329\ue3fb\ue315\ue339\ue32f\ue339\ue328\ue341 \ue339 \ue315\ue449\ue378\ue32e\ue339\ue341 \ue307\ue328 \ue341 \ue315\ue339\ue32e\ue326\ue339\n\ue3e4\ue339\ue32f\ue339 \ue315\ue436\ue332\ue33b \ue32f\ue33b\ue324 \ue341\ue307\ue305\ue324 \ue330\ue339\ue332\ue33b \ue333\ue315\ue339\ue32e ? i 25\ns\n\ue307\ue325\ue332\ue339\n(A) \ue335\ue32d\ue3c8\ue332\ue339\ue341 : \ue316\ue32f\ue33b\ue326\ue328\ue339\ue32f \ue335\ue339\ue332\ue327\ue339\ue328 l 15\na\n(B) \ue335\ue32d\ue3c8\ue332\ue339\ue341 : \ue333\ue32f\ue324\ue339 \ue341\ue307\ue328 \ue341\ue316\ue339\ue324\ue32f\ue33b\ue307\ue339\ue341 10\ne",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \ue307\ue323 \ue31a\ue33c\ue315\ue385\ue32e\ue339\ue341 \ue332\ue31a\ue341 \ue328\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue339 \ue341\ue307\ue328 \ue341\ue307\ue323 \ue31a\ue33c\ue315\ue385\ue32e\ue339 \ue332\ue341\ue31a\ue328\ue339\ue32f\ue328\ue339 \ue307\ue33a\ue327\ue315\ue339\ue32f\ue339\ue341 \ue335\ue32d\ue3c8\ue332\ue339.\ue341 25\n\ue307R\ue325\ue332\ue339\n(A) \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b \ue324\ue341\ue328\ue339 \ue3a3\ue315\ue339\ue32f\ue339\ue341\ue328\ue33b \ue335\ue33a\ue332\ue388\ue324\ue339\ue32f \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339.\ue341 15\n(B) \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue33a\ue332\ue335\ue31c\ue442\ue328\ue328\ue33b \ue31c.\ue444\ue326\ue33b-\ue31c\ue326\ue444 \ue33b \ue32f\ue33b\ue324\ue339\ue328\ue341 \ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339.\ue341 10\nw",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. (A) \ue31f\ue445\ue441\ue315\ue328\ue339\ue327\ue3b0 \ue330\ue316\ue339\ue341 \ue306 (\ue315\ue339\ue30a\ue341 \ue329\ue323 \ue39e\ue323) 15\n(1) \ue335\ue317\ue33b\ue32f w\ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\n(2) \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue339\ue328\ue341 \ue339 \ue336\ue3cc\ue339\ue341 \ue307\ue328 \ue341\ue32a\ue32f\ue3c8\ue341\n(3) w\ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue329\ue322\ue341 \ue33b\ue328\ue33b \ue33a\ue32b\ue328-\ue328\ue339\ue327\ue3b0 \ue323\ue33b\ue328\ue33b \ue307\ue335\ue32f\ue339 \ue341\n(4) \ue332\ue341\ue31a\ue339\ue323 \ue307\ue328 \ue341\ue332\ue31a\ue341 \ue339\ue323 \ue335\ue32d\ue31c\ue445\ue324\ue33b\n(5) \ue33a\ue328\ue3fb\ue329\ue341 \ue328\ue339 \ue315\ue32f\ue339\ue32f\n(6) \ue33a\ue330\ue32e\ue328\ue328\ue339 \ue3a3\ue315\ue339\ue32f\ue339\ue341\n(B) \ue328\ue33b\ue31a\ue328\ue341 \ue339 \ue33a\ue332\ue327\ue339\ue328\ue339\ue341 \ue316\ue32f\ue339 \ue31b\ue341 \ue315\ue436 \ue316\ue339\ue341\ue31f\ue339 \ue324\ue341 \ue315\ue339\ue32e\ue326\ue339\ue315\ue33b\ue32e \ue315\ue339\ue32f\ue323 \ue307\ue339\ue329\ue33b \ue335\ue32d\ue3c8\ue332\ue339\ue341 \ue306 (\ue315\ue339\ue30a\ue341 \ue329\ue323 \ue32b\ue341) 10\n(1) \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue329\ue322\ue341 \ue33b\ue32d\ue339\ue325\ue305 \ue33b \ue328\ue32a\ue339 \ue341\ue32d\ue331\ue341 \ue332\ue328\ue339\ue32f \ue385\ue32e\ue405\ue369\ue324 \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f \ue336\ue339\ue341\ue32e \ue31c \ue324\ue341 \ue31c\ue3ca\ue32f\ue33b \ue328\ue325\ue33b.\n(2) \ue316\ue32f\ue33b\ue326\ue328\ue339\ue32f \ue332\ue31a\ue341 \ue328\ue339\ue32f \ue315\ue32f\ue324\ue339 \ue336\ue32d\ue305 \ue341\ue333\ue339 \ue335\ue339\ue32f\ue305 \ue33c\ue31f\ue339\ue30a\ue31f\ue330 \ue307\ue339\ue329\ue33b \ue333\ue315.\ue436\n(3) \ue307\ue341\ue31c\ue37c\ue31f \ue436\ue315\ue32f\ue330\ue341 \ue339 \ue32b\ue327\ue339 \ue315\ue339\ue32e\ue339\ue3b1 \ue32d\ue339\ue31f\ue436 \ue32d\ue339\ue33a\ue330\ue315 \ue31c\ue332\ue339\ue32b\ue326\ue339\ue32f \ue320\ue32f \ue341\ue31b\ue341.\n(4) \ue335\ue317\ue33b\ue32f \ue315\ue339\ue30a\ue341 \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue329\ue322\ue341 \ue33b\ue32d\ue339\ue305 \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. What is agency ? State its essential elements. Explain horw agency can be terminated by\nact of parties and by law. i 25\nOR s\n(A) Explain : Rule of Caveat Emptor 15\nl\n(B) Explain : Conditions and Warranties 10\na",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Define an \"Unpaid seller\". Discuss thee rights of unpaid seller. 25\nOR\nR\n(A) Define Partnership and explain in detail various types of partnership. 15\n(B) State the various modes of dissolution of partnership. 10\n.\nw",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "partnership"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. (A) Write short notes on any Three of the following : 15\n(1) Minor Partner\nw\n(2) Rights and duties of Partners\n(3) Effect of non-registration of partnership firm\nw\n(4) Contract of sale and agreement to sell\n(5) Contract of Bailment\n(6) Types of Lien\n(B) State with reasons whether following statements are true or false. (any two) 10\n(1) A person who receives the profits from Partnership firm is not necessarily a\npartner.\n(2) Buyer can always give better title from the seller.\n(3) Principal is",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "partnership",
+      "agreement",
+      "sale",
+      "bailment",
+      "registration"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. 20\nl\na\n\ue315\ue32f\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b, \ue315\ue32f\ue339\ue32f\ue328\ue339 \ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339 \ue400\ue315\ue32f\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. 20\ne\n\ue32d\ue33c\ue369\ue324-\ue335\ue305\ue32d\ue33a\ue324 \ue32d\ue339\ue37c\ue32e \ue315\ue32f\ue339\ue32f\ue328\ue33c\ue305 \ue307\ue317\ue378\ue32e\ue328\ue33c\ue305 \ue324\ue378\ue332 \ue31b.\ue341 \ue307\ue339 \ue33a\ue332\ue327\ue339\ue328\ue328\ue33b \ue33a\ue332\ue317\ue324\ue341 \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \u201c \u201d 20\nR\n\ue315\ue32f\ue339\ue32f \ue32c\ue339\ue335 \ue307\ue341\ue31f\ue330\ue341 \ue333\ue305 \ue33c? \ue315\ue32f\ue339\ue32f \ue32c\ue339\ue335\ue328\ue33b \ue3cb\ue3f1\ue339\ue305\ue324\ue339\ue341 \ue335\ue33a\ue336\ue324 \ue335\ue32d\ue31c\ue445\ue324\ue33b \ue307\ue339\ue329\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. 20\n.\n\ue315\ue32f\ue339\ue32f\ue32d\ue339\ue305\ue325\ue33b \ue32d\ue369\ue33c \ue324 \ue325\ue332\ue339\ue328\ue33b \ue33a\ue332\ue33a\ue332\ue327w \ue32f\ue33b\ue324\ue339\ue341 \ue30b\ue326\ue339\ue336\ue32f\ue323\ue339\ue341 \ue335\ue339\ue325\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. 20\n\ue33a\ue332\ue33a\ue333\ue3f1 \ue326\ue339\ue326 \ue307\ue341\ue31f\ue330\ue341 \ue333\ue305 \ue33c? \ue30b\ue326\ue339\ue336\ue32f\ue323\ue339\ue341 \ue335\ue339\ue325\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "6",
+    "questionText": "6. w 20\n___________\nw\nMD-101 1 P.T.O.\nwww.Realsir.in Instagram : @GRealsir\nSeat No. : _______________\nMD-101\nMarch-2021\nLL.B., Sem.-I\n104 : Law of Contract & Sp. Relief Act\nTime : 2 Hours] [Max. Marks : 60\nn\nInstructions : (1) Figures to the right indicate full marks.\ni\n(2) Cite cases in support of yours answer.\n.\n(3) Attempt any three questions from the following.\nr\ni",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define Acceptance. Discuss the essential elements of thes lawful acceptance. 20\nl",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Definecontract and discuss the essential elements of contract. 20\na",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \u201cFree Consent\u201d is the essential element of a valid contract. Discuss this statement in\ne\ndetail. 20\nR",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. What is quasi contract ? Explain quasi contract with illustration. 20\n.\nw",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. Discuss the various modes of Discharge of Contract. 20",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "6",
+    "questionText": "6. Discuss about Spwecific Relief with illustrations. 20\n___________\nw\nMD-101 2\nwww.Realsir.in Instagram : @GRealsir",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. l\na",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. e\n25\nR",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. 25\n.\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. 25\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. 25\nw\n3 25",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. 25\n(1) y\n(2) As6 RR\n(3) l sR12\n(4) rRN RLsid\nJT-126 1 P.T.0.\nwww.Realsir.in www.Instagram.com/grealsir/\nSeat No. :\nJT-126\nJanuary-2026\nLL.B., Sem.-I\n104 : Law of Contract & Specific Relief Act-I\nTime : 2:30H ours] [Max. Marks : 100\nn\nInstructions : (1) All questions carry equal marks.\ni\n(2) Cite decided cases in support of your answer.\n.\nr\ni\nDefine contract and discuss the essential elements of contract. 25",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1.\ns\nOR\nl\nDefine consent. When consent is said to be free consent ? Explain the effect on the",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1.\na\nvalidity of contract in absence of free consent. 25\ne",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. What is Quasi-Contract ? Explain QuRasi Contract with illustrations. 25\nOR\n.\nDiscuss various modes of discharge of contract and its effects thereof.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. 25\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Explain the Doctr wine of Frustration with its exceptions and illustrations in detail. 25\nOR",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Discuss iwn detail the main features of Specific Relief Act. 25\n4 Write short note : (any Two) 25\n(1) Anticipatory Breach of Contract\n(2) Contingent Contract\n(3) Wagering Agreements\n(4) Doctrine of Quantum Merit\nJT-126\nwww.Realsir.in www.Instagram.com/grealsir/",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. \u201c \u201d \u201c \u201d\n\ue315\ue436\ue335 \ue330\ue339\ue340 \ue335\ue33a\ue336\ue324 \ue335\ue32d\ue3c8\ue332\ue339\ue341. e\nR\n\ue33a\ue328\ue3fb\ue341\ue329 (\ue32b\ue341\ue30a\ue330\ue32d\ue37c\ue341 \ue31f) \ue307\ue328\ue341 \ue31c\ue317\ue441 \ue32d \ue33a\ue32d\ue330\ue315\ue324\ue328\ue339 \ue315\ue32b\ue3c8\ue317\ue33b\ue32f\ue339\ue341\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b \ue324\ue341\ue328\ue339 \ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341\ue328 \ue341",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2.\n\ue30b\ue326\ue339\ue336\ue32f\ue323\ue339\ue341 \ue324\ue325\ue339 \ue315\ue436\ue335 \ue330\ue339\ue340 \ue335\ue33a\ue336\ue324 \ue335\ue32d.\ue3c8\ue332\ue339\ue341.\nw\n\ue3c8\ue32d\ue33b\ue328\ue328\ue339 \ue336\ue315\ue339\ue341 \ue307\ue328\ue341 \ue31c\ue332\ue339\ue32b\ue326\ue339\ue32f\ue33b\ue307\ue339\ue341\ue328\ue341 \ue30b\ue326\ue339\ue336\ue32f\ue323\ue339\ue341 \ue324\ue325\ue339 \ue315\ue436\ue335 \ue330\ue339\ue340 \ue335\ue339\ue325\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3.\nw\n\ue31a\ue339\ue330 \ue33c\ue3c8\ue32d\ue33b\ue328\ue317\ue33b\ue32f\ue33b \ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b \ue307\ue339 \ue315\ue32f\ue339\ue32f\ue328\ue339\ue341 \ue307\ue305\ue324 \ue315\ue30a \ue32f\ue33b\ue324\ue341 \ue307\ue339\ue332\ue341 \ue31b \ue341\ue324\ue341 \ue30b\ue326\ue339\ue336\ue32f\ue323\ue339\ue341 \ue335\ue339\ue325\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. \u201c \u201d\nw\n\ue33a\ue32b\ue328 \ue31a\ue33d\ue315\ue332\ue341\ue330 \ue332\ue341\ue31a\ue328\ue339\ue32f \ue328\ue339 \ue341\ue307\ue325\ue400 \ue335\ue32d\ue3c8\ue332\ue33b \ue324\ue341\ue328\ue339 \ue307\ue33a\ue327\ue315\ue339\ue32f\ue339\ue341\ue328\ue341 \ue33a\ue332\ue317\ue324\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. \u201c \u201d\n\ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue329\ue341\ue322\ue33b \ue328\ue339 \ue33a\ue332\ue335\ue31c\ue442\ue328\ue328\ue33b \ue31c\ue444\ue326\ue33b-\ue31c\ue444\ue326\ue33b \ue32f\ue33b\ue324\ue339 \ue341\ue31c\ue323\ue339\ue332\ue339\ue341.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "6",
+    "questionText": "6. \u201c \u201d\n____________\nME-101 1 P.T.O.\nwww.Realsir.in Instagram : @GRealsir\nSeat No. : _______________\nME-101\nMarch-2021\nLL.B., Sem.-I\n105 : Special Contract\nn\nTime : 2 Hours] [Max. Marks : 60\nNote : (1) All questions carry equal marks. i\n.\n(2) State same question number in your answer book which is stated in the\nr\nquestion paper.\ni\n(3) Cite authorities in support of your answers.\ns\n(4) Attempt any three questions.\nl\na",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define \u201cContract of Indemnity\u201d and \u201cContract of Guarantee\u201d and state their essential\nelements with illustrations and case laws.\ne\nR",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Define \u201cContract of Bailment\u201d and \u201cContract of Pledge\u201d and state their essential\nelements with illustrations and case laws.\n.\nw",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "bailment"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Explain the rights and liabilities of surety with case laws and illustrations.\nw",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. Define contract of \u201cContinue Guarantee\u201d and state with illustration how contract of\ncontinue guarantee extinguish.\nw",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. Explain the meaning of \u201cAn Unpaid Seller\u201d and state his rights in detail.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "6",
+    "questionText": "6. State the various modes of \u201cDissolution of Partnership firm\u201d.\n____________\nME-101 2\nwww.Realsir.in Instagram : @GRealsir",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "partnership"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1.\n25\nl\na",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1.\ne\n25\nR",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2.\n25\n.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2.\n25\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3.\nw 25",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3.\nw\n25",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. 15\n(a) sIel sRI l\n(b) l-l aaua\n10\nJU-110 1 PT.0.\nwww.Realsir.in www.Instagram.com/grealsir/\nSeat No.:\nJU-110\nJanuary-2026\nLLB., Sem.-I\nCC-105: Special Contract\nTime : 2:30 Hours] [Max. Marks : 100\nn\nInstructions : () Marks indicated at right hand side is full marks of the question.\n(2) Cite case laws in support of your answer. i\n.\nr\nDefine Contract of Indemnity. Explain the nature and extent of liability of the\n1\ni\nindemnifier and discuss when such liability commences. 25\ns\nOR",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define Bailment. Explain the rights and duties ofl bailor and bailee under the Indian\nContract Act, 1872. a 25\ne",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "bailment"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Define Agency. Explain the modes of creation of agency and the various kinds of\nagents. 25\nR\nOR",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. In which circumstances the Contract of Guarantee can be terminated ? Explain. 25\n.\nw",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. No seller can give better title than what he himself is having.\" Explain this statement\nwith exceptions.\n25\nw OR",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Define Partnership. Discuss the nature and scope of partnership and explain the\nliabilities of partners.\nw 25",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "partnership"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. (A) Explain any two of the following : 15\n(a) Agency by ratification\n(b) Termination of Agency\n(c) Rights of an unpaid seller\n(d) Doctrine of Holding Out\n(B) Distinguish any one : 10\n(a) Indemnity and Guarantee.\n(b) Sub-agent and Substituted agent.\n(c) Passing of property and Passing of risk.\nJU-110 2\nwww.Realsir.in www.Instagram.com/grealsir/",
+    "marks": 5,
+    "type": "MCQ",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "property",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. \u203a\u00db\u00be\u00db\u00e0\u00b6\u00db\u2022\u00db\u00e0\u00c1\u00f5\u00e0\u00b6\u00db\u00db \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u00a9\u00db\u00b6\u00e9 \u00db\u00db \u2026\u00db\u00c8\u00db\u00c9\u00fd\u00db\u00ef\u00f5 \u00a9\u00db\u00ab\u00c8\u00db\u00db\u00b6\u00e9 \u00db\u00e0 \u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00efi\u00f5\u00c1\u00f5\u00db.\u00e9 20\n.\n\u2026\u00ac\u00db\u00c8\u00db\u00db\nr\n\u201c\u00db\u00dc\u00a9\u00db\u00b8\u00db\u00dc\u00e6 \u00a9\u00db\u00b6\u00d9 \u00db\u00db \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u00a9\u00db\u00b6\u00e9 \u00db\u00db \u2026\u00db\u00c8\u00db\u00c9\u00fd\u00db\u00ef\u00f5 \u00a9\u00db\u00ab\u00c8\u00db\u00db\u00b6\u00e9 \u00db\u00e0 i\u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db.\u00e9\ns",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. \u2026\u203a\u00e9 \u00f7\u00b6\u00cd\u00db\u00e0\u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u2026\u203a\u00e9 \u00f7\u00b6\u00cd\u00db\u00e0 \u00c1\u00f5\u00fe\u00f9 \u00ac\u00db\u00c8\u00db\u00db\u00b6\u00db\u00e0 \u00b8\u00db\u00b1\u00f9\u00dc\u00a9\u00db\u2026\u00db \u00e9 \u203a\u00f7\u00a8\u00db\u00db\u00c8\u00db\u00db.\u00e9 20\nl\n\u2026\u00ac\u00db\u00c8\u00db\u00db a\n\u201c\u00dc\u00b6\u00db\u201c\u00db\u00b8\u00e9 \u00db\u201d \u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u00a9\u00db\u00b6\u00e9 \u00db\u00db \u2026\u00db\u00c8\u00db\u00c9\u00fd\u00db\u00ef\u00f5 e\u00a9\u00db\u00ab\u00c8\u00db\u00db \u00e9 \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db.\u00e9\nR",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \u2026\u00a8\u00db\u02dc\u00db\u00ef\u00e6 \u00f5\u00c8\u00fd\u00db\u00db \u00e9 \u00c8\u00db\u02dc\u00e9 \u00db\u00b6\u00db\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u2026\u00a8\u00db\u02dc\u00db\u00ef\u00e6 \u00f5\u00c8\u00fd\u00db\u00db \u00c8\u00db\u02dc\u00e9 \u00db\u00b6\u00db\u00db\u00c1\u00f5\u00b6\u00db\u00db \u2026\u00dc\u00b5\u00db\u00ef\u00f5\u00db\u00c1\u00f5\u00db\u00b6\u00e9 \u00db\u00e0 \u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db.\u00e9 20\n\u2026\u00ac\u00db\u00c8\u00db\u00db\n.\n\u201c\u00ef\u00f5\u00db\u02c6\u00e9 \u00b8\u00db\u00a8\u00db \u00c8\u00db\u02dc\u00e9 \u00db\u00b6\u00db\u00db\u00c1\u00f5 \u00b8\u00db\u00db\u00a9\u00e9 \u00db\u00db\u00b6\u00db\u00db w\u00ef\u00f5\u00c1\u00f5\u00a9\u00db\u00db \u00d7 \u00c8\u00db\u00b5\u00db\u00db\u00c1\u00f5\u00e9 \u00cd\u00db\u00db\u00c1\u00f5\u00db \u00e9 \u00be\u00db\u00db\u00dc\u00c5\u00db\u00ef\u00f5\u00e0 \u00d0\u00fc\u2018\u00f5 \u201d\u00db\u00c1\u00f5\u00e0\u00fe\u00f9\u00b6\u00db\u00db\u00c1\u00f5\u00b6\u00db \u00e9 \u2026\u00db\u00b8\u00db\u00e0 \u00c9\u00db\u00ef\u00f5\u00e9 \u00b6\u00db\u00d0\u00fc\u00e1.\u201d \u2026\u00db\n\u00dc\u00c8\u00db\u00b5\u00db\u00db\u00b6\u00db \u2026\u00b8\u00db\u00c8\u00db\u00db\u00fe\u00f9\u00db \u00e9 \u00cd\u00db\u00db\u00ac\u00db \u00e9 \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db.\u00e9\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. \u00bd\u00db\u00db\u2022\u00db\u00e0\u00fe\u00f9\u00db\u00c1\u00f5\u00e0 \u00b8\u00db\u00a7\u00e9 \u00f8\u00e0\u00b6\u00db\u00e0 \u00dc\u00bc\u00db\u00b6\u00db\u00b6\u00db\u00db\u00b5\u00ea \u00db\u00a8\u00db\u00e0\u00b6\u00db\u00e0 \u2026\u00cd\u00db\u00c1\u00f5\u00db\u00b6\u00e9 \u00db\u00e0 \u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db.\u00e9 20\nw \u2026\u00ac\u00db\u00c8\u00db\u00db\n\u00bd\u00db\u00db\u2022\u00db\u00e0\u00fe\u00f9\u00db\u00c1\u00f5\u00e0\u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u00bd\u00db\u00db\u2022\u00db\u00e0\u00fe\u00f9\u00db\u00c1\u00f5\u00db\u00b6\u00e9 \u00db\u00db \u2026\u00dc\u00b5\u00db\u00ef\u00f5\u00db\u00c1\u00f5\u00db \u00e9 \u2026\u00b6\u00db \u00e9 \u203a\u00f7\u00c8\u00db\u00db\u00bc\u00db\u00fe\u00f9\u00db\u00c1\u00f5\u00e0\u2026\u00db \u00e9 \u00dc\u00c8\u00db\u2022\u00db\u00a9\u00db\u00c8\u00db\u00db\u00c1\u00f5 \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db.\u00e9",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. \u2022\u00db\u00be\u00db \u00e9 \u00a9\u00db \u00e9 \u00bc\u00db \u00e9 \u00dc\u00c8\u00db\u00cc\u00db \u00e9 \u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db \u00e9 : 20\n(1) \u00cd\u00db\u00d0\u00fc\u203a\u00db\u00be\u00db\u00e0\u00b6\u00db\u00b6\u00db\u00db \u00d7 \u00d0\u00fc\u00ef\u00f5\u00db \u00e9 \u2026\u00b6\u00db \u00e9 \u203a\u00f7\u00c8\u00db\u00db\u00bc\u00db\u00fe\u00f9\u00db\u00c1\u00f5\u00e0\u2026\u00db\u00e9\n(2) \u00a6\u00f8\u00e9\u00c5\u00db-\u2019\u00f5\u00e9\u00a6\u00f8\u00c1\u00f5 \u2026\u203a\u00e9 \u00f7\u00b6\u00a4\u00f8\n(3) \u00b8\u00db\u00dc\u00f3 \u00a9\u00db\u00bd\u00db\u00db\u00cd\u00db \u00bd\u00db\u00db\u2022\u00db\u00e0\u00fe\u00f9\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u203a\u00f7\u00c8\u00db\u00db\u00bc\u00db\u00fe\u00f9\u00db\u00c1\u00f5\u00e0\n(4) \u00be\u00db\u00db\u00c5\u00db\u00b6\u00db\u00e0 \u00cd\u00db\u00db\u00b8\u00ea \u00db\u00a8\u00db\u00e0 \u2026\u2022\u00d7 \u00db\u00b6\u00e9 \u00db\u00db \u00dc\u00b6\u00db\u00fd\u00db\u00be\u00db\u00db\u00e9\n_________\nN12-103 1 P.T.O.\nInstagram : @GRealsir www.Realsir.info\nSeat No. : _______________\nN12-103\nNovember-2014\nLL.B., Sem.-I\nCore Course 105 : Special Contract\nTime : 3 Hours] [Max. Marks : 100\nInstruction : Figures to the right indicate full marks of the questions.\no",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define contract of guarantee and discuss its essential elements. f 20\nOR n\nGive definition of contract of Indemnity and explain its essential elements.\ni\n.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Give definition of Agency and explain how agency termirnated. 20\nOR i\ns\nDefine \u201cBailment\u201d and explain its essential elements.\nl\na",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "bailment"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Define an \u201cunpaid seller\u201d. Discuss the rights of an unpaid seller. 20\nOR e\n\u201cNo seller can give to buyer a better title than what he himself has.\u201d Explain exceptions\nR\nto this statement.\n.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. Discuss in detail the effect of non-registration of partnership. 20\nw\nOR\nGive definition of partnership and explain in details the Rights and Liabilities of\nw\npartners.\nw",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "partnership",
+      "registration"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. Write notes on any two : 20\n(1) Rights and Liabilities of Co-sureties.\n(2) Del-creder Agent\n(3) Liability by holding out partner.\n(4) Rules as to Delivery of Goods.\n_________\nN12-103 2\nInstagram : @GRealsir www.Realsir.info",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00c8\u00fd\u00db\u00db\u201d\u00fd\u00db\u00db \u2026\u00db\u00b8\u00db\u00e0, \u00ef\u00f5\u00db\u00fd\u00db\u00fe\u00f9\u00e9\u00cd\u00db\u00c1\u00f5 \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00db \u2026\u00db\u00c8\u00db\u00c9\u00fd\u00db\u00ef\u00f5 \u00a9\u00db\u00ab\u00c8\u00db\u00db \u00e9 \u203a\u00f7\u00a8\u00db\u00db\u00c8\u00db\u00db.\u00e9 o 20\n\u2026\u00ac\u00db\u00c8\u00db\u00db\nf\n\u2026\u00c8\u00db\u203a\u00e9 \u00f7 \u2026\u00a4\u00e9 \u00f8\u00c5\u00db \u00e9 \u00c9\u00db\u00e4 \u00d7 ? \u2018\u2026\u00c8\u00db\u203a\u00e9 \u00f7 \u00c8\u00db\u2022\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00cd\u00db\u00be\u00db\u203a\u00f7\u00e6\u00a9\u00db\u00e0 \u00c1\u00f5\u00fe\u00f9\u00bc\u00db\u00db\u00a9\u00db\u00c5\u00db \u2122\u00f6.\u00e9 \u2019 \u2026\u00db \u00dc\u00c8\u00db\u00b5\u00db\u00db\u00b6\u00db\u00b6\u00db\u00e0 \u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db.\u00e9 \u00bd\u00db\u00db\u00c1\u00f5\u00a9\u00db\u00e0\u00fd\u00db\nn\n\u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00db \u00ef\u00f5\u00db\u00fd\u00db\u00fe\u00f9\u00db\u00be\u00db\u00db \u00d7 \u2026\u00db \u00dc\u00b6\u00db\u00fd\u00db\u00be\u00db\u00db \u00e9 \u00cd\u00db\u00bc\u00d7 \u00db\u00b5\u00d7 \u00db\u00e0 \u203a\u00db \u00e9 \u00ef\u00f5\u00db\u02c6\u00e9 \u2026\u00b8\u00db\u00c8\u00db\u00db\u00fe\u00f9 \u00d0\u00fc\u00db\u00fd\u00e9 \u00db \u00a9\u00db\u00db \u00e9 \u203a\u00f7\u00a8\u00db\u00db\u00c8\u00db\u00db.\u00e9\ni",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. \u00be\u00db\u00d0\u00fc\u00db\u00c1\u00e9 \u00f5\u00e0\u00bc\u00db\u00e0\u00bc\u00db\u00e0 \u00dc\u00c8\u00db. \u00b5\u00db\u00c1\u00f5\u00be\u00db\u00fe\u00f9\u00db\u00cd\u00db \u2013\u00db\u00db\u00cc\u00e9 \u00db\u00b6\u00db\u00db \u00ef\u00f5\u00e9\u00cd\u00db\u00b6\u00db\u00db \u00e9 \u00dc\u00cd\u00db\u00b1\u00f9\u00db\u00a9\u00d7 \u00db \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00e0, \u00cd\u00db\u2022\u00db\u00e0\u00c1.\u00f5\u00b6\u00db\u00e0 \u00cd\u00db\u00be\u00db\u203a\u00f7\u00e6\u00a9\u00db\u00e0\u00b6\u00db\u00db \u00cd\u00db\u00fe\u00d7 \u00f9\u00bd\u00db\u00be\u00d9 \u00db\u00db \u00d7 \u00ef\u00f5\u00db\u00fd\u00db\u00fe\u00f9\u00db\u00b6\u00db\u00e0\n\u00b8\u00db\u00dc\u00c1\u00f5\u00dc\u00cd\u00ac\u00db\u00dc\u00a9\u00db\u00b6\u00db\u00e0 \u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db.\u00e9 r 20\n\u2026\u00ac\u00db\u00c8\u00db\u00db\ni\ns\n\u00bd\u00db\u00c5\u00e6 \u00db \u2026\u00a4\u00e9 \u00f8\u00c5\u00db \u00e9 \u00c9\u00db \u00d7\u00e4 ? \u00d0\u00fc\u00ef\u00f5\u00e0\u00ef\u00f5\u00a9\u00db\u00b6\u00db\u00e0 \u00bd\u00db\u00c5\u00e6 \u00db \u2026\u00b6\u00db \u00e9 \u00ef\u00f5\u00db\u00fd\u00db\u00fe\u00e9\u00f9\u00cd\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00bd\u00db\u00c5\u00e6 \u00db \u2026\u2022\u00d7 \u00db \u00e9 \u00bd\u00db\u00db\u00c1\u00f5\u00a9\u00db\u00e0\u00fd\u00db \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00db \u00ef\u00f5\u00db\u00fd\u00db\u00fe\u00f9\u00db\u00be\u00db\u00db \u00d7 \u00ef\u00f5\u00c1\u00f5\u00c8\u00db\u00db\u00be\u00db\u00db \u00d7\n\u2026\u00db\u00c8\u00db\u00c5\u00e9 \u00db\u00e0 \u203a\u00db\u2022\u00e9 \u00db\u00c8\u00db\u00db\u02c6\u2026\u00db \u00e9 \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db.\u00e9\nl\na",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5 \u00dc\u00c8\u00db\u00be\u00db\u00db\u02dc\u00e9 \u00db\u00b6\u00db (\u00be\u00db\u00dc\u00e4 \u00ee\u00a9\u00db)\u00b6\u00db\u00e0 \u00dc\u00c8\u00db\u00dc\u00c8\u00db\u00b5\u00db \u00c1\u00f5\u00e0\u00a9\u00db\u00db \u00e9 \u2026\u00b6\u00db \u00e9 \u00a9\u00db\u00b6\u00e9 \u00db\u00e0 \u2026\u00cd\u00db\u00c1\u00f5 \u00cd\u00db\u00dc\u00d7 \u201c\u00db\u00b8\u00a9\u00db\u00be\u00db\u00db \u00d7 \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db.\u00e9 20\n\u2026\u00ac\u00db\u00c8\u00db\u00db e\n\u201c\u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00dc\u00b6\u00db\u00cc\u00ba\u00f5\u00c7\u00a9\u00db\u00db\u201d \u00b6\u00db\u00db \u00e9 \u00dc\u00cd\u00db\u00b1\u00f9\u00db\u00a9\u00d7 \u00db \u00b4\u00f9\u00cc\u00a4\u00f8\u00db\u00a9\u00d7 \u00db\u00db \u00e9 \u00cd\u00db\u00dc\u00d0\u00fc\u00a9\u00db \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db.\u00e9 \u2026\u00db \u00dc\u00cd\u00db\u00b1\u00f9\u00db\u00a9\u00d7 \u00db\u00b6\u00db\u00db \u2026\u00b8\u00db\u00c8\u00db\u00db\u00fe\u00f9\u00db\u00b6\u00e9 \u00db\u00e0 \u00dc\u00c8\u00db\u2022\u00db\u00a9\u00db\u00c8\u00db\u00db\u00c1\u00f5\nR\n\u02dc\u00db\u02dc\u00db\u00db \u00d9 \u00ef\u00f5\u00c1\u00f5\u00db.\u00e9\n.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. \u00dc\u00c8\u00db\u00dc\u00c9\u00db\u00cc\u00a4\u00f8 \u00fe\u00f9\u00db\u00fe\u00f9\u00b6\u00db\u00db \u00b8\u00db\u00ef\u00f3 \u00f5\u00db\u00c1\u00f5\u00db \u00e9 \u203a\u00f7\u00a8 w\u00db\u00db\u00c8\u00db\u00db.\u00e9 \u00ef\u00f5\u00fd\u00db\u00db \u00cd\u00db\u203a\u00d7 \u00db\u2022\u00e9 \u00db\u00db\u00be\u00e9 \u00db\u00db \u00d7 \u2026\u00b6\u00db\u00e9 \u00ef\u00f5\u00fd\u00db\u00db \u00dc\u00cd\u00db\u00b1\u00f9\u00db\u00a9\u00d7 \u00db\u00b6\u00db\u00db \u2026\u00db\u00b5\u00db\u00db\u00c1\u00f5\u00e9 \u00c8\u00db\u00db\u00fe\u00f9\u00e0\u00b6\u00db \u00e9 \u00dc\u00c8\u00db\u00dc\u00c9\u00db\u00cc\u00a4\u00f8 \u00fe\u00f9\u00db\u00fe\u00f9\n\u00be\u00db\u00c7\u00e0 \u00c9\u00db\u00ef\u00f5\u00e9 ? 20\n\u2026\u00ac\u00db\u00c8\u00db\u00db\nw\n\u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db \u00e9 :\n(1) \u00cd\u00ac\u00db\u00db\u00c8\u00db\u00c1\u00f5 \u00dc\u00be\u00db\u00c5\u00db\u00ef\u00f5\u00a9\u00db\u00b6\u00db\u00e0 \u00b8\u00db\u00b6\u00e4 \u00db:\u00b8\u00db\u00db\u00f3 \u00dc\u00b8\u00a9\u00db\nw\n(2) \u00fe\u00f9\u00cd\u00a9\u00db\u00db\u00c8\u00db\u203a\u00e9 \u00f7\u00b6\u00db\u00e0 \u00cd\u00db\u00b5\u00e4 \u00db\u00db\u00c1\u00f5\u00a8\u00db\u00db\n(3) \u00dc\u00c1\u00f5\u00dc\u00cd\u00db\u00c8\u00db\u00c1\u00f5\u00b6\u00db\u00e0 \u00dc\u00b6\u00db\u00be\u00db\u00a8\u00db\u00ef\u00e6 \u00f5",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. \u00cd\u00db\u00be\u00db\u203a\u00db\u00c8\u00db\u00db \u00e9 : (\u2022\u00db\u00be\u00db \u00e9 \u00a9\u00db \u00e9 \u00aa\u00db\u00a8\u00db) 20\n(1) \u00b8\u00db\u00c8\u00e6 \u00db\u00fd\u00d9 \u00db\u00dc\u00d7 \u00aa\u00db\u00a9\u00db \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00bd\u00db\u2022\u00d7 \u00db\n(2) \u203a\u00f7\u00e4\u2022\u00db\u00db\u00c1\u00f5\u00e0 \u00ef\u00f5\u00c1\u00f5\u00db\u00c1\u00f5\u00db\u00e9\n(3) \u2022\u00db\u00c1\u00e9 \u00f5\u00ef\u00f5\u00db\u00fd\u00db\u00fe\u00f9\u00e9\u00cd\u00db\u00c1\u00f5 \u00cd\u00db\u00be\u00db\u203a\u00f7\u00e6\u00a9\u00db\u00e0\n(4) \u00ef\u00f5\u00db\u00c5\u00db\u00db\u02c6\u00d9 \u00c5\u00db \u00dc\u00c8\u00db. \u00ef\u00f5\u00db\u00bc\u00db\u00db\u00dc\u00eb \u00c5\u00db\u00ef\u00f5 \u00cd\u00be\u00db\u00db\u00ef\u00e9 \u00f5 \u00bc\u00db\u00db\u00c5\u00e9 \u00db \u00ef\u00f5\u00d7\u00b8\u00db\u00b6\u00db\u00e0\n(5) \u00c5\u00db\u00db\u00c5\u00db\u00be\u00db\u00b6\u00e9 \u00db \u00dc\u00c8\u00db. \u2022\u00db\u00db\u00c1\u00e9\u00ed \u00f5\u00e0 \u00fe\u00f9\u00ab\u00db\n(6) \u00bc\u00db\u00c7\u203a\u00f7\u00bc\u00db\u00c1\u00f5\u00e0 \u2026\u00b6\u00db \u00e9 \u2026\u00fd\u00db\u00db\u2022\u00e9 \u00fd\u00db \u00c5\u00db\u00db\u2022\u00db\u00c8\u00db\u2022\u00db\n_________\nN11-103 1 P.T.O.\nInstagram : @GRealsir www.Realsir.info\nSeat No. : _______________\nN11-103\nNovember-2014\nLL.B., Sem.-I (CBCS)\nCore-Course 104 : Law of Contract\nPaper \u2013 I\nTime : 3 Hours] [Max. Marks : 100",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define contract and discuss the essential elements of valid contract. 20\no\nOR\nDefine consideration. \u2018An agreement without consideration is vfoid.\u2019 Discuss this\nstatement. State whether there are any exceptions to this rule in then Indian Contract Act.\ni",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Explain the principle in the case Mohoribibi V/s. Dharmdas Ghose and discuss fully the\n.\nlaw relations to minor\u2019s agreement. 20\nr\nOR\ni\nWhat is mistake ? Explain kinds of Fundamentals error mistake of fact and mistake of\nlaw under the Indian Contract Act.\nl\na",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Discuss the various mode of discharge of contract and effects thereof. 20\nOR e\nExplain \u201cDoctrine of Frustration\u201d with the help of illustrations. Discuss in detail\nR\nexceptions of this doctrine.\n.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. What are the kinds of specific relief ? In what circumstances and on what principles can\nw\nplaintiff get specific relief ? 20\nOR\nw\nExplain :\n(1) Possession of immovable property.\nw\n(2) Retification of Instrument.\n(3) Appointment of Receiver.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "property",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. Explain : (any three) 20\n(1) Anticipatory Breach of Contract.\n(2) Wagering contract.\n(3) Unlawfull Agreement.\n(4) Carllil V/s. Carbolic Smoke Balli.Co.\n(5) Lalman V/s. Gauri Dutt.\n(6) Coercion and undue influence\n_________\nN11-103 2\nInstagram : @GRealsir www.Realsir.info",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. \ue307\ue332\ue341\ue31c \ue307\ue31f\ue341 \ue330\ue341 \ue333\ue305 \ue33c ? \u201c\ue307\ue332\ue341\ue31c \ue332\ue317\ue32f\ue328\ue33b \ue335\ue32d\ue31c\ue324\ue445 \ue33b \ue32f\ue326\ue32b\ue339\ue324\ue330 \ue31b.\ue341 \u201d \u2013\ue307\ue339 \ue33a\ue332\ue327\ue339\ue328\ue328\ue33b \ue31a\ue31a\ue339\ue400 f\ue315\ue32f\ue339.\ue341 \ue32c\ue339\ue32f\ue324\ue33b\ue32e \ue315\ue32f\ue339\ue32f\ue328\ue339\n\ue315\ue339\ue32e\ue326\ue339\ue32d\ue339 \ue305\ue307\ue339 \ue33a\ue328\ue32e\ue32d \ue335\ue305\ue32b\ue305\ue327\ue33b \ue3c8 \ue341\ue315\ue339\ue341\ue30a \ue307\ue329\ue332\ue339\ue326\ue339\ue341 \ue336\ue339\ue32e\ue341 \ue324\ue339\ue341 \ue31c\ue323\ue339\ue332\ue339.\ue341 n 20\n\ue307\ue325\ue332\ue339\ni\n\u201c\ue32d\ue33c\ue369\ue324 \ue335\ue32d\ue305 \ue33a\ue324\u201d \ue32d\ue339\ue37c\ue32e \ue315\ue32f\ue339\ue32f\ue328\ue305 \ue33c\ue307\ue317\ue378\ue32e\ue328\ue305 \ue33c\ue324\ue38e\ue332 \ue31b\ue341. \ue307\ue339 \ue33a\ue332\ue327\ue339\ue328\ue328\ue33b \ue33a\ue332\ue317\ue324\ue341 \ue31a.\ue31a\ue339\ue400 \ue315\ue32f\ue339\ue341.\nr\ni",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. \ue32d\ue336\ue339\ue341\ue32f\ue33b\ue32b\ue33b\ue32b\ue33b \ue33a\ue332. \ue327\ue32d\ue326\ue400 \ue339\ue335 \ue318\ue339\ue341\ue334\ue328\ue339 \ue315\ue436\ue335\ue328\ue339 \ue341 \ue33a\ue335\ue3e6\ue339\ue324\ue305 \ue335\ue32d\ue3c8\ue332\ue33b, \ue335\ue317\ue33b\ue32f\ue328\ue33b \ue335\ue32d\ue31c\ue324\ue445 \ue33b\ue328\ue339 \ue335\ue326\ue305 \ue32c\ue32d\ue400 \ue339\ue305 \ue315\ue339\ue32e\ue326\ue339\ue328\ue33b\ns\n\ue329\ue404\ue32f\ue405\ue388\ue325\ue33a\ue324\ue328\ue33b \ue31a\ue31a\ue339 \ue400\ue315\ue32f\ue339.\ue341 20\nl\n\ue307\ue325\ue332\ue339\na\n\ue388\ue332\ue33b\ue315\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue339\ue341. \ue315\ue339\ue32e\ue326\ue436\ue335\ue32f\ue328\ue339 \ue388\ue332\ue33b\ue315\ue339\ue32f\ue328\ue339 \ue305\ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339.\ue341\ne",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \ue315\ue32f\ue339\ue32f\ue32c\ue339\ue335 (\ue307\ue327\ue315\ue400 \ue32f\ue339\ue32f) \ue307\ue341\ue31f\ue330\ue341 \ue333\ue33c\ue305 ? \ue315\ue32f\ue339\ue32fR\ue32c\ue339\ue335\ue328\ue33b \ue3cb\ue387\ue31f\ue339\ue324\ue305 \ue335\ue339\ue325 \ue341\ue335\ue32d\ue31c\ue445\ue324\ue33b \ue307\ue339\ue329\ue339.\ue341 20\n\ue307\ue325\ue332\ue339\n.\n\ue315\ue32f\ue339\ue32f\ue328\ue33b \ue33a\ue328\ue387\ue32a\ue331\ue324\ue339\ue328\ue339 \ue341\ue33a\ue335\ue3e6\ue339\ue324\ue305 \ue30b\ue326\ue339\ue336\ue32f\ue323 \ue335\ue33a\ue336\ue324 \ue335\ue32d\ue3c8\ue332\ue339\ue341. \ue307\ue339 \ue33a\ue335\ue3e6\ue339\ue324\ue305 \ue328\ue339 \ue307\ue329\ue332\ue339\ue326\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339\ue341.\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. \ue328\ue33a\ue342\ue32d\ue33a\ue324\ue315 \ue315\ue32f\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue339.\ue341 \ue328\ue33a\ue342\ue32d\ue33a\ue324\ue315 \ue315\ue32f\ue339\ue32f\ue328\ue305 \ue33c\ue329\ue339\ue330\ue328 \ue369\ue32e\ue339\ue32f\ue341 \ue315\ue32f\ue339\ue332\ue33b \ue333\ue315\ue339\ue32e \ue324 \ue341\ue30b\ue326\ue339\ue336\ue32f\ue323 \ue335\ue33a\ue336\ue324 \ue335\ue32d\ue3c8\ue332\ue339\ue341. 20\nw\n\ue307\ue325\ue332\ue339\n\ue33a\ue332\ue33a\ue333\ue387\ue31f\ue326\ue339\ue326\ue328\ue339 \ue3a3\ue315\ue339\ue32f\ue339\ue341 \ue307\ue328 \ue341\ue324\ue341 \ue32d\ue331\ue332\ue339\ue328\ue339 \ue335\ue305\ue3c8\ue317\ue341 \ue339\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. \ue31f\ue445\ue441\ue315\ue328\ue339\ue327\ue3b0 \ue330\ue316\ue339\ue341 \ue306 (\ue315\ue339\ue30a\ue341 \ue329\ue323 \ue32b)\ue341 20\n(1) \ue315\ue339\ue32d\ue31a\ue330\ue339\ue30b \ue32d\ue328\ue339\ue30a\ue41c\ue315\ue32d \ue307\ue328 \ue341\ue315\ue339\ue32e\ue32d\ue33b \ue32d\ue328\ue339\ue30a\ue41c\ue315\ue32d\n(2) \ue32e\ue325\ue339 \ue329\ue404\ue32f\ue3ac\ue32d\ue328\ue339\ue341 \ue33a\ue335\ue3e6\ue339\ue324\ue305\n(3) \ue385\ue32e\ue405\ue369\ue324\ue307\ue339\ue341 \ue31c\ue436\ue32d\ue328\ue339 \ue33a\ue332\ue3ca\ue3e6 \ue33a\ue332\ue33a\ue333\ue387\ue31f\ue326\ue339\ue326\ue328\ue339 \ue341\ue41c\ue315\ue32d \ue325\ue30a \ue333\ue315\ue436.\n(4) \ue329\ue33d\ue332\ue339\ue400\ue329\ue341\ue33a\ue3fb\ue324 \ue315\ue32f\ue339\ue32f\ue32c\ue317\ue305\n(5) \ue330\ue339\ue330\ue32d\ue328\ue341 \ue33a\ue332. \ue317\ue339\ue32f\ue342 \ue33b\ue326\ue3e1\n__________\nNN-115 1 P.T.O.\nInstagram : @GRealsir\nSeat No. : _______________\nNN-115\nNovember-2017\nLL.B., Sem.-I\n104 : Law of Contract, Paper-I\nTime : 3 Hours] [Max. Marks : 100\nInstructions : (1) All questions carry equal marks.\n(2) Cite decided cases in support of your answer.\no",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define Consideration. \u201cAn agreement without consideration is void.\u201d \u2013Discuss this\nf\nstatement. State whether there are any exception to this rule in the Indian Contract Act. 20\nn\nOR\n\u201cFree Consent\u201d is the essential element of a valid contract.i Discuss this statement in\n.\ndetail.\nr\ni",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Explain the Principle in case of Moharibibi V/s Dsharamdas Ghose and discuss fully the\nlaw relating to Minor's agreement. 20\nl\nOR\na\nDefine Acceptance. Discuss the essential elements of the lawful acceptance.\ne",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. What is Quasi-Contract ? Explain Quasi contract with illustrations. 20\nR\nOR\nExplain the Doctrine of Frustration with the help of illustrations. Discuss in detail\n.\nexceptions of this doctrine.\nw",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. Define Contingent Contract. Explain with illustrations as to when contingent contracts\nw\ncan be enforced. 20\nOR\nw\nDiscuss kinds of Specific Relief and circumstances for getting it.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. Write short note : (Any Two) 20\n(1) Temporary Injunction and Permanent Injunction.\n(2) Doctrine of Quantum Merit.\n(3) Persons against whom specific enforcement can be ordered.\n(4) Anticipatory breach of contract.\n(5) Lalmen V/s Gauridutt.\n__________\nNN-115 2\nInstagram : @GRealsir",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. \ue307\ue323\ue31a\ue315\ue33d \ue385\ue32e\ue339 \ue332\ue31a\ue341 \ue328\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b, \ue307\ue323\ue31a\ue315\ue33d \ue385\ue32e\ue339 \ue332\ue31a\ue341 \ue328\ue339\ue32f\ue328\ue339 \ue307\ue33a\ue327\ue315\ue339\ue32f\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32ff\ue339.\ue341 20\nn\n\ue307\ue325\ue332\ue339\n\u201c\ue315\ue339\ue341\ue30a\ue329\ue323 \ue332\ue31a\ue341 \ue328\ue339\ue32f \ue329\ue339\ue341\ue324\ue339\ue328\ue339 \ue315\ue32f\ue324\ue339\ue305 \ue332\ue327\ue339\ue32f \ue341\ue335\ue339\ue32f\ue339\ue341 \ue32d\ue339\ue33a\ue330\ue315\ue33b \ue336\ue3cc \ue316\ue32f\ue33b\ue326\ue328\ue339\ue32f\ue328 \ue341\ue307\ue339i\ue329\ue33b \ue333\ue315 \ue436\ue328\ue336\ue3b6.\u201d \ue307\ue339 \ue33a\ue332\ue327\ue339\ue328\n.\n\ue307\ue329\ue332\ue339\ue326\ue339\ue341 \ue335\ue339\ue325\ue341 \ue335\ue32d\ue3c8\ue332\ue339\ue341.\nr\ni",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue329\ue341\ue322\ue33b\ue328\ue33b \ue33a\ue32b\ue328\ue328\ue339\ue327\ue3b0 \ue323\ue33b\ue328\ue33b \ue307\ue335\ue32f\ue339\ue328\ue341 \ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339.\ue341 s 20\n\ue307\ue325\ue332\ue339\nl\na\n\ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b, \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue339\ue328\ue341 \ue339 \ue307\ue33a\ue327\ue315\ue339\ue32f\ue339\ue341 \ue307\ue328 \ue341\ue31c\ue332\ue339\ue32b\ue326\ue339\ue32f\ue33b\ue307\ue339\ue341 \ue33a\ue332\ue317\ue324\ue332\ue339\ue32f \ue335\ue32d\ue3c8\ue332\ue339\ue341.\ne",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. \ue3c8\ue32d\ue33b\ue328\ue317\ue33b\ue32f\ue33b\ue328\ue339 \ue315\ue32f\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b, \ue324\ue328\ue341 \ue339 \ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339.\ue341 20\nR\n\ue307\ue325\ue332\ue339\n\ue307\ue341\ue31c\ue37c\ue335\ue33b \ue307\ue341\ue31f\ue330\ue341 \ue333\ue33c\ue305 ? \ue324\ue328\ue341 \ue339 \ue32d\ue336\ue38e.\ue332\ue328\ue339 \ue324\ue38e\ue332\ue339\ue341 \ue335\ue32d\ue3c8\ue332\ue339.\ue341 \ue307\ue31c\ue341 \ue37c\ue335\ue33b\ue328\ue339 \ue335\ue305\ue32b\ue305\ue327\ue339\ue328\ue341 \ue339 \ue329\ue3fb\ue315\ue339\ue32f\ue339\ue328\ue341 \ue339 \ue315\ue449\ue378\ue32e\ue339\ue341 \ue3e4\ue339\ue32f\ue339 \ue307\ue328 \ue341\nw\n\ue315\ue339\ue32e\ue326\ue339 \ue3e4\ue339\ue32f\ue339 \ue315\ue436\ue332\ue33b \ue32f\ue33b\ue324 \ue341\ue307\ue305\ue324 \ue330\ue339\ue332\ue33b \ue333\ue315\ue339\ue32e ?\nw",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. \ue3fb\ue33a\ue324\ue329\ue33d\ue33a\ue324\ue328\ue400 \ue339 \ue315\ue32f\ue339\ue32f\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b, \ue324\ue341\ue328\ue339 \ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341\ue328\ue33b \ue31a\ue31a\ue339\ue400 \ue315\ue32f\ue339.\ue341 20\n\ue307\ue325\ue332\ue339\nw\n\u201c\ue33a\ue328\ue3fb\ue329\ue341 \u201d\ue328\ue33b \ue385\ue32e\ue339\ue36a\ue32e\ue339 \ue307\ue339\ue329\ue33b \ue324\ue328\ue341 \ue339 \ue307\ue339\ue332\ue386\ue32e\ue315 \ue324\ue38e\ue332\ue339\ue341 \ue335\ue32d\ue3c8\ue332\ue339.\ue341",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. \ue31f\ue445\ue441\ue315\ue328\ue339\ue327\ue3b0 \ue330\ue316\ue339\ue341 \ue306 (\ue315\ue339\ue30a\ue341 \ue329\ue323 \ue32b)\ue341 20\n(1) \ue32d\ue339\ue330 \ue335\ue339\ue329\ue3b0 \ue323\ue33b \ue307\ue305\ue317\ue328\ue341 \ue339 \ue33a\ue328\ue32e\ue32d\ue339\ue341\n(2) \ue332\ue341\ue31a\ue339\ue323 \ue307\ue328 \ue341\ue332\ue31a\ue341 \ue339\ue323\ue328\ue33b \ue335\ue32d\ue31c\ue445\ue324\ue33b\n(3) \ue307\ue326\ue339\ue330\ue324 \ue3e4\ue339\ue32f\ue339 \ue32c\ue339\ue317\ue33b\ue326\ue339\ue32f\ue33b \ue329\ue322\ue341 \ue33b\ue328\ue305 \ue33c\ue33a\ue332\ue335\ue31c\ue442\ue328\n(4) \ue321\ue436\ue330-\ue38f\ue436\ue321\ue32f \ue307\ue31c\ue341 \ue37c\ue31f\n__________\nNO-112 1 P.T.O.\nInstagram : @GRealsir\nSeat No. : _______________\nNO-112\nNovember-2017\nLL.B., Sem.-I\nCC-105 : Special Contract\nTime : 3 Hours] [Max. Marks : 100\nInstruction : All questions carry equal marks.\no",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "1",
+    "questionText": "1. Define an \u201cUnpaid Seller.\u201d Discuss the rights of unpaid seller. f 20\nn\nOR\n\u201cNo seller can give to buyer a better title than what he himself has.\u201d Explain with\ni\n.\nexceptions to this rule.\nr\ni",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. Discuss in detail the effect of non-registration of psartnership. 20\nOR\nl\nGive definition of partnership and explain ain details the rights and liabilities of partners.\ne",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract",
+      "partnership",
+      "registration"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3. Define contract of guarantee and discuss its essential elements. 20\nR\nOR\nWhat is Agency ? State its essential elements. Explain how agency can be terminated\n.\nby act of parties and by wlaw.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. Give definition\now\nf Contract of Indemnity and explain its essential elements. 20\nOR\nDefine \u201cBwailment\u201d and explain its essential elements.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "contract"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. Write short notes : (any two) 20\n(1) Rules as to Delivery of Goods.\n(2) Sale and Agreement of Sale.\n(3) Dissolution of Partnership firm by Court.\n(4) Del \u2013 Creder Agent\n__________\nNO-112 2\nInstagram : @GRealsir",
+    "marks": 5,
+    "type": "SHORT",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "agreement",
+      "contract",
+      "partnership",
+      "sale"
+    ],
+    "options": null,
+    "correctAnswer": null
+  }
+]

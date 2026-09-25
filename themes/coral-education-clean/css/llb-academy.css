@@ -1,0 +1,295 @@
+/**
+ * LLB Academy Custom Styles
+ * Education Zone Theme - LLB Customization
+ */
+
+:root {
+    --llb-primary: #1a3a52;      /* Law Blue */
+    --llb-secondary: #c41e3a;    /* Legal Red */
+    --llb-accent: #f39c12;       /* Gold */
+    --llb-light: #f5f7fa;        /* Light Background */
+    --llb-dark: #2c3e50;         /* Dark Text */
+}
+
+/* ============================================
+   LLB Academy Section
+   ============================================ */
+
+.llb-academy-section {
+    background: linear-gradient(135deg, var(--llb-light) 0%, #ffffff 100%);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.llb-academy-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--llb-primary), var(--llb-secondary), var(--llb-accent));
+}
+
+.llb-academy-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.llb-academy-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.llb-academy-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--llb-primary);
+    margin: 0 0 15px 0;
+    letter-spacing: -1px;
+}
+
+.llb-academy-subtitle {
+    font-size: 24px;
+    color: var(--llb-secondary);
+    font-weight: 600;
+    margin: 0 0 20px 0;
+}
+
+.llb-academy-description {
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Content Area */
+.llb-academy-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.llb-academy-image {
+    text-align: center;
+}
+
+.llb-academy-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(26, 58, 82, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.llb-academy-image img:hover {
+    transform: translateY(-5px);
+}
+
+.llb-academy-info {
+    padding: 40px;
+    background: white;
+    border-radius: 10px;
+    border-left: 5px solid var(--llb-primary);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Features */
+.llb-features h4 {
+    font-size: 20px;
+    color: var(--llb-primary);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.llb-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.llb-features-list li {
+    padding: 12px 0;
+    color: #333;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    line-height: 1.6;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.llb-features-list li:last-child {
+    border-bottom: none;
+}
+
+.check-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--llb-accent);
+    color: white;
+    border-radius: 50%;
+    margin-right: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* CTA Button */
+.llb-academy-cta {
+    margin-top: 30px;
+}
+
+.btn-llb-academy {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--llb-primary), var(--llb-secondary));
+    color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 5px 15px rgba(26, 58, 82, 0.3);
+}
+
+.btn-llb-academy:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(26, 58, 82, 0.4);
+    color: white;
+    text-decoration: none;
+}
+
+/* Quick Links Section */
+.llb-quick-links {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    border-top: 5px solid var(--llb-accent);
+}
+
+.llb-quick-links h4 {
+    font-size: 24px;
+    color: var(--llb-primary);
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.llb-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.llb-link-card {
+    background: var(--llb-light);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.llb-link-card:hover {
+    border-color: var(--llb-primary);
+    background: white;
+    box-shadow: 0 8px 20px rgba(26, 58, 82, 0.1);
+    transform: translateY(-5px);
+}
+
+.llb-link-card h5 {
+    font-size: 18px;
+    color: var(--llb-primary);
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.llb-link-card p {
+    font-size: 13px;
+    color: #666;
+    margin: 0 0 15px 0;
+    line-height: 1.5;
+}
+
+.llb-link-card a {
+    display: inline-block;
+    color: var(--llb-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.llb-link-card a:hover {
+    color: var(--llb-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .llb-academy-section {
+        padding: 50px 15px;
+    }
+
+    .llb-academy-title {
+        font-size: 36px;
+    }
+
+    .llb-academy-subtitle {
+        font-size: 18px;
+    }
+
+    .llb-academy-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .llb-academy-info {
+        padding: 25px;
+    }
+
+    .llb-quick-links {
+        padding: 25px;
+    }
+
+    .llb-links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .llb-academy-title {
+        font-size: 28px;
+    }
+
+    .llb-academy-subtitle {
+        font-size: 16px;
+    }
+
+    .llb-academy-description {
+        font-size: 14px;
+    }
+
+    .llb-features h4,
+    .llb-quick-links h4 {
+        font-size: 18px;
+    }
+
+    .btn-llb-academy {
+        width: 100%;
+        text-align: center;
+    }
+}

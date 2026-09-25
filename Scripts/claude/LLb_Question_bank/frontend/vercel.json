@@ -1,0 +1,21 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "framework": "react",
+  "env": {
+    "REACT_APP_API_URL": "@react_app_api_url",
+    "REACT_APP_ENV": "@react_app_env"
+  },
+  "envVars": [
+    {
+      "key": "REACT_APP_API_URL",
+      "value": "https://api.coralrush.com",
+      "target": ["production"]
+    },
+    {
+      "key": "REACT_APP_ENV",
+      "value": "production",
+      "target": ["production"]
+    }
+  ]
+}

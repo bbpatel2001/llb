@@ -1,0 +1,86 @@
+version: '3.8'
+
+services:
+  # MongoDB Database
+  mongodb:
+    image: mongo:7.0
+    container_name: llb_mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: llb_question_bank
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_config:/data/configdb
+    networks:
+      - llb_network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # FastAPI Backend
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: llb_backend
+    environment:
+      MONGODB_URL: mongodb://root:password@mongodb:27017
+      DATABASE_NAME: llb_question_bank
+      LOG_LEVEL: INFO
+      ENABLE_AUTHENTICATION: "False"
+    ports:
+      - "8000:8000"
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    volumes:
+      - ./app:/app/app
+      - ./uploads:/app/uploads
+    networks:
+      - llb_network
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+
+  # React Frontend (optional - run separately with npm)
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #   container_name: llb_frontend
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     REACT_APP_API_URL: http://localhost:8000
+  #   depends_on:
+  #     - backend
+  #   networks:
+  #     - llb_network
+
+  # Mongo Express (optional UI for MongoDB)
+  mongo-express:
+    image: mongo-express:latest
+    container_name: llb_mongo_express
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: password
+      ME_CONFIG_MONGODB_URL: mongodb://root:password@mongodb:27017
+      ME_CONFIG_BASICAUTH_USERNAME: admin
+      ME_CONFIG_BASICAUTH_PASSWORD: pass
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongodb
+    networks:
+      - llb_network
+
+volumes:
+  mongodb_data:
+  mongodb_config:
+
+networks:
+  llb_network:
+    driver: bridge

@@ -1,0 +1,224 @@
+keyword,score,category
+recruitment,-30,hr
+advertisement,-25,hr
+employment,-25,hr
+vacancy,-30,hr
+job,-20,hr
+jobs,-20,hr
+career,-25,hr
+careers,-25,hr
+interview,-25,hr
+walk in interview,-30,hr
+walk-in,-25,hr
+contractual,-20,hr
+teaching assistant recruitment,-30,hr
+research assistant recruitment,-30,hr
+security officer,-20,hr
+peon,-20,hr
+clerk,-15,hr
+driver,-20,hr
+sweeper,-20,hr
+attendant,-15,hr
+staff recruitment,-30,hr
+faculty recruitment,-25,hr
+appointment,-20,hr
+deputation,-20,hr
+transfer order,-15,hr
+promotion order,-15,hr
+tender,-30,procurement
+quotation,-30,procurement
+auction,-25,procurement
+vendor,-25,procurement
+purchase,-20,procurement
+procurement,-25,procurement
+rate contract,-20,procurement
+empanelment,-20,procurement
+supply,-15,procurement
+bid,-20,procurement
+e-tender,-30,procurement
+e-procurement,-30,procurement
+rfp,-20,procurement
+request for proposal,-20,procurement
+nit,-20,procurement
+notice inviting tender,-25,procurement
+hostel,-25,facility
+hostel fee,-25,facility
+hostel allotment,-25,facility
+hostel rules,-20,facility
+hostel notice,-25,facility
+mess,-15,facility
+canteen,-15,facility
+accommodation,-15,facility
+sports,-25,facility
+sports meet,-25,facility
+sports day,-25,facility
+annual sports,-25,facility
+nss,-25,activity
+ncc,-25,activity
+national service scheme,-25,activity
+national cadet corps,-25,activity
+cultural,-20,activity
+cultural fest,-25,activity
+cultural program,-20,activity
+festival,-20,activity
+annual function,-20,activity
+annual day,-20,activity
+convocation,-20,activity
+alumni,-25,activity
+alumni meet,-25,activity
+alumni association,-25,activity
+placement,-25,activity
+placement cell,-25,activity
+campus placement,-25,activity
+placement drive,-30,activity
+museum,-25,facility
+gallery,-15,facility
+exhibition,-15,facility
+press release,-20,communication
+circular,-15,communication
+notice,-10,communication
+notification,-10,communication
+brochure,-20,communication
+newsletter,-20,communication
+bulletin,-15,communication
+annual report,-20,communication
+finance,-20,administration
+audit,-20,administration
+budget,-20,administration
+accounts,-20,administration
+financial statement,-20,administration
+balance sheet,-20,administration
+income expenditure,-20,administration
+purchase committee,-20,administration
+finance committee,-20,administration
+vice chancellor,-20,administration
+registrar,-20,administration
+board of management,-25,administration
+executive council,-25,administration
+academic council,-15,administration
+senate,-20,administration
+syndicate,-20,administration
+board of governors,-20,administration
+governing body,-20,administration
+election,-20,administration
+election notice,-25,administration
+voting,-15,administration
+ballot,-15,administration
+fee notice,-20,administration
+fee structure,-15,administration
+fee payment,-15,administration
+scholarship,-10,administration
+fellowship,-10,administration
+stipend,-10,administration
+admission notice,-15,administration
+admission form,-15,administration
+prospectus,-15,administration
+workshop,-15,event
+seminar,-10,event
+conference,-10,event
+symposium,-10,event
+webinar,-10,event
+fdp,-15,event
+faculty development,-15,event
+orientation,-10,event
+induction,-10,event
+holiday,-20,calendar
+holiday list,-25,calendar
+leave,-15,calendar
+vacation,-15,calendar
+recess,-15,calendar
+public holiday,-20,calendar
+national holiday,-20,calendar
+result notification,-20,exam
+merit list,-15,exam
+rank list,-15,exam
+selection list,-20,exam
+waiting list,-15,exam
+counselling,-15,exam
+rti,-20,legal
+right to information,-15,legal
+rti application,-20,legal
+public information officer,-15,legal
+grievance,-10,legal
+complaint,-10,legal
+anti ragging,-10,legal
+icc,-10,legal
+internal complaint committee,-10,legal
+posh,-10,legal
+infrastructure,-10,infrastructure
+construction,-10,infrastructure
+building,-10,infrastructure
+renovation,-10,infrastructure
+maintenance,-10,infrastructure
+repair,-10,infrastructure
+zoology,-40,nonlaw
+botany,-40,nonlaw
+biology,-35,nonlaw
+butterfly,-40,nonlaw
+butterflies,-40,nonlaw
+spider,-35,nonlaw
+hornbill,-35,nonlaw
+pigeon,-35,nonlaw
+lizard,-35,nonlaw
+bird diversity,-40,nonlaw
+floral,-35,nonlaw
+faunal,-35,nonlaw
+fauna,-30,nonlaw
+flora,-30,nonlaw
+ecology,-30,nonlaw
+wildlife,-30,nonlaw
+zoology semester,-40,nonlaw
+bcom,-40,nonlaw
+b.com,-40,nonlaw
+mba,-35,nonlaw
+bba,-40,nonlaw
+b.b.a,-40,nonlaw
+mca,-35,nonlaw
+bca,-35,nonlaw
+b.sc,-35,nonlaw
+bsc,-35,nonlaw
+m.sc,-35,nonlaw
+msc,-35,nonlaw
+commerce,-35,nonlaw
+marketing,-30,nonlaw
+accounting,-25,nonlaw
+economics,-25,nonlaw
+management,-25,nonlaw
+business management,-35,nonlaw
+corporate accounting,-30,nonlaw
+banking,-20,nonlaw
+advanced banking,-30,nonlaw
+statistics,-25,nonlaw
+computer applications,-30,nonlaw
+social enterprise,-25,nonlaw
+climate change,-20,nonlaw
+sustainable development,-20,nonlaw
+cost accounting,-25,nonlaw
+small enterprise,-25,nonlaw
+micro economics,-25,nonlaw
+macro economics,-25,nonlaw
+principles of management,-30,nonlaw
+stress management,-25,nonlaw
+time management,-20,nonlaw
+personality development,-20,nonlaw
+yoga,-25,nonlaw
+meditation,-20,nonlaw
+arthashastra,-20,nonlaw
+mimansa,-20,nonlaw
+nyaya darshan,-20,nonlaw
+purana,-20,nonlaw
+vyakaran,-20,nonlaw
+shiksha,-15,nonlaw
+nirukta,-20,nonlaw
+arthaveda,-20,nonlaw
+dharmshashtra,-20,nonlaw
+ikbcom,-35,nonlaw
+mabcom,-35,nonlaw
+mdcom,-35,nonlaw
+secom,-35,nonlaw
+macom,-35,nonlaw
+ubcom,-35,nonlaw
+umcom,-35,nonlaw
+dang report,-30,nonlaw
+dissertation on,-30,nonlaw
+diversity of,-30,nonlaw

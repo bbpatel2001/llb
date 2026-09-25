@@ -1,0 +1,21 @@
+{
+  "total_questions": 48,
+  "questions_by_year": {
+    "2014": 48
+  },
+  "questions_by_subject": {
+    "Law of Torts": 10,
+    "Criminal Law": 20,
+    "Use of Law Journals": 8,
+    "Law of Contract": 10
+  },
+  "questions_by_type": {
+    "Short Answer": 39,
+    "MCQ": 4,
+    "Case Law": 3,
+    "Bare Act": 2
+  },
+  "total_marks": 960,
+  "duplicate_groups": 3,
+  "repeated_questions": 2
+}

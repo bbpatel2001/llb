@@ -1,0 +1,21 @@
+DocumentType,Category,Priority,Download,OCR,Index,Enabled
+Syllabus,Syllabus,100,Yes,Yes,Yes,Yes
+Course Structure,Syllabus,95,Yes,Yes,Yes,Yes
+Curriculum,Syllabus,95,Yes,Yes,Yes,Yes
+Programme Structure,Syllabus,95,Yes,Yes,Yes,Yes
+Academic Calendar,Academic,90,Yes,Yes,Yes,Yes
+Question Paper,QuestionPaper,100,Yes,Yes,Yes,Yes
+Old Question Paper,QuestionPaper,100,Yes,Yes,Yes,Yes
+Previous Year Paper,QuestionPaper,100,Yes,Yes,Yes,Yes
+Model Question Paper,QuestionPaper,80,Yes,Yes,Yes,Yes
+Sample Question Paper,QuestionPaper,70,Yes,Yes,Yes,Yes
+Exam Time Table,Exam,80,Yes,No,Yes,Yes
+Examination Schedule,Exam,80,Yes,No,Yes,Yes
+Result,Exam,30,No,No,No,Yes
+Notification,Notification,60,Yes,Yes,Yes,Yes
+Circular,Notification,60,Yes,Yes,Yes,Yes
+Ordinance,Regulation,90,Yes,Yes,Yes,Yes
+Regulation,Regulation,90,Yes,Yes,Yes,Yes
+Rule Book,Regulation,90,Yes,Yes,Yes,Yes
+Admission Brochure,Admission,40,Yes,Yes,Yes,Yes
+Prospectus,Admission,40,Yes,Yes,Yes,Yes

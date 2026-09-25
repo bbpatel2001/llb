@@ -1,0 +1,5 @@
+Field,Pattern,Priority
+Semester,"(Semester|Sem)\s*[-:]?\s*(\d+)",100
+ExamYear,(20\d{2}),100
+PaperCode,"([A-Z]{2,6}[-/]?\d{2,6})",90
+AcademicYear,"(20\d{2}\s*-\s*20\d{2})",90

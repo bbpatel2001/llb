@@ -1,0 +1,84 @@
+{
+  "package": "llb-backend-plugins",
+  "version": "1.0.0",
+  "description": "LLB Knowledge Platform Backend Plugins Package",
+  "created": "2026-08-12",
+  "plugins": [
+    {
+      "name": "QuestionEnhancerPlugin",
+      "version": "1.0.0",
+      "description": "Enhances questions with difficulty analysis, related cases, and study recommendations",
+      "file": "QuestionEnhancerPlugin.ts",
+      "features": [
+        "Calculate question difficulty",
+        "Estimate answer time",
+        "Extract key topics",
+        "Find related questions",
+        "Generate study plan"
+      ]
+    },
+    {
+      "name": "CaseLawPlugin",
+      "version": "1.0.0",
+      "description": "Manages and retrieves case law information",
+      "file": "CaseLawPlugin.ts",
+      "features": [
+        "Case law management",
+        "Citation tracking",
+        "Related cases",
+        "Legal principle extraction"
+      ]
+    },
+    {
+      "name": "StudyPlanPlugin",
+      "version": "1.0.0",
+      "description": "Generates personalized study plans",
+      "file": "StudyPlanPlugin.ts",
+      "features": [
+        "Generate study plans",
+        "Track progress",
+        "Adjust difficulty",
+        "Recommend content"
+      ]
+    },
+    {
+      "name": "MockTestPlugin",
+      "version": "1.0.0",
+      "description": "Creates and manages mock tests",
+      "file": "MockTestPlugin.ts",
+      "features": [
+        "Generate mock tests",
+        "Evaluate performance",
+        "Provide feedback",
+        "Track test history"
+      ]
+    },
+    {
+      "name": "AnalyticsPlugin",
+      "version": "1.0.0",
+      "description": "Analytics and reporting functionality",
+      "file": "AnalyticsPlugin.ts",
+      "features": [
+        "Track usage",
+        "Generate reports",
+        "Performance metrics",
+        "User analytics"
+      ]
+    }
+  ],
+  "pluginManager": {
+    "file": "PluginManager.ts",
+    "features": [
+      "Plugin registration",
+      "Plugin lifecycle management",
+      "Hook execution",
+      "Plugin statistics"
+    ]
+  },
+  "interface": {
+    "file": "PluginInterface.ts",
+    "description": "Base interfaces and types for all plugins"
+  },
+  "installation": "Copy all .ts files to backend/src/plugins/ directory",
+  "usage": "Plugins are automatically loaded by PluginManager singleton"
+}

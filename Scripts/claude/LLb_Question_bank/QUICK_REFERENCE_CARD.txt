@@ -1,0 +1,316 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║          LLB QUESTION BANK - QUICK REFERENCE CARD                             ║
+║                                                                                ║
+║  Print this page and keep it with you during deployment!                      ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════════
+DEPLOYMENT CHECKLIST (3 HOURS)
+═══════════════════════════════════════════════════════════════════════════════════
+
+HOUR 1: Cloud Setup (30 min) + Backend Deploy (30 min)
+─────────────────────────────────────────────────────
+☐ Create MongoDB Atlas account
+☐ Create M0 cluster in Mumbai region
+☐ Create user: llb_admin with password
+☐ Allow IP: 0.0.0.0/0
+☐ Copy connection string
+☐ Create Render account
+☐ Push backend code to GitHub
+☐ Deploy on Render (select llb-question-bank repo)
+☐ Add environment variables (MONGODB_URL, SECRET_KEY, etc.)
+☐ Verify: https://llb-api.onrender.com/health
+
+HOUR 2: Frontend Deploy (30 min) + DNS Setup (30 min)
+────────────────────────────────────────────────────
+☐ Create Vercel account
+☐ Push frontend code to GitHub
+☐ Deploy on Vercel (select llb-frontend repo)
+☐ Set environment variable: REACT_APP_API_URL=https://api.coralrush.com
+☐ Get Vercel CNAME value for quiz subdomain
+☐ Login to domain registrar (GoDaddy/Namecheap)
+☐ Add CNAME: api → llb-api.onrender.com
+☐ Add CNAME: quiz → [Vercel CNAME value]
+☐ Wait 10-15 minutes for DNS propagation
+☐ Verify: https://api.coralrush.com/health
+☐ Verify: https://quiz.coralrush.com (React app loads)
+
+HOUR 3: Data Import (10 min) + WordPress (10 min) + Testing (10 min)
+───────────────────────────────────────────────────────────────────
+☐ Import extracted_questions.json via API (POST /api/admin/import/questions)
+☐ Import study_materials.json via API (POST /api/admin/import/study-materials)
+☐ Download wordpress-plugin.php
+☐ Upload plugin in WordPress admin
+☐ Activate plugin
+☐ Add menu item: "LLB Question Bank" → https://quiz.coralrush.com
+☐ Test: Click menu item → opens quiz app in new tab
+☐ Test: API health check
+☐ Test: Load questions from frontend
+☐ Test: View study materials
+☐ Verify: All components working
+☐ 🚀 LAUNCH!
+
+═══════════════════════════════════════════════════════════════════════════════════
+IMPORTANT CREDENTIALS (SAVE SECURELY)
+═══════════════════════════════════════════════════════════════════════════════════
+
+MongoDB Atlas:
+  URL: mongodb+srv://llb_admin:PASSWORD@llb-cluster.xxxxx.mongodb.net/...
+  Username: llb_admin
+  Password: _________________________________
+  Database: llb_question_bank
+
+Render:
+  Service: llb-api
+  URL: https://llb-api.onrender.com
+  Custom Domain: https://api.coralrush.com
+
+Vercel:
+  Project: llb-frontend
+  URL: https://llb-frontend.vercel.app
+  Custom Domain: https://quiz.coralrush.com
+
+GitHub:
+  Backend Repo: https://github.com/_________________________________
+  Frontend Repo: https://github.com/_________________________________
+
+Domain Registrar:
+  Registrar: _________________________________
+  Email: _________________________________
+  Password: _________________________________
+
+═══════════════════════════════════════════════════════════════════════════════════
+CRITICAL COMMANDS
+═══════════════════════════════════════════════════════════════════════════════════
+
+Backend Local Testing:
+```
+python -m venv venv
+venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+copy .env.example .env
+# Edit .env
+uvicorn app.main:app --reload
+# Visit: http://localhost:8000/docs
+```
+
+Frontend Local Testing:
+```
+npm install
+npm start
+# Visit: http://localhost:3000
+```
+
+Export Data (if needed):
+```
+curl https://api.coralrush.com/api/admin/export/questions > questions.json
+```
+
+DNS Check:
+```
+# Use: https://mxtoolbox.com (DNS Lookup)
+# Or command line: nslookup api.coralrush.com
+```
+
+═══════════════════════════════════════════════════════════════════════════════════
+KEY FILES TO DOWNLOAD
+═══════════════════════════════════════════════════════════════════════════════════
+
+BACKEND (9 Python files):
+  ✓ 1_app_main.py
+  ✓ 2_config.py
+  ✓ 3_database.py
+  ✓ 4_models.py
+  ✓ 5_routes_questions.py
+  ✓ 6_routes_study.py
+  ✓ 7_routes_flashcards.py
+  ✓ 8_routes_progress.py
+  ✓ 9_routes_admin.py
+
+CONFIGURATION (5 files):
+  ✓ requirements.txt
+  ✓ .env.example
+  ✓ Dockerfile
+  ✓ docker-compose.yml
+  ✓ render.yaml
+
+FRONTEND (2 files):
+  ✓ api_client.js
+  ✓ vercel.json
+
+WORDPRESS (1 file):
+  ✓ wordpress-plugin.php
+
+DOCUMENTATION (9 files):
+  ✓ LLB_MASTER_DEPLOYMENT_GUIDE.md (THIS GUIDE - read first!)
+  ✓ PRODUCTION_DEPLOYMENT_GUIDE.txt (detailed steps)
+  ✓ PRODUCTION_CHECKLIST.txt (verification)
+  ✓ DNS_SETUP_GUIDE.txt (domain setup)
+  ✓ BACKEND_SETUP_GUIDE.txt (local development)
+  ✓ COMPLETE_FILE_DIRECTORY.txt (file reference)
+  ✓ PROJECT_IMPLEMENTATION_GUIDE.md (technical details)
+  ✓ README_COMPLETE_SYSTEM.md (quick start)
+  ✓ MONGODB_SCHEMA.js (database schema)
+
+DATA (3 files - from previous extraction):
+  ✓ extracted_questions.json (48 questions)
+  ✓ study_materials.json (study content)
+  ✓ extraction_statistics.json (stats)
+
+═══════════════════════════════════════════════════════════════════════════════════
+URLS (AFTER DEPLOYMENT)
+═══════════════════════════════════════════════════════════════════════════════════
+
+Production:
+  Main Site:     https://coralrush.com
+  Quiz App:      https://quiz.coralrush.com
+  API:           https://api.coralrush.com
+  API Docs:      https://api.coralrush.com/docs
+  Health Check:  https://api.coralrush.com/health
+
+Admin Dashboards:
+  Render:        https://dashboard.render.com
+  Vercel:        https://vercel.com/dashboard
+  MongoDB Atlas: https://cloud.mongodb.com
+  GitHub:        https://github.com
+
+═══════════════════════════════════════════════════════════════════════════════════
+QUICK TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════════════
+
+Problem: "ERR_NAME_NOT_RESOLVED" (api.coralrush.com)
+→ Solution: Wait 15 minutes for DNS, clear browser cache, check registrar
+
+Problem: MongoDB connection timeout
+→ Solution: Check IP whitelist is 0.0.0.0/0, verify connection string
+
+Problem: CORS error in browser console
+→ Solution: Update app/main.py allowed_origins, redeploy backend
+
+Problem: 404 on quiz.coralrush.com
+→ Solution: Verify Vercel deployment is live, check DNS records
+
+Problem: API returns 500 error
+→ Solution: Check Render logs, verify MongoDB connection, check env vars
+
+═══════════════════════════════════════════════════════════════════════════════════
+MONTHLY COSTS
+═══════════════════════════════════════════════════════════════════════════════════
+
+Service          Plan         Cost/Month
+────────────────────────────────────────
+Render           Starter      $7-12
+Vercel           Hobby        Free-$20
+MongoDB Atlas    M0           Free
+Domain           Existing     Included
+WordPress        Existing     Included
+────────────────────────────────────────
+TOTAL                         $7-32
+
+═══════════════════════════════════════════════════════════════════════════════════
+FILE ORGANIZATION (After Downloading All Files)
+═══════════════════════════════════════════════════════════════════════════════════
+
+Create folder structure:
+
+C:\Users\YourName\llb-complete\
+├── README.txt                          ← START HERE
+├── LLB_MASTER_DEPLOYMENT_GUIDE.md      ← Complete guide (this file)
+├── PRODUCTION_DEPLOYMENT_GUIDE.txt     ← Detailed steps
+├── PRODUCTION_CHECKLIST.txt            ← Verification
+├── DNS_SETUP_GUIDE.txt                 ← Domain config
+│
+├── backend\                            ← Create GitHub repo "llb-question-bank"
+│   ├── app\
+│   │   ├── main.py                     (from 1_app_main.py)
+│   │   ├── config.py                   (from 2_config.py)
+│   │   ├── database.py                 (from 3_database.py)
+│   │   ├── models.py                   (from 4_models.py)
+│   │   └── routes\
+│   │       ├── questions.py            (from 5_routes_questions.py)
+│   │       ├── study.py                (from 6_routes_study.py)
+│   │       ├── flashcards.py           (from 7_routes_flashcards.py)
+│   │       ├── progress.py             (from 8_routes_progress.py)
+│   │       └── admin.py                (from 9_routes_admin.py)
+│   ├── requirements.txt
+│   ├── .env.example
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   ├── render.yaml
+│   └── .gitignore
+│
+├── frontend\                           ← Create GitHub repo "llb-frontend"
+│   ├── src\
+│   │   ├── api\
+│   │   │   └── client.js               (from api_client.js)
+│   │   ├── components\
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── public\
+│   ├── package.json
+│   ├── .env.example
+│   ├── vercel.json
+│   └── .gitignore
+│
+├── wordpress\
+│   └── llb-question-bank.php           (from wordpress-plugin.php)
+│
+└── data\
+    ├── extracted_questions.json
+    ├── study_materials.json
+    └── extraction_statistics.json
+
+═══════════════════════════════════════════════════════════════════════════════════
+READING ORDER (Follow These Steps)
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. THIS CARD                                              (5 min)
+   Overview and quick reference
+
+2. LLB_MASTER_DEPLOYMENT_GUIDE.md                         (30 min)
+   Complete technical guide with all sections
+
+3. PRODUCTION_DEPLOYMENT_GUIDE.txt                        (Refer while deploying)
+   Step-by-step instructions for each service
+
+4. PRODUCTION_CHECKLIST.txt                               (Refer while deploying)
+   Verification checklist for each phase
+
+5. DNS_SETUP_GUIDE.txt                                    (Refer for DNS setup)
+   Specific instructions for your domain registrar
+
+6. Other guides as needed:
+   - BACKEND_SETUP_GUIDE.txt (local testing)
+   - COMPLETE_FILE_DIRECTORY.txt (file reference)
+
+═══════════════════════════════════════════════════════════════════════════════════
+SUPPORT CONTACTS & RESOURCES
+═══════════════════════════════════════════════════════════════════════════════════
+
+Documentation:
+  FastAPI Docs:        https://fastapi.tiangolo.com/
+  React Docs:          https://react.dev/
+  MongoDB Docs:        https://docs.mongodb.com/
+  Render Support:      https://render.com/support
+  Vercel Support:      https://vercel.com/support
+
+Tools:
+  DNS Checker:         https://mxtoolbox.com
+  SSL Checker:         https://www.sslshopper.com/ssl-checker.html
+  API Tester:          https://www.postman.com/
+
+Deployment Platforms:
+  Render:              https://render.com
+  Vercel:              https://vercel.com
+  MongoDB Atlas:       https://cloud.mongodb.com
+
+═══════════════════════════════════════════════════════════════════════════════════
+
+Questions during deployment? Refer to:
+  1. LLB_MASTER_DEPLOYMENT_GUIDE.md (Part 7 - Troubleshooting)
+  2. PRODUCTION_DEPLOYMENT_GUIDE.txt (Troubleshooting section)
+  3. Official documentation links above
+
+═══════════════════════════════════════════════════════════════════════════════════
+                             🚀 GOOD LUCK! 🚀
+═══════════════════════════════════════════════════════════════════════════════════

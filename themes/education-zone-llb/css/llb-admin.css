@@ -1,0 +1,108 @@
+/**
+ * LLB Knowledge Platform - Admin Styles
+ */
+
+/* Menu Icons */
+#menu-posts-llb_question_paper::before {
+  content: "\f326" !important;
+}
+
+#menu-posts-llb_case_law::before {
+  content: "\f448" !important;
+}
+
+#menu-posts-llb_statute::before {
+  content: "\f124" !important;
+}
+
+#menu-posts-llb_study_material::before {
+  content: "\f507" !important;
+}
+
+#menu-posts-llb_revision_note::before {
+  content: "\f514" !important;
+}
+
+/* Custom Post Type Title */
+#post-type-llb_question_paper .page-title-action::before,
+#post-type-llb_case_law .page-title-action::before,
+#post-type-llb_statute .page-title-action::before,
+#post-type-llb_study_material .page-title-action::before,
+#post-type-llb_revision_note .page-title-action::before {
+  content: "\2733 ";
+  color: #1a3a52;
+}
+
+/* Meta Box Styling */
+#llb_question_paper_details,
+#llb_case_law_details {
+  border-left: 4px solid #1a3a52;
+}
+
+.llb_question_paper_details .form-table th,
+.llb_case_law_details .form-table th {
+  color: #1a3a52;
+  font-weight: 600;
+}
+
+/* Input Fields */
+#llb_exam_date,
+#llb_total_marks,
+#llb_duration,
+#llb_university,
+#llb_case_citation,
+#llb_judgment_year,
+#llb_judges,
+#llb_ratio_decidendi {
+  border-left: 3px solid #1a3a52;
+  padding-left: 10px;
+}
+
+/* Dashboard Widget */
+#llb_dashboard_widget {
+  border-left: 4px solid #1a3a52;
+}
+
+#llb_dashboard_widget h2 {
+  color: #1a3a52;
+}
+
+#llb_dashboard_widget ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#llb_dashboard_widget ul li:last-child {
+  border-bottom: none;
+}
+
+#llb_dashboard_widget ul li strong {
+  color: #1a3a52;
+}
+
+/* Taxonomy Tags */
+.tagsdiv {
+  border-left: 3px solid #1a3a52;
+}
+
+.tagsdiv .tagchecklist {
+  margin-left: 15px;
+}
+
+/* Highlight LLB Content */
+.post-row.type-llb_question_paper,
+.post-row.type-llb_case_law,
+.post-row.type-llb_statute,
+.post-row.type-llb_study_material,
+.post-row.type-llb_revision_note {
+  background: #f9f9f9;
+  border-left: 4px solid #1a3a52;
+}
+
+.post-row.type-llb_question_paper:hover,
+.post-row.type-llb_case_law:hover,
+.post-row.type-llb_statute:hover,
+.post-row.type-llb_study_material:hover,
+.post-row.type-llb_revision_note:hover {
+  background: #f0f0f0;
+}

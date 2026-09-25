@@ -1,0 +1,166 @@
+# LLB Knowledge Platform - Content Generation Configuration
+# This file configures how content is generated
+
+generation:
+  # AI Provider: gemini or openai
+  provider: gemini
+  
+  # Model configuration
+  models:
+    gemini:
+      model: gemini-1.5-flash
+      temperature: 0.3
+      max_tokens: 2048
+      timeout: 60
+    openai:
+      model: gpt-4o-mini
+      temperature: 0.3
+      max_tokens: 2048
+      timeout: 60
+
+  # Retry configuration
+  retries: 3
+  retry_delay: 2  # seconds
+
+# Content processing settings
+processing:
+  # PDF extraction
+  pdf:
+    max_chars_per_chunk: 14000
+    extract_images: false
+    extract_tables: true
+    
+  # Text processing
+  text:
+    min_length: 50
+    max_length: 50000
+    encoding: utf-8
+    
+  # Parallel processing
+  parallelization:
+    pdf_workers: 2
+    content_tasks: 7
+    batch_size: 10
+
+# Content types to generate
+content_types:
+  short_answers:
+    enabled: true
+    word_count_min: 100
+    word_count_max: 200
+    
+  long_answers:
+    enabled: true
+    word_count_min: 500
+    word_count_max: 1000
+    
+  flashcards:
+    enabled: true
+    cards_per_topic: 10
+    categories:
+      - Definition
+      - Section
+      - Case
+      - Principle
+      - Concept
+      - Act
+      - Timeline
+    
+  timelines:
+    enabled: true
+    events_min: 10
+    events_max: 30
+    
+  concept_maps:
+    enabled: true
+    
+  case_summaries:
+    enabled: true
+    
+  bare_acts:
+    enabled: true
+    
+  revision_notes:
+    enabled: true
+    
+  practice_tests:
+    enabled: true
+    questions_min: 20
+    questions_max: 30
+    
+  topic_aggregation:
+    enabled: true
+    years_to_analyze: 10
+
+# Data sources
+sources:
+  papers:
+    path: papers/
+    recursive: true
+    years: 10
+    
+  syllabi:
+    path: data/syllabi/
+    format: json  # json, yaml, or pdf
+    
+  references:
+    acts_path: data/reference-material/acts.json
+    cases_path: data/reference-material/cases.json
+    timelines_path: data/reference-material/timelines.json
+
+# Output configuration
+output:
+  base_path: generated/
+  format: json  # json or markdown
+  organized_by: semester-subject  # semester-subject or year-subject
+  include_metadata: true
+  compression: false
+
+# Quality control
+quality:
+  validate_content: true
+  min_quality_score: 0.7
+  check_plagiarism: false
+  manual_review_required: false
+
+# Logging
+logging:
+  level: INFO  # DEBUG, INFO, WARNING, ERROR
+  log_file: logs/generation.log
+  console_output: true
+  
+# Batch job settings
+batch:
+  max_retries: 3
+  timeout: 3600  # seconds
+  notify_on_completion: true
+
+# Subject-specific settings
+subjects:
+  Criminal Law:
+    priority: high
+    min_content_items: 100
+    include_cases: true
+    
+  Contract Law:
+    priority: high
+    min_content_items: 100
+    include_cases: true
+    
+  Constitutional Law:
+    priority: high
+    min_content_items: 80
+    include_cases: true
+
+# Cache configuration
+cache:
+  enabled: true
+  ttl: 86400  # 24 hours in seconds
+  clear_on_update: true
+
+# Notifications
+notifications:
+  enabled: true
+  email_on_completion: true
+  email_on_error: true
+  slack_webhook: null

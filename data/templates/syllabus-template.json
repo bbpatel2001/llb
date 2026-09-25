@@ -1,0 +1,160 @@
+{
+  "university": "Goa University",
+  "semester": 1,
+  "subject": "Criminal Law Paper - I",
+  "subjectCode": "CC-102",
+  "credits": 4,
+  "description": "This course introduces students to the Indian Penal Code and principles of criminal law.",
+  "objectives": [
+    "Understand basic principles of criminal law",
+    "Study IPC provisions",
+    "Analyze criminal liability",
+    "Examine defenses and exceptions"
+  ],
+  "outcomes": [
+    "Apply criminal law principles",
+    "Analyze criminal cases",
+    "Draft legal opinions on criminal matters",
+    "Understand criminal procedure"
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "Introduction to Criminal Law",
+      "order": 1,
+      "description": "Basics of criminal law, distinction from civil law",
+      "subtopics": [
+        "Nature and scope of criminal law",
+        "Criminal law vs Civil law",
+        "Sources of criminal law in India",
+        "Classification of offenses"
+      ],
+      "estimatedHours": 5,
+      "keyTerms": [
+        "Actus reus",
+        "Mens rea",
+        "Liability",
+        "Punishment"
+      ],
+      "relatedSections": [
+        "IPC Section 1",
+        "IPC Section 2",
+        "CrPC 1973"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "General Principles of Criminal Liability",
+      "order": 2,
+      "description": "Actus reus, mens rea, strict liability",
+      "subtopics": [
+        "Actus reus - criminal act",
+        "Mens rea - criminal intent",
+        "Causation",
+        "Strict liability"
+      ],
+      "estimatedHours": 8,
+      "keyTerms": [
+        "Criminal act",
+        "Criminal intent",
+        "Guilty mind",
+        "Negligence"
+      ],
+      "relatedSections": [
+        "IPC Section 40",
+        "IPC Section 41",
+        "IPC Section 43"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Offenses Against the Person",
+      "order": 3,
+      "description": "Crimes of violence and harm",
+      "subtopics": [
+        "Culpable homicide",
+        "Murder",
+        "Hurt and grievous injury",
+        "Wrongful restraint and confinement"
+      ],
+      "estimatedHours": 10,
+      "keyTerms": [
+        "Homicide",
+        "Murder",
+        "Culpable",
+        "Grievous injury"
+      ],
+      "relatedSections": [
+        "IPC Section 300",
+        "IPC Section 302",
+        "IPC Section 304",
+        "IPC Section 337"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Offenses Against Property",
+      "order": 4,
+      "description": "Crimes related to property",
+      "subtopics": [
+        "Theft",
+        "Robbery and dacoity",
+        "Criminal breach of trust",
+        "Cheating and fraud"
+      ],
+      "estimatedHours": 8,
+      "keyTerms": [
+        "Theft",
+        "Robbery",
+        "Dacoity",
+        "Fraud"
+      ],
+      "relatedSections": [
+        "IPC Section 378",
+        "IPC Section 390",
+        "IPC Section 406",
+        "IPC Section 420"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Defenses in Criminal Law",
+      "order": 5,
+      "description": "General exceptions and defenses",
+      "subtopics": [
+        "Necessity",
+        "Duress",
+        "Insanity",
+        "Intoxication",
+        "Mistake"
+      ],
+      "estimatedHours": 7,
+      "keyTerms": [
+        "Defense",
+        "Exception",
+        "Insanity",
+        "Duress"
+      ],
+      "relatedSections": [
+        "IPC Section 81",
+        "IPC Section 82",
+        "IPC Section 83",
+        "IPC Section 84"
+      ]
+    }
+  ],
+  "references": [
+    "Indian Penal Code, 1860",
+    "Criminal Procedure Code, 1973",
+    "Ratanlal & Dhirajlal: The Indian Penal Code",
+    "State of Maharashtra v. Mayer Hans George",
+    "Virendra v. State of Punjab"
+  ],
+  "assessmentPattern": {
+    "endSemesterExam": 50,
+    "internalAssessment": 50,
+    "totalMarks": 100
+  },
+  "createdAt": "2024-01-01",
+  "updatedAt": "2024-01-01"
+}

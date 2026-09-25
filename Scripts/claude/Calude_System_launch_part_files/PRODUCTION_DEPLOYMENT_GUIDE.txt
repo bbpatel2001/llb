@@ -1,0 +1,649 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║         LLB QUESTION BANK - PRODUCTION DEPLOYMENT GUIDE                       ║
+║                                                                                ║
+║  Vercel (Frontend) + Render (Backend) + MongoDB Atlas + WordPress             ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════════
+ARCHITECTURE OVERVIEW
+═══════════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────┐          ┌──────────────────────┐          ┌──────────────────┐
+│  WordPress Site │          │  React Frontend      │          │  FastAPI Backend │
+│ coralrush.com   │◄────────►│ (Vercel)             │◄────────►│ (Render)         │
+│                 │          │ quiz.coralrush.com   │          │ api.coralrush.com│
+└─────────────────┘          └──────────────────────┘          └──────────────────┘
+        │                              │                                │
+        │                              │                                │
+        └──────────────────────────────┴────────────────────────────────┘
+                                       │
+                              ┌────────▼─────────┐
+                              │  MongoDB Atlas   │
+                              │ (Cloud Database) │
+                              └──────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 1: MONGODB ATLAS SETUP (Cloud Database)
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. Go to https://www.mongodb.com/cloud/atlas
+
+2. Create Free Account
+
+3. Create New Project:
+   - Project Name: "LLB Question Bank"
+   - Create Project
+
+4. Create Database Cluster:
+   - Choose: M0 Sandbox (FREE)
+   - Provider: AWS
+   - Region: Choose closest to India (Mumbai: ap-south-1)
+   - Cluster Name: "llb-cluster"
+   - Create Cluster (takes 3-5 minutes)
+
+5. Setup Security:
+   - Database Access → Add New Database User
+   - Username: llb_admin
+   - Password: (Generate strong password - save it!)
+   - Built-in Role: Atlas Admin
+   - Add User
+
+6. Setup Network Access:
+   - Network Access → Add IP Address
+   - Click "Allow Access from Anywhere"
+   - Add 0.0.0.0/0 (for Render to connect)
+   - Confirm
+
+7. Get Connection String:
+   - Clusters → Connect
+   - Choose: "Connect your application"
+   - Copy connection string:
+   
+   mongodb+srv://llb_admin:<password>@llb-cluster.xxxxx.mongodb.net/llb_question_bank?retryWrites=true&w=majority
+
+8. Replace <password> with your actual password
+
+9. Save this - you'll need it for:
+   - Render environment variable
+   - Local testing
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 2: PREPARE BACKEND FOR RENDER
+═══════════════════════════════════════════════════════════════════════════════════
+
+A. Create render.yaml (Render configuration file):
+
+─────────────────────────────────────────────────────────────────────────────────
+FILE: render.yaml
+─────────────────────────────────────────────────────────────────────────────────
+
+services:
+  - type: web
+    name: llb-api
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: MONGODB_URL
+        scope: build
+        sync: false
+      - key: DATABASE_NAME
+        value: llb_question_bank
+      - key: LOG_LEVEL
+        value: INFO
+      - key: ENABLE_AUTHENTICATION
+        value: "False"
+      - key: ENABLE_RATE_LIMITING
+        value: "True"
+
+─────────────────────────────────────────────────────────────────────────────────
+
+B. Update requirements.txt to include:
+
+pip install gunicorn
+
+─────────────────────────────────────────────────────────────────────────────────
+
+C. Create production.env for Render:
+
+MONGODB_URL=mongodb+srv://llb_admin:YOUR_PASSWORD@llb-cluster.xxxxx.mongodb.net/llb_question_bank?retryWrites=true&w=majority
+DATABASE_NAME=llb_question_bank
+SECRET_KEY=your-super-secret-production-key-change-this
+LOG_LEVEL=INFO
+ENABLE_AUTHENTICATION=False
+ENABLE_RATE_LIMITING=True
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 3: DEPLOY BACKEND TO RENDER
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. Create Render Account:
+   - Go to https://render.com
+   - Sign up with GitHub
+
+2. Push Code to GitHub:
+   - Create repo: llb-question-bank
+   - Push all files:
+   
+   ```
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/yourusername/llb-question-bank.git
+   git push -u origin main
+   ```
+
+3. Deploy on Render:
+   - Click "New +"
+   - Select "Web Service"
+   - Connect GitHub repo
+   - Select: llb-question-bank
+   - Configuration:
+     * Name: llb-api
+     * Environment: Python 3
+     * Build Command: pip install -r requirements.txt
+     * Start Command: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+     * Plan: Free (or Starter for production)
+
+4. Add Environment Variables:
+   - Click "Environment"
+   - Add variables from production.env:
+   
+   | Key | Value |
+   |-----|-------|
+   | MONGODB_URL | mongodb+srv://llb_admin:PASSWORD@llb-cluster.xxxxx.mongodb.net/llb_question_bank... |
+   | DATABASE_NAME | llb_question_bank |
+   | SECRET_KEY | (generate strong key) |
+   | LOG_LEVEL | INFO |
+
+5. Deploy:
+   - Click "Create Web Service"
+   - Wait 5-10 minutes for deployment
+   - Your backend URL: https://llb-api.onrender.com
+
+✅ Backend deployed!
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 4: SETUP CUSTOM DOMAIN FOR BACKEND
+═══════════════════════════════════════════════════════════════════════════════════
+
+Goal: https://api.coralrush.com → Render backend
+
+1. In Render Dashboard:
+   - Select llb-api service
+   - Settings
+   - Custom Domain
+   - Add Custom Domain: api.coralrush.com
+
+2. Update DNS in WordPress/GoDaddy/Cloudflare:
+   - Go to your domain registrar
+   - DNS Settings
+   - Add CNAME record:
+   
+   | Type | Name | Value |
+   |------|------|-------|
+   | CNAME | api | llb-api.onrender.com |
+   | CNAME | quiz | quiz-frontend.vercel.app |
+
+3. Verify (takes 5-10 minutes):
+   - Visit https://api.coralrush.com/health
+   - Should return: {"status": "healthy", "database": "connected"}
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 5: CREATE & DEPLOY REACT FRONTEND
+═══════════════════════════════════════════════════════════════════════════════════
+
+A. Create React App:
+
+```
+npx create-react-app llb-frontend
+cd llb-frontend
+npm install axios react-router-dom chart.js react-chartjs-2
+```
+
+B. Create .env.production file:
+
+```
+REACT_APP_API_URL=https://api.coralrush.com
+REACT_APP_ENV=production
+```
+
+C. Create .env.local file (for development):
+
+```
+REACT_APP_API_URL=http://localhost:8000
+REACT_APP_ENV=development
+```
+
+D. Update src/api/client.js:
+
+```javascript
+import axios from 'axios';
+
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+
+export const apiClient = axios.create({
+  baseURL: API_URL,
+  timeout: 10000,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
+// API functions
+export const questionsAPI = {
+  getAll: (skip = 0, limit = 20) =>
+    apiClient.get('/api/questions', { params: { skip, limit } }),
+  
+  getById: (id) =>
+    apiClient.get(`/api/questions/${id}`),
+  
+  search: (query) =>
+    apiClient.post('/api/questions/search', { query }),
+  
+  getSubjects: () =>
+    apiClient.get('/api/questions/subjects/list'),
+  
+  getYears: () =>
+    apiClient.get('/api/questions/years/list'),
+};
+
+export const studyAPI = {
+  getAll: (questionId) =>
+    apiClient.get(`/api/study/${questionId}`),
+  
+  getLongAnswer: (questionId) =>
+    apiClient.get(`/api/study/${questionId}/long-answer`),
+  
+  getShortAnswer: (questionId) =>
+    apiClient.get(`/api/study/${questionId}/short-answer`),
+  
+  getKeyPoints: (questionId) =>
+    apiClient.get(`/api/study/${questionId}/key-points`),
+  
+  getCaseLaws: (questionId) =>
+    apiClient.get(`/api/study/${questionId}/case-laws`),
+  
+  getBareActs: (questionId) =>
+    apiClient.get(`/api/study/${questionId}/bare-acts`),
+  
+  getMCQ: (questionId) =>
+    apiClient.get(`/api/study/${questionId}/mcq`),
+};
+
+export const progressAPI = {
+  getDashboard: (studentId) =>
+    apiClient.get(`/api/progress/dashboard/${studentId}`),
+  
+  getBySubject: (studentId, subject) =>
+    apiClient.get(`/api/progress/subject/${studentId}/${subject}`),
+  
+  updateProgress: (studentId, questionId, data) =>
+    apiClient.put(`/api/progress/${studentId}/${questionId}`, data),
+  
+  getStreak: (studentId) =>
+    apiClient.get(`/api/progress/streak/${studentId}`),
+};
+
+export const flashcardsAPI = {
+  getDue: (studentId, limit = 10) =>
+    apiClient.get(`/api/flashcards/due/${studentId}`, { params: { limit } }),
+  
+  recordReview: (flashcardId, data) =>
+    apiClient.post(`/api/flashcards/${flashcardId}/review`, data),
+  
+  getStats: (studentId) =>
+    apiClient.get(`/api/flashcards/stats/${studentId}`),
+};
+```
+
+E. Create vercel.json:
+
+```json
+{
+  "buildCommand": "npm run build",
+  "framework": "react",
+  "outputDirectory": "build"
+}
+```
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 6: DEPLOY FRONTEND TO VERCEL
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. Create Vercel Account:
+   - Go to https://vercel.com
+   - Sign up with GitHub
+
+2. Push Frontend to GitHub:
+   ```
+   cd llb-frontend
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/yourusername/llb-frontend.git
+   git push -u origin main
+   ```
+
+3. Deploy on Vercel:
+   - Click "Add New..." → "Project"
+   - Import GitHub repo: llb-frontend
+   - Configure:
+     * Framework Preset: Create React App
+     * Environment Variables:
+       - REACT_APP_API_URL = https://api.coralrush.com
+       - REACT_APP_ENV = production
+     * Deploy
+
+4. Custom Domain:
+   - Settings → Domains
+   - Add Domain: quiz.coralrush.com
+   - Add DNS CNAME records (as shown in Step 4)
+
+✅ Frontend deployed!
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 7: WORDPRESS INTEGRATION (coralrush.com)
+═══════════════════════════════════════════════════════════════════════════════════
+
+OPTION A: Add "Quiz" Menu Item (Link to Vercel)
+────────────────────────────────────────────────
+
+1. WordPress Admin → Appearance → Menus
+2. Add Menu Item:
+   - Label: "LLB Question Bank"
+   - URL: https://quiz.coralrush.com
+   - Open in new tab: Yes
+
+2. This creates a link on WordPress that goes to your React app
+
+
+OPTION B: Embed React App in WordPress (Advanced)
+────────────────────────────────────────────────
+
+1. Install plugin: "WP Offload Media" or similar
+
+2. Create Custom Page Template:
+
+FILE: template-quiz.php
+```php
+<?php
+/*
+Template Name: Quiz Page
+*/
+
+get_header();
+?>
+
+<div id="root" style="min-height: 100vh;"></div>
+
+<script>
+  // Load React app
+  const script = document.createElement('script');
+  script.src = 'https://quiz.coralrush.com/static/js/main.js';
+  document.body.appendChild(script);
+</script>
+
+<?php
+get_footer();
+?>
+```
+
+3. Create new page in WordPress:
+   - Page Title: "Quiz"
+   - Template: Quiz Page
+   - Publish
+   - Access via: https://coralrush.com/quiz/
+
+Note: This approach has CORS issues. Option A is better.
+
+
+OPTION C: WordPress REST API Bridge (Recommended)
+────────────────────────────────────────────────
+
+1. Create WordPress API endpoint that connects to your backend:
+
+FILE: wp-content/plugins/llb-bridge/llb-bridge.php
+```php
+<?php
+/*
+Plugin Name: LLB Question Bank Bridge
+*/
+
+add_action('rest_api_init', function() {
+  register_rest_route('llb/v1', '/questions', array(
+    'methods' => 'GET',
+    'callback' => 'llb_get_questions',
+    'permission_callback' => '__return_true'
+  ));
+});
+
+function llb_get_questions($request) {
+  $api_url = 'https://api.coralrush.com/api/questions';
+  $params = $request->get_query_params();
+  
+  $response = wp_remote_get(add_query_arg($params, $api_url));
+  
+  if (is_wp_error($response)) {
+    return new WP_Error('api_error', 'Failed to fetch questions', 
+      array('status' => 500));
+  }
+  
+  return json_decode(wp_remote_retrieve_body($response));
+}
+?>
+```
+
+2. Use in React:
+```javascript
+// This prevents CORS issues
+const response = await fetch('/wp-json/llb/v1/questions');
+const data = await response.json();
+```
+
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 8: CORS CONFIGURATION
+═══════════════════════════════════════════════════════════════════════════════════
+
+Update app/main.py for production CORS:
+
+```python
+from fastapi.middleware.cors import CORSMiddleware
+
+allowed_origins = [
+    "https://coralrush.com",
+    "https://www.coralrush.com",
+    "https://quiz.coralrush.com",
+    "http://localhost:3000",
+    "http://localhost:8000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+```
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 9: SECURITY & ENVIRONMENT VARIABLES
+═══════════════════════════════════════════════════════════════════════════════════
+
+Production Checklist:
+
+✅ Render Environment Variables:
+  - MONGODB_URL (from MongoDB Atlas)
+  - SECRET_KEY (generate: openssl rand -hex 32)
+  - LOG_LEVEL=INFO
+  - ENABLE_AUTHENTICATION=True (optional)
+
+✅ Vercel Environment Variables:
+  - REACT_APP_API_URL=https://api.coralrush.com
+
+✅ Database Security:
+  - MongoDB Atlas IP whitelist: 0.0.0.0/0
+  - Create dedicated user (done in Step 1)
+
+✅ API Security:
+  - Rate limiting enabled
+  - CORS configured for your domains only
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 10: DNS CONFIGURATION (Final Setup)
+═══════════════════════════════════════════════════════════════════════════════════
+
+Login to your domain registrar (GoDaddy, Namecheap, etc.):
+
+DNS Records to Add:
+
+| Type | Name | Value | TTL |
+|------|------|-------|-----|
+| CNAME | api | llb-api.onrender.com | 3600 |
+| CNAME | quiz | quiz-frontend.vercel.app | 3600 |
+| TXT | _acme-challenge | (Vercel provides) | 3600 |
+
+Verification (wait 5-10 minutes):
+- https://api.coralrush.com/health → Should work ✓
+- https://quiz.coralrush.com → Should load React app ✓
+- https://coralrush.com/llb-quiz → Should show WordPress page with link ✓
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 11: TESTING PRODUCTION
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. Test Backend:
+```
+curl https://api.coralrush.com/health
+curl https://api.coralrush.com/stats
+curl https://api.coralrush.com/docs
+```
+
+2. Test Frontend:
+```
+Open https://quiz.coralrush.com in browser
+Should see: Question Bank UI
+Should load questions from api.coralrush.com
+```
+
+3. Test Integration:
+```
+Visit https://coralrush.com
+Click "LLB Quiz" menu
+Should redirect to quiz.coralrush.com
+```
+
+═══════════════════════════════════════════════════════════════════════════════════
+STEP 12: IMPORT PRODUCTION DATA
+═══════════════════════════════════════════════════════════════════════════════════
+
+1. Go to https://api.coralrush.com/docs
+
+2. Scroll to Admin section
+
+3. Import questions:
+   - POST /api/admin/import/questions
+   - Upload extracted_questions.json
+
+4. Import study materials:
+   - POST /api/admin/import/study-materials
+   - Upload study_materials.json
+
+5. Verify:
+   - GET /api/stats → Should show imported data
+
+═══════════════════════════════════════════════════════════════════════════════════
+MONITORING & MAINTENANCE
+═══════════════════════════════════════════════════════════════════════════════════
+
+Render Dashboard:
+- https://dashboard.render.com
+- Monitor: Logs, Metrics, Deployments
+- Set up alerts for downtime
+
+Vercel Dashboard:
+- https://vercel.com/dashboard
+- Monitor: Deployments, Analytics
+- View error logs
+
+MongoDB Atlas:
+- https://cloud.mongodb.com
+- Monitor: Cluster metrics, backup status
+- Backup retention: Keep 7 days
+
+═══════════════════════════════════════════════════════════════════════════════════
+TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════════════════════
+
+ERROR: MongoDB connection timeout
+SOLUTION:
+  - Check MongoDB Atlas IP whitelist (should be 0.0.0.0/0)
+  - Verify MONGODB_URL environment variable
+  - Test: mongosh "mongodb+srv://user:pass@cluster..."
+
+ERROR: CORS errors in React console
+SOLUTION:
+  - Update app/main.py allowed_origins
+  - Add your domain: https://quiz.coralrush.com
+  - Redeploy backend
+
+ERROR: 404 on quiz.coralrush.com
+SOLUTION:
+  - Check DNS CNAME records
+  - Verify Vercel domain settings
+  - Clear browser cache: Ctrl+Shift+Delete
+
+ERROR: Backend returning 500 on production
+SOLUTION:
+  - Check Render logs: dashboard.render.com
+  - Verify MongoDB connection
+  - Check environment variables
+
+═══════════════════════════════════════════════════════════════════════════════════
+FINAL URLS
+═══════════════════════════════════════════════════════════════════════════════════
+
+Production URLs:
+  - Website: https://coralrush.com
+  - Quiz App: https://quiz.coralrush.com
+  - API Docs: https://api.coralrush.com/docs
+  - API Health: https://api.coralrush.com/health
+  - MongoDB Atlas: https://cloud.mongodb.com
+
+Local Development URLs:
+  - Frontend: http://localhost:3000
+  - Backend: http://localhost:8000
+  - API Docs: http://localhost:8000/docs
+  - MongoDB: localhost:27017
+
+═══════════════════════════════════════════════════════════════════════════════════
+COST ESTIMATE (Monthly)
+═══════════════════════════════════════════════════════════════════════════════════
+
+Service | Plan | Cost
+--------|------|------
+Render | Free/Starter | $7-12
+Vercel | Hobby | Free-$20
+MongoDB Atlas | M0 Sandbox | Free
+Domain | Existing | Already owned
+Total | | $7-32/month
+
+═══════════════════════════════════════════════════════════════════════════════════
+SUCCESS! 🎉
+═══════════════════════════════════════════════════════════════════════════════════
+
+You now have:
+✅ Scalable backend on Render
+✅ Fast frontend on Vercel
+✅ Cloud database on MongoDB Atlas
+✅ Integrated with WordPress on coralrush.com
+✅ Custom domains for all services
+✅ Monitoring & maintenance setup
+
+Next: Monitor performance, add features, scale as needed!
+
+═══════════════════════════════════════════════════════════════════════════════════

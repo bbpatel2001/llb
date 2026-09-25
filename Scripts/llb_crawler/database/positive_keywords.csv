@@ -1,0 +1,266 @@
+keyword,score,category
+llb,30,degree
+ll.b,30,degree
+ll.b.,30,degree
+llm,25,degree
+ll.m,25,degree
+ll.m.,25,degree
+ba llb,30,degree
+ba.llb,30,degree
+bba llb,30,degree
+bba.llb,30,degree
+bcom llb,30,degree
+b.com llb,30,degree
+bsc llb,30,degree
+b.sc llb,30,degree
+integrated law,25,degree
+five year law,25,degree
+three year law,25,degree
+phd law,20,degree
+ph.d law,20,degree
+mphil law,20,degree
+diploma in law,20,degree
+certificate in law,15,degree
+law,20,law
+legal,20,law
+faculty of law,30,department
+school of law,30,department
+department of law,30,department
+institute of law,25,department
+centre for legal studies,25,department
+legal studies,25,department
+legal education,25,department
+legal research,25,law
+law college,25,department
+law school,25,department
+law faculty,25,department
+law department,25,department
+law institute,25,department
+law syllabus,35,law
+law curriculum,30,law
+law question paper,35,law
+law exam paper,35,law
+law notes,30,law
+law scheme,30,law
+llb syllabus,35,law
+llb question paper,35,law
+llb notes,30,law
+llb scheme,30,law
+llb curriculum,30,law
+llm syllabus,35,law
+llm question paper,35,law
+moot court,30,law
+clinical legal education,25,law
+legal drafting,25,law
+legal writing,20,law
+bare act,25,law
+case law,25,law
+judgment,25,law
+judgement,25,law
+law report,20,law
+law review,20,law
+legal journal,20,law
+syllabus,10,academic
+syllabi,10,academic
+curriculum,10,academic
+scheme of examination,15,academic
+scheme of studies,15,academic
+course structure,10,academic
+academic calendar,5,academic
+course outline,10,academic
+examination scheme,15,academic
+question paper,15,academic
+previous year paper,15,academic
+previous paper,15,academic
+old question paper,15,academic
+model question paper,10,academic
+model paper,10,academic
+sample paper,10,academic
+solved paper,15,academic
+past paper,15,academic
+exam paper,10,academic
+examination paper,10,academic
+notes,10,academic
+lecture notes,10,academic
+study material,10,academic
+reading material,10,academic
+study notes,10,academic
+semester,5,academic
+sem,5,academic
+cbcs,10,academic
+choice based credit system,10,academic
+nep,10,academic
+national education policy,10,academic
+ordinance,15,academic
+regulation,15,academic
+dissertation,5,academic
+thesis,5,academic
+internship,5,academic
+viva,5,academic
+viva voce,5,academic
+constitution,30,law
+constitutional law,35,law
+fundamental rights,25,law
+directive principles,20,law
+constitutional amendment,20,law
+constitutional history,20,law
+criminal law,35,law
+ipc,30,law
+indian penal code,30,law
+bns,30,law
+bharatiya nyaya sanhita,30,law
+crpc,30,law
+code of criminal procedure,30,law
+bnss,30,law
+bharatiya nagarik suraksha sanhita,30,law
+evidence act,30,law
+indian evidence act,30,law
+bharatiya sakshya adhiniyam,30,law
+bsa,25,law
+civil law,30,law
+cpc,30,law
+code of civil procedure,30,law
+civil procedure,25,law
+family law,30,law
+hindu law,25,law
+muslim law,25,law
+personal law,20,law
+marriage law,20,law
+divorce law,20,law
+succession law,20,law
+inheritance law,20,law
+adoption law,20,law
+maintenance law,20,law
+labour law,30,law
+labor law,30,law
+industrial law,25,law
+employment law,25,law
+workmen compensation,20,law
+trade union,20,law
+factories act,20,law
+minimum wages,20,law
+taxation,25,law
+tax law,25,law
+income tax,20,law
+gst,20,law
+goods and services tax,20,law
+direct tax,20,law
+indirect tax,20,law
+customs law,20,law
+environmental law,30,law
+environment law,30,law
+pollution law,20,law
+wildlife law,20,law
+forest law,20,law
+international law,30,law
+public international law,25,law
+private international law,25,law
+conflict of laws,20,law
+human rights law,30,law
+fundamental freedoms,20,law
+civil liberties,20,law
+cyber law,30,law
+information technology law,25,law
+it act,20,law
+data protection,20,law
+privacy law,20,law
+jurisprudence,30,law
+legal theory,25,law
+philosophy of law,20,law
+natural law,20,law
+positivism,15,law
+legal positivism,20,law
+administrative law,30,law
+administrative tribunal,20,law
+judicial review,25,law
+writ,20,law
+habeas corpus,20,law
+mandamus,20,law
+certiorari,20,law
+company law,30,law
+corporate law,30,law
+companies act,25,law
+corporate governance,20,law
+securities law,20,law
+sebi,20,law
+commercial law,25,law
+mercantile law,25,law
+contract act,30,law
+law of contract,30,law
+indian contract act,30,law
+sale of goods,20,law
+negotiable instruments,20,law
+partnership act,20,law
+competition law,25,law
+antitrust,20,law
+arbitration,25,law
+alternative dispute resolution,25,law
+adr,20,law
+mediation,20,law
+conciliation,20,law
+lok adalat,20,law
+transfer of property,30,law
+property law,25,law
+land law,20,law
+real estate law,20,law
+mortgage,15,law
+easement,15,law
+law of torts,30,law
+tort,25,law
+negligence,20,law
+defamation,20,law
+nuisance,15,law
+banking law,25,law
+banking regulation,20,law
+rbi act,20,law
+insurance law,20,law
+intellectual property,25,law
+ipr,25,law
+copyright,20,law
+trademark,20,law
+patent,20,law
+geographical indication,15,law
+maritime law,20,law
+admiralty law,20,law
+air law,20,law
+space law,20,law
+media law,20,law
+press law,20,law
+election law,20,law
+representation of people act,15,law
+land acquisition,20,law
+revenue law,20,law
+municipal law,20,law
+local government law,15,law
+public law,20,law
+private law,20,law
+procedural law,20,law
+substantive law,20,law
+advocate,25,profession
+advocacy,20,profession
+bar council,20,profession
+bar exam,20,profession
+legal practitioner,20,profession
+solicitor,15,profession
+barrister,15,profession
+legal profession,20,profession
+legal aid,20,profession
+legal service,20,profession
+legal services authority,20,profession
+public interest litigation,25,profession
+pil,25,profession
+case study,20,profession
+supreme court,20,court
+high court,20,court
+district court,15,court
+sessions court,15,court
+magistrate court,15,court
+family court,15,court
+consumer court,15,court
+tribunal,15,court
+national green tribunal,15,court
+ngt,15,court
+nclt,15,court
+nclat,15,court
+rera,15,court
+consumer forum,15,court

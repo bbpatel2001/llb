@@ -1,0 +1,21 @@
+University,Type,BaseURL,CrawlDepth,MaxPages,DownloadPDF,SearchSyllabus,SearchQuestionPaper,SearchExam,SearchLaw,Enabled
+Gujarat University,State,https://www.gujaratuniversity.ac.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+MSU,State,https://msubaroda.ac.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+SPU,State,https://www.spuvvn.edu,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+VNSGU,State,https://vnsgu.ac.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+HNGU,State,https://www.ngu.ac.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+Saurashtra University,State,https://www.saurashtrauniversity.ac.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+KSKV Kachchh University,State,https://www.kskvku.ac.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+SGGU,State,https://sggu.ac.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+BKNMU,State,https://www.bknmu.edu.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+MKBU,State,https://mkbhavuni.edu.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+GLS University,Private,https://www.glsuniversity.ac.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+Parul University,Private,https://paruluniversity.ac.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+Ganpat University,Private,https://www.ganpatuniversity.ac.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+Karnavati University,Private,https://karnavatiuniversity.edu.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+Silver Oak University,Private,https://silveroakuni.ac.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+Sabarmati University,Private,https://sabarmatiuniversity.edu.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+Indus University,Private,https://indusuni.ac.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+Rai University,Private,https://raiuniversity.edu,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+Marwadi University,Private,https://www.marwadiuniversity.ac.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes
+Swarrnim Startup & Innovation University,Private,https://swarrnim.edu.in,6,1000,Yes,Yes,Yes,Yes,Yes,Yes

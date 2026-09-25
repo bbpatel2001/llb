@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: llb-api
+    env: python
+    plan: starter
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app.main:app"
+    pythonVersion: "3.11"
+    envVars:
+      - key: MONGODB_URL
+        scope: build
+        sync: false
+      - key: DATABASE_NAME
+        value: llb_question_bank
+      - key: LOG_LEVEL
+        value: INFO
+      - key: SECRET_KEY
+        scope: build
+        sync: false
+      - key: ENABLE_AUTHENTICATION
+        value: "True"
+      - key: ENABLE_RATE_LIMITING
+        value: "True"
+      - key: ENABLE_CACHING
+        value: "True"
+    healthCheckPath: "/health"

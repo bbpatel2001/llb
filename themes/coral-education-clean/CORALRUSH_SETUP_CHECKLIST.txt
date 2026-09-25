@@ -1,0 +1,121 @@
+CORAL-EDUCATION THEME - CORALRUSH SETUP CHECKLIST
+===================================================
+
+After uploading the theme to Coralrush, follow these steps:
+
+STEP 1: ACTIVATE THEME
+[ ] 1. Login to WordPress Admin
+[ ] 2. Go to Appearance → Themes
+[ ] 3. Find "Coral-Education" theme
+[ ] 4. Click "Activate"
+
+STEP 2: BASIC SETUP
+[ ] 1. Go to Customize (Appearance → Customize)
+[ ] 2. Go to "Site Identity"
+[ ] 3. Upload custom logo
+[ ] 4. Set site title and tagline
+[ ] 5. Publish changes
+
+STEP 3: ENABLE HOMEPAGE SECTIONS
+[ ] 1. In Customize, open "Home Page Settings"
+[ ] 2. SLIDER SECTION:
+      - Enable: Enable Slider Section ✓
+      - Upload banner image
+      - Add title and subtitle
+      - Set button text and link
+      
+[ ] 3. INFO SECTION:
+      - Enable: Enable Information Section ✓
+      - Add content
+      
+[ ] 4. WELCOME SECTION:
+      - Enable: Enable Welcome Section ✓
+      - Select a page to display
+      
+[ ] 5. LLB ACADEMY SECTION (NEW): ⭐ IMPORTANT
+      - Enable: Enable LLB Academy Section ✓
+      - Title: Enter your academy name
+      - Subtitle: Enter tagline
+      - Description: Enter description
+      - Image: Upload section image
+      - Button Text: e.g., "Explore Programs"
+      - Button Link: e.g., /programs/
+      - Features: Enter separated by | symbol
+        Example: Expert Faculty|Study Materials|Practice Tests
+
+[ ] 6. FEATURED COURSES SECTION:
+      - Enable: Enable Featured Courses Section ✓
+      
+[ ] 7. OTHER SECTIONS (Optional):
+      - Enable: Testimonials Section ✓
+      - Enable: Blog Section ✓
+      - Enable: Gallery Section ✓
+
+STEP 4: FRONT PAGE SETUP
+[ ] 1. Go to Settings → Reading
+[ ] 2. Select: Static Page
+[ ] 3. Front page: Create a new page or select existing
+[ ] 4. Save changes
+[ ] 5. Visit site homepage - sections should now be visible!
+
+STEP 5: ADD CONTENT
+[ ] 1. Create Pages:
+      - About Us
+      - Programs
+      - Faculty
+      - Contact Us
+      
+[ ] 2. Add Blog Posts:
+      - News and announcements
+      - Updates
+      
+[ ] 3. Upload Images to Media Library
+
+STEP 6: VERIFY EVERYTHING
+[ ] 1. Visit homepage - all sections should be visible
+[ ] 2. Banner/Slider should display
+[ ] 3. LLB Academy section should show with quick links
+[ ] 4. All buttons and links should work
+[ ] 5. Images should load properly
+
+IMPORTANT NOTES:
+================
+- Sections MUST be enabled in Customizer to show on homepage
+- Make sure you set a STATIC FRONT PAGE (not blog posts page)
+- All customizer settings MUST be saved/published
+- LLB Academy section features are separated by | symbol
+
+CONTACT LINKS IN LLB ACADEMY SECTION:
+=====================================
+These will appear automatically if you have custom post types:
+- Question Papers: /question-papers/
+- Case Laws: /case-laws/
+- Acts & Statutes: /acts-statutes/
+- Study Materials: /study-materials/
+
+TROUBLESHOOTING:
+================
+Problem: Homepage still blank or shows old content
+Solution: 
+1. Clear WordPress cache
+2. Clear browser cache
+3. Check if static front page is set
+4. Check if sections are enabled in Customizer
+
+Problem: Banner not visible
+Solution:
+1. Go to Customize → Home Page Settings → Slider Section
+2. Make sure "Enable Slider Section" is checked
+3. Make sure banner image is uploaded
+
+Problem: LLB Academy section not showing
+Solution:
+1. Go to Customize → Home Page Settings → LLB Academy Section
+2. Check "Enable LLB Academy Section"
+3. Fill all fields (Title, Subtitle, Image, etc.)
+4. Click "Publish" button
+
+---
+Theme: Coral-Education v2.0
+Setup Date: August 11, 2026
+Status: Ready for Deployment

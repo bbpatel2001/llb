@@ -1,0 +1,371 @@
+[
+  {
+    "questionNumber": "1",
+    "questionText": "1. 1942 20     ,      .",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "2",
+    "questionText": "2. 1935 20",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "3",
+    "questionText": "3.   , 1947 R    . 20     .      .",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "4",
+    "questionText": "4. 20              .",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "5",
+    "questionText": "5. 20 ",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "6",
+    "questionText": "6. : 20   (a)   (b) ____________ Foundation 106 F : Constitutional History of India ours] (2) Answer any three questions from the following.",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional",
+      "constitution"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "7",
+    "questionText": "1. Explain in detail the aims and objectives of the Cripps Mission, 1942. 20",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "8",
+    "questionText": "2. Explain in detail the main provisions of the Govaernment of India Act, 1935. 20",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "9",
+    "questionText": "3. Explain in detail the main provisions of the Indian Independence Act, 1947. 20",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "10",
+    "questionText": "4. Explain in detail the Final Draft and procedure of the adoption of the Constitution of India. 20",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional",
+      "constitution"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "11",
+    "questionText": "5. Explain in detail the main aims and objectives of the Cabinet Mission and Mountbatten Plan. 20",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "12",
+    "questionText": "6. Explain : 20 (a) Fedweral Court (b) Scheme of Rajgopalachari ____________",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "13",
+    "questionText": "1. Explain in detail the aims and objectives of the Cripps Miission, 1942. 25 OR",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "14",
+    "questionText": "1. Explain in detail the main provisions of the Indian Independence Act, 1947. 25",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "15",
+    "questionText": "2. Expiain in detail the importance and outcomes of the Round Table Conferences. e 25 OR",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "16",
+    "questionText": "2. Explain the main provisions of the Government of India Act, 1935. 25",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional",
+      "government"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "17",
+    "questionText": "3. Explain in detail the Final wDraft and procedure of the adoption of the Constitution of India. 25 w OR",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional",
+      "constitution"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "18",
+    "questionText": "3. Explain in detail the main aims and objectives of the Cabinet Mission and Mountbatten Plan. 25",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "19",
+    "questionText": "4. Explain in detail the aims and objectives of the Wavell Plan and Shimla Conference,",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "20",
+    "questionText": "1945. 25 OR",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "21",
+    "questionText": "4. (a) Rajgopalachari'sf ormula 13 (b) Federal Court 12 /grealsir/ Foundation-106F: Constitutional History of India ours]. 25",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional",
+      "constitution"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "22",
+    "questionText": "4. (a) R1lNIARR 13 (b) ARl1 EIGt 12 /grealsir/",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "23",
+    "questionText": "1.  , 1942        . 25  r           .",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "24",
+    "questionText": "2.               . 25      , 1935      .",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "25",
+    "questionText": "3.   25 (1)   (2)    w    (1)    (2)      ",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "26",
+    "questionText": "4.   , 1947     . 25           . __________ 106 F : Constitutional History of India ours] (2) Give the same number to the answer as is given to the question in the question paper. (3) Cite",
+    "marks": 5,
+    "type": "DESCRIPTIVE",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional",
+      "constitution"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "27",
+    "questionText": "1. Explain in detail the aims and objectives of the Cripps Mission, 1942. 25  OR s Explain in detail the Final Draft and procedure of the adoption of the Constitution of India. a",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional",
+      "constitution"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "28",
+    "questionText": "2. Explain in detail the main aims and objectives of the Cabinet Mission and Mountbatten Plan. R 25  OR Explain in detail the main p.rovisions of the Government of India Act, 1935.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional",
+      "government"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "29",
+    "questionText": "3. Explain : (a) Federal Court (b) Scheme of Rajgopalachari 25  OR Discuss : (a) Power of the Government General (b) Restrictions on Legislative power.",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional",
+      "government"
+    ],
+    "options": null,
+    "correctAnswer": null
+  },
+  {
+    "questionNumber": "30",
+    "questionText": "4. Explain in detail the main provisions of the Indian Independence Act, 1947. 25  OR Limits on the powers of the Provincial Legislature and the working of the provincial Autonomy. ___________",
+    "marks": 5,
+    "type": "LONG",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "constitutional"
+    ],
+    "options": null,
+    "correctAnswer": null
+  }
+]

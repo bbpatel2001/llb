@@ -1,0 +1,15 @@
+Artifact,Folder,Extension
+Original PDF,pdf,.pdf
+OCR Text,text,.txt
+Metadata,metadata,.json
+Summary,summaries,.md
+Short Notes,notes,.md
+Long Notes,long_notes,.md
+Flashcards,flashcards,.json
+MCQs,mcqs,.json
+FillBlanks,fill_blanks,.json
+TrueFalse,true_false,.json
+MindMap,mindmap,.md
+Keywords,keywords,.json
+Timeline,timeline,.json
+CaseReferences,cases,.json

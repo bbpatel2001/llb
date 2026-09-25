@@ -1,0 +1,16 @@
+TaskName,Input,Output,Enabled
+Extract Metadata,PDF,JSON,Yes
+Extract Subjects,PDF,JSON,Yes
+Generate Summary,PDF,Markdown,Yes
+Generate Short Notes,PDF,Markdown,Yes
+Generate Long Notes,PDF,Markdown,Yes
+Generate Flashcards,PDF,JSON,Yes
+Generate MCQs,PDF,JSON,Yes
+Generate Fill in the Blanks,PDF,JSON,Yes
+Generate True False,PDF,JSON,Yes
+Generate Important Questions,PDF,JSON,Yes
+Generate Keywords,PDF,JSON,Yes
+Generate Mind Map,PDF,Markdown,Yes
+Generate Timeline,PDF,JSON,Yes
+Generate Case References,PDF,JSON,Yes
+Generate Glossary,PDF,JSON,Yes

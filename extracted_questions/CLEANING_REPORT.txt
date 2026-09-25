@@ -1,0 +1,55 @@
+============================================================
+QUESTION CLEANING REPORT
+============================================================
+
+sem1_constitutional.json
+  Total questions: 30
+  Valid questions: 29
+  Sample: 1. 1942 20     ,      ....
+
+sem1_contract.json
+  Total questions: 92
+  Valid questions: 91
+  Sample: 1.   .      . 25  (A)    ?  ...
+
+sem1_criminal.json
+  Total questions: 98
+  Valid questions: 97
+  Sample: 1. •Û¶ä ÐüÛ¶ÛÛ é …¬Û Ù …Û¸Ûà, •Û¶ä ÐüÛ¶ÛÛ ÜÈÛÜÈÛµÛ ©Û¼Û‘õÛ…Û é ïõéÍÛ ÅÛÛ ñ ÍÛÜÐü©Û ÍÛ¾Û›ÛÈÛÛ.é f 20 ...
+
+sem1_general.json
+  Total questions: 212
+  Valid questions: 212
+  Sample: 1.       ?     i   . 25 ...
+
+sem1_torts.json
+  Total questions: 28
+  Valid questions: 28
+  Sample: 1.    ,             ...
+
+sem2_general.json
+  Total questions: 182
+  Valid questions: 182
+  Sample: 1. Distinguish between a Sub-agent and Substituted agent. State also the modes in which the relation...
+
+sem3_general.json
+  Total questions: 149
+  Valid questions: 149
+  Sample: 1. Critically examine the ruling of Supreme Court that the state wouLd be liable to pay compensation...
+
+sem4_general.json
+  Total questions: 178
+  Valid questions: 178
+  Sample: 4. Who is an Expert? State the circumstances in which expert opinion becomes relevant? oreugpn orein...
+
+sem5_general.json
+  Total questions: 198
+  Valid questions: 198
+  Sample: 2. Define Res Judicata. Explain its importance in civil proceedings. gretn $o"qp p6DL6Dr1r 6116D[ru6...
+
+sem6_general.json
+  Total questions: 148
+  Valid questions: 148
+  Sample: 1. What do you know about the Declaration of Rights of Man in France? r-9qnein$letn Loaflp a-rflarLo...
+
+============================================================

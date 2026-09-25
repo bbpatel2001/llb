@@ -1,0 +1,15 @@
+{
+  "max_depth": 6,
+  "max_pages_per_site": 1000,
+  "threads": 10,
+  "request_timeout": 30,
+  "retry_count": 3,
+  "retry_delay": 5,
+  "follow_redirects": true,
+  "download_pdfs": true,
+  "ocr_scanned_pdfs": true,
+  "extract_text": true,
+  "deduplicate_files": true,
+  "resume_supported": true,
+  "user_agent": "LLB Knowledge Platform Crawler/1.0"
+}

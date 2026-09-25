@@ -1,0 +1,418 @@
+╔════════════════════════════════════════════════════════════════════════════════╗
+║         LLB QUESTION BANK - PRODUCTION DEPLOYMENT CHECKLIST                   ║
+║                                                                                ║
+║ Complete this checklist to launch your application on                         ║
+║ Vercel + Render + MongoDB Atlas + WordPress                                  ║
+╚════════════════════════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════════════════════════
+PHASE 1: SETUP DATABASES & CLOUD SERVICES (30 minutes)
+═══════════════════════════════════════════════════════════════════════════════════
+
+DATABASE: MongoDB Atlas
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Create MongoDB Atlas account                                              │
+│ ☐ Create free M0 Sandbox cluster                                            │
+│ ☐ Create database user: llb_admin                                           │
+│ ☐ Save password in secure location                                          │
+│ ☐ Add IP: 0.0.0.0/0 (allow all - for Render/Vercel)                        │
+│ ☐ Copy connection string: mongodb+srv://llb_admin:PASSWORD@cluster...      │
+│                                                                             │
+│ Connection String Saved: ________________________                            │
+│ Database Name: llb_question_bank                                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+GITHUB ACCOUNTS
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Create GitHub account (if don't have one)                                │
+│ ☐ Create repo: llb-question-bank (backend)                                 │
+│ ☐ Create repo: llb-frontend (React app)                                    │
+│ ☐ Push all backend files to llb-question-bank                              │
+│ ☐ Push all frontend files to llb-frontend                                  │
+│                                                                             │
+│ Backend Repo URL: https://github.com/YOUR_USERNAME/llb-question-bank      │
+│ Frontend Repo URL: https://github.com/YOUR_USERNAME/llb-frontend          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════
+PHASE 2: DEPLOY BACKEND (15 minutes)
+═══════════════════════════════════════════════════════════════════════════════════
+
+RENDER.COM BACKEND DEPLOYMENT
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Create Render account (https://render.com)                               │
+│ ☐ Sign up with GitHub                                                      │
+│ ☐ Create new Web Service                                                   │
+│ ☐ Connect GitHub repo: llb-question-bank                                   │
+│ ☐ Service name: llb-api                                                    │
+│ ☐ Environment: Python                                                      │
+│ ☐ Build command: pip install -r requirements.txt                           │
+│ ☐ Start command: uvicorn app.main:app --host 0.0.0.0 --port $PORT         │
+│ ☐ Plan: Starter (or Free)                                                  │
+│ ☐ Add environment variables:                                               │
+│     ├─ MONGODB_URL: [Your MongoDB Atlas connection string]                │
+│     ├─ DATABASE_NAME: llb_question_bank                                    │
+│     ├─ SECRET_KEY: [Generate strong key]                                  │
+│     ├─ LOG_LEVEL: INFO                                                     │
+│     └─ ENABLE_AUTHENTICATION: True                                         │
+│ ☐ Deploy                                                                   │
+│ ☐ Wait 5-10 minutes for deployment                                        │
+│                                                                             │
+│ Backend Render URL: https://llb-api.onrender.com                           │
+│ Test: https://llb-api.onrender.com/health                                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+VERIFY BACKEND
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Visit https://llb-api.onrender.com/                                      │
+│   Should see: {"message": "Welcome to LLB Question Bank API", ...}         │
+│ ☐ Visit https://llb-api.onrender.com/health                                │
+│   Should see: {"status": "healthy", "database": "connected"}               │
+│ ☐ Visit https://llb-api.onrender.com/stats                                 │
+│   Should see database statistics                                           │
+│ ☐ Visit https://llb-api.onrender.com/docs                                  │
+│   Should see Swagger UI with all endpoints                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════
+PHASE 3: DEPLOY FRONTEND (15 minutes)
+═══════════════════════════════════════════════════════════════════════════════════
+
+VERCEL FRONTEND DEPLOYMENT
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Create Vercel account (https://vercel.com)                               │
+│ ☐ Sign up with GitHub                                                      │
+│ ☐ Import GitHub repo: llb-frontend                                         │
+│ ☐ Framework Preset: Create React App                                       │
+│ ☐ Add Environment Variables:                                               │
+│     ├─ REACT_APP_API_URL: https://llb-api.onrender.com                     │
+│     └─ REACT_APP_ENV: production                                           │
+│ ☐ Deploy                                                                   │
+│ ☐ Wait 5-10 minutes for deployment                                        │
+│                                                                             │
+│ Frontend Vercel URL: https://llb-frontend.vercel.app                       │
+│ Test: Visit the URL - should load React app                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+VERIFY FRONTEND
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Visit https://llb-frontend.vercel.app/                                   │
+│   Should see question bank UI                                              │
+│ ☐ Check console for errors (F12 → Console)                                 │
+│ ☐ Verify API calls are going to: https://llb-api.onrender.com             │
+│ ☐ Try loading questions - should work                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════
+PHASE 4: SETUP CUSTOM DOMAINS (30 minutes)
+═══════════════════════════════════════════════════════════════════════════════════
+
+RENDER CUSTOM DOMAIN
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Go to Render Dashboard                                                   │
+│ ☐ Select service: llb-api                                                  │
+│ ☐ Settings → Custom Domain                                                 │
+│ ☐ Enter: api.coralrush.com                                                 │
+│ ☐ Add Domain                                                               │
+│ ☐ Note the CNAME value (if asked)                                          │
+│                                                                             │
+│ Production URL: https://api.coralrush.com                                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+VERCEL CUSTOM DOMAIN
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Go to Vercel Dashboard                                                   │
+│ ☐ Select project: llb-frontend                                             │
+│ ☐ Settings → Domains                                                       │
+│ ☐ Add Domain: quiz.coralrush.com                                           │
+│ ☐ Copy CNAME value                                                         │
+│                                                                             │
+│ Production URL: https://quiz.coralrush.com                                 │
+│ CNAME Value from Vercel: ________________________                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+DNS CONFIGURATION
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Login to domain registrar (GoDaddy/Namecheap/etc.)                       │
+│ ☐ Go to DNS Settings                                                       │
+│ ☐ Add CNAME record:                                                        │
+│     Name: api                                                              │
+│     Value: llb-api.onrender.com                                            │
+│ ☐ Add CNAME record:                                                        │
+│     Name: quiz                                                             │
+│     Value: [CNAME from Vercel above]                                       │
+│ ☐ Save DNS records                                                         │
+│ ☐ Wait 5-15 minutes for DNS propagation                                    │
+│                                                                             │
+│ Registrar Used: ________________________                                    │
+│ Domain Email: ________________________                                      │
+│ DNS Propagation Check: https://mxtoolbox.com                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+VERIFY CUSTOM DOMAINS
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Wait 10-15 minutes after DNS update                                      │
+│ ☐ Visit https://api.coralrush.com/health                                   │
+│   Should return: {"status": "healthy", ...}                                │
+│ ☐ Visit https://quiz.coralrush.com                                         │
+│   Should load React app                                                    │
+│ ☐ Test API call from frontend:                                             │
+│   Open DevTools (F12) → Network tab                                       │
+│   Load questions - should call api.coralrush.com                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════
+PHASE 5: IMPORT PRODUCTION DATA (10 minutes)
+═══════════════════════════════════════════════════════════════════════════════════
+
+UPLOAD QUESTIONS
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Visit: https://api.coralrush.com/docs                                    │
+│ ☐ Scroll to "admin" section                                                │
+│ ☐ Click: POST /api/admin/import/questions                                  │
+│ ☐ Click "Try it out"                                                       │
+│ ☐ Upload file: extracted_questions.json                                    │
+│ ☐ Click "Execute"                                                          │
+│ ☐ Should see: {"status": "success", "imported_count": 48}                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+UPLOAD STUDY MATERIALS
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ In same Swagger UI                                                       │
+│ ☐ Click: POST /api/admin/import/study-materials                            │
+│ ☐ Click "Try it out"                                                       │
+│ ☐ Upload file: study_materials.json                                        │
+│ ☐ Click "Execute"                                                          │
+│ ☐ Should see: {"status": "success", "imported_count": ...}                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+VERIFY DATA
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Visit: https://api.coralrush.com/stats                                   │
+│ ☐ Should show total_questions > 0                                          │
+│ ☐ Visit: https://quiz.coralrush.com                                        │
+│ ☐ Should load questions from database                                      │
+│ ☐ Try searching/filtering questions                                        │
+│ ☐ Click on a question - should see all study materials                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════
+PHASE 6: WORDPRESS INTEGRATION (20 minutes)
+═══════════════════════════════════════════════════════════════════════════════════
+
+INSTALL PLUGIN (Optional)
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Download wordpress-plugin.php                                            │
+│ ☐ WordPress Admin → Plugins → Add New → Upload Plugin                      │
+│ ☐ Select wordpress-plugin.php                                              │
+│ ☐ Click "Install Now"                                                      │
+│ ☐ Activate Plugin                                                          │
+│ ☐ New menu item appears: LLB Question Bank                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+ADD QUIZ LINK TO MENU
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ WordPress Admin → Appearance → Menus                                     │
+│ ☐ Click your main menu (e.g., "Main Menu")                                 │
+│ ☐ Add Menu Item:                                                           │
+│     ├─ Label: "LLB Question Bank"                                          │
+│     ├─ URL: https://quiz.coralrush.com                                     │
+│     ├─ Open in new tab: ✓ Yes                                              │
+│ ☐ Save Menu                                                                │
+│                                                                             │
+│ Now visitors can click menu item to go to quiz app                          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+OPTIONAL: ADD SHORTCODE
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Create new WordPress page: "Quiz Questions"                              │
+│ ☐ Add shortcode in page: [llb_questions]                                   │
+│ ☐ Publish page                                                             │
+│ ☐ View page - should show questions                                        │
+│                                                                             │
+│ Features:                                                                  │
+│   [llb_questions]                                                          │
+│   [llb_questions subject="Law of Torts"]                                   │
+│   [llb_questions year="2024"]                                              │
+│   [llb_questions subject="Criminal Law" year="2023"]                       │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════
+PHASE 7: FINAL TESTING (30 minutes)
+═══════════════════════════════════════════════════════════════════════════════════
+
+BACKEND TESTING
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Test /health endpoint                                                    │
+│ ☐ Test /stats endpoint                                                     │
+│ ☐ Test GET /api/questions/ (list questions)                                │
+│ ☐ Test GET /api/questions/{id} (get single question)                       │
+│ ☐ Test GET /api/study/{id} (get study materials)                           │
+│ ☐ Test POST /api/questions/search (search)                                 │
+│ ☐ Check /docs for Swagger UI working                                       │
+│ ☐ Check all endpoints return valid responses                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+FRONTEND TESTING
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Load https://quiz.coralrush.com                                          │
+│ ☐ See question list loaded                                                 │
+│ ☐ Can filter by subject                                                    │
+│ ☐ Can filter by year                                                       │
+│ ☐ Click on a question                                                      │
+│ ☐ See all study materials (long answer, short answer, etc.)               │
+│ ☐ Can view flashcards                                                      │
+│ ☐ Can see progress dashboard                                               │
+│ ☐ No CORS errors in console (F12)                                          │
+│ ☐ API calls go to api.coralrush.com                                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+WORDPRESS TESTING
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Visit coralrush.com                                                      │
+│ ☐ See "LLB Question Bank" menu item                                        │
+│ ☐ Click menu item                                                          │
+│ ☐ Opens quiz.coralrush.com in new tab                                      │
+│ ☐ Check shortcode page (if created)                                        │
+│ ☐ Questions display correctly                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+SECURITY TESTING
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Check HTTPS is enabled (lock icon in browser)                            │
+│ ☐ Check SSL certificate is valid (click lock icon)                         │
+│ ☐ Check no sensitive data in local storage                                 │
+│ ☐ Check CORS is working (no CORS errors)                                   │
+│ ☐ Check rate limiting is working (if enabled)                              │
+│ ☐ MongoDB credentials not exposed in frontend                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+PERFORMANCE TESTING
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Page loads in < 3 seconds                                                │
+│ ☐ API response time < 1 second                                             │
+│ ☐ No console errors                                                        │
+│ ☐ Images load properly                                                     │
+│ ☐ Search feature is responsive                                             │
+│ ☐ Check Render logs for errors                                             │
+│ ☐ Check Vercel logs for errors                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════
+PHASE 8: MONITORING & MAINTENANCE SETUP (15 minutes)
+═══════════════════════════════════════════════════════════════════════════════════
+
+RENDER MONITORING
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Go to Render Dashboard                                                   │
+│ ☐ Select llb-api service                                                   │
+│ ☐ Enable health checks (already done)                                      │
+│ ☐ Monitor: Logs, Metrics, Deployments                                      │
+│ ☐ Set up alerts (if on paid plan)                                          │
+│ ☐ Keep auto-restart enabled                                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+VERCEL MONITORING
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Go to Vercel Dashboard                                                   │
+│ ☐ Select llb-frontend project                                              │
+│ ☐ View Analytics                                                           │
+│ ☐ Check Deployments                                                        │
+│ ☐ Monitor: Performance, Error Tracking                                     │
+│ ☐ Enable notifications for deployments                                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+MONGODB MONITORING
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Go to MongoDB Atlas: https://cloud.mongodb.com                           │
+│ ☐ Select your cluster                                                      │
+│ ☐ Check: Performance, CPU, Memory usage                                    │
+│ ☐ Enable automated backups                                                 │
+│ ☐ Set retention to 7 days minimum                                          │
+│ ☐ Monitor database size                                                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════
+PHASE 9: DOCUMENTATION & HANDOFF
+═══════════════════════════════════════════════════════════════════════════════════
+
+SAVE IMPORTANT INFORMATION
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ Save these in secure location (password manager):                           │
+│                                                                             │
+│ ☐ MongoDB Atlas:                                                           │
+│     Username: llb_admin                                                    │
+│     Password: ________________________                                      │
+│     Connection String: ________________________                             │
+│     Cluster Name: llb-cluster                                              │
+│                                                                             │
+│ ☐ Render:                                                                  │
+│     Service: llb-api                                                       │
+│     URL: https://llb-api.onrender.com                                      │
+│     Custom Domain: https://api.coralrush.com                               │
+│     Dashboard: https://dashboard.render.com                                │
+│                                                                             │
+│ ☐ Vercel:                                                                  │
+│     Project: llb-frontend                                                  │
+│     URL: https://llb-frontend.vercel.app                                   │
+│     Custom Domain: https://quiz.coralrush.com                              │
+│     Dashboard: https://vercel.com/dashboard                                │
+│                                                                             │
+│ ☐ GitHub:                                                                  │
+│     Backend Repo: https://github.com/...                                   │
+│     Frontend Repo: https://github.com/...                                  │
+│     Access Token: ________________________                                  │
+│                                                                             │
+│ ☐ Domain Registrar:                                                        │
+│     Registrar: ________________________                                    │
+│     Admin Email: ________________________                                  │
+│     Password: ________________________                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+CREATE DOCUMENTATION
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ ☐ Document: API endpoints and usage                                        │
+│ ☐ Document: How to deploy updates                                          │
+│ ☐ Document: How to add new questions                                       │
+│ ☐ Document: How to handle errors/troubleshooting                           │
+│ ☐ Document: Backup and recovery procedures                                 │
+│ ☐ Document: Cost tracking and optimization                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════════
+FINAL CHECKLIST - LAUNCH READY ✅
+═══════════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        🚀 LAUNCH CHECKLIST 🚀                              │
+│                                                                             │
+│ ☐ Backend deployed on Render (api.coralrush.com)                           │
+│ ☐ Frontend deployed on Vercel (quiz.coralrush.com)                         │
+│ ☐ MongoDB Atlas connected and working                                      │
+│ ☐ DNS records configured correctly                                         │
+│ ☐ All custom domains working (HTTPS)                                       │
+│ ☐ Data imported (questions & study materials)                              │
+│ ☐ WordPress integration complete                                           │
+│ ☐ All endpoints tested and working                                         │
+│ ☐ Frontend and backend communicating                                       │
+│ ☐ Performance acceptable (< 3s load time)                                  │
+│ ☐ No console errors or warnings                                            │
+│ ☐ Monitoring and alerts configured                                         │
+│ ☐ Backups enabled                                                          │
+│ ☐ Documentation completed                                                  │
+│ ☐ Credentials saved securely                                               │
+│                                                                             │
+│                  ✅ READY FOR PRODUCTION! ✅                              │
+│                                                                             │
+│ Application URLs:                                                          │
+│   - Main Site: https://coralrush.com                                       │
+│   - Quiz App: https://quiz.coralrush.com                                   │
+│   - API: https://api.coralrush.com                                         │
+│   - API Docs: https://api.coralrush.com/docs                               │
+│                                                                             │
+│ Total Deployment Time: ~2-3 hours                                          │
+│ Ongoing Monthly Cost: $7-32                                                │
+│                                                                             │
+│                    🎉 CONGRATULATIONS! 🎉                                  │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘

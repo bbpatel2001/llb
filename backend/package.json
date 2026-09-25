@@ -1,0 +1,67 @@
+{
+  "name": "llb-platform-backend",
+  "version": "1.0.0",
+  "description": "LLB Knowledge Platform - Backend API",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "tsx dist/index.js",
+    "lint": "eslint src --ext .ts --max-warnings 0",
+    "test": "jest",
+    "reconcile:data": "tsx src/scripts/reconcileData.ts",
+    "repair:data": "tsx src/scripts/repairData.ts",
+    "reextract:questions": "tsx src/scripts/reextractQuestionsClean.ts",
+    "clean:garbage": "tsx src/scripts/cleanGarbageQuestions.ts",
+    "clean:garbage:apply": "tsx src/scripts/cleanGarbageQuestions.ts --confirm",
+    "consolidate:json": "tsx src/scripts/extractQuestionsFromJSON.ts",
+    "consolidate:clean": "tsx src/scripts/extractQuestionsFromJSON.ts --clean",
+    "fix:marks": "tsx src/scripts/fixQuestionMarks.ts",
+    "fix:marks:apply": "tsx src/scripts/fixQuestionMarks.ts --apply",
+    "seed:case-laws": "tsx src/scripts/seedCaseLaws.ts",
+    "admin:create": "tsx src/scripts/createAdmin.ts",
+    "seed:gujarat-llb-2026": "tsx src/scripts/seedGujaratUniversityLlb2026.ts",
+    "generate:semester1-syllabus": "tsx src/scripts/generateSyllabusQuestions.ts",
+    "generate:flashcard-options": "tsx src/scripts/generateFlashcardOptions.ts",
+    "backfill:flashcard-options": "tsx src/scripts/backfillDraftFlashcardOptions.ts"
+  },
+  "keywords": [
+    "llb",
+    "law",
+    "education",
+    "study-platform"
+  ],
+  "author": "Xeevi",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.0",
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^6.2.108"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.20",
+    "@types/jest": "^29.5.5",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.8.0",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "eslint": "^8.51.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
