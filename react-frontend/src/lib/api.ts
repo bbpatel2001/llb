@@ -118,7 +118,7 @@ export const papersApi = {
  * Questions API
  */
 export const questionsApi = {
-  getAll: (params: { semester?: number; subject?: string; type?: string; search?: string; skip?: number; limit?: number } = {}) =>
+  getAll: (params: { semester?: string; subject?: string; type?: string; search?: string; skip?: number; limit?: number } = {}) =>
     api.get('/api/questions', { params }),
   getBySemester: (semester: number, skip = 0, limit = 50, subject?: string, type?: string) =>
     api.get(`/api/questions/semester/${semester}`, { params: { skip, limit, subject, type } }),
@@ -142,6 +142,10 @@ export const answersApi = {
   getByQuestion: (questionId: string, language: Locale = 'en') => api.get(`/api/answers/${questionId}`, { params: { language } }),
   generateShort: (questionId: string, language: Locale = 'en') => api.post('/api/answers/generate/short', { questionId, language }),
   generateLong: (questionId: string, language: Locale = 'en') => api.post('/api/answers/generate/long', { questionId, language }),
+  getRatings: (answerId: string) => api.get(`/api/answers/${answerId}/ratings`),
+  getPrivateReviews: (answerId: string) => api.get(`/api/answers/${answerId}/ratings/reviews`),
+  rate: (answerId: string, rating: number, comment?: string) => api.post(`/api/answers/${answerId}/ratings`, { rating, comment }),
+  verify: (answerId: string, data: { verified: boolean; qualityScore?: number; reviewStatus: 'approved' | 'review_required'; reviewNotes?: string }) => api.patch(`/api/answers/${answerId}/verify`, data),
 };
 
 /**
@@ -214,6 +218,7 @@ export const adminApi = {
   promoteImport: (batchId: string) => api.post(`/api/admin/imports/${batchId}/promote`),
   getFlashcardDeck: (deckId: string, limit = 200) =>
     api.get(`/api/admin/flashcards/deck/${deckId}`, { params: { limit } }),
+  createFormattedAnswer: (payload: Record<string, unknown>) => api.post('/api/admin/formatted-answers', payload),
 };
 
 /**

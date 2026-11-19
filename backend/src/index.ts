@@ -21,6 +21,7 @@ import lawMappingRoutes from "./routes/lawMapping";
 import articleRoutes from "./routes/articles";
 import blogRoutes from "./routes/blogs";
 import { requestContext, rateLimit, validatePaginationQuery } from "./middleware/security";
+import { SEMESTER1_SUBJECTS } from "./utils/semester1Subjects";
 
 // Load environment variables
 dotenv.config();
@@ -31,6 +32,7 @@ const PORT = process.env.PORT || 6000;  // Backend on 6000
 const UNREADABLE_QUESTION_PATTERN = new RegExp(`[${String.fromCodePoint(0xe000)}-${String.fromCodePoint(0xf8ff)}${String.fromCodePoint(0xfffd)}]`);
 const READABLE_QUESTION_FILTER = {
   $and: [
+    { reviewStatus: { $ne: 'rejected' } },
     { questionText: { $not: UNREADABLE_QUESTION_PATTERN } },
     { questionText: { $regex: '\\p{L}' } },
   ],
@@ -121,9 +123,9 @@ app.get("/api/papers", async (req: Request, res: Response) => {
   try {
     const { semester, subject, skip = 0, limit = 20 } = req.query;
     
-    const query: any = {};
+    const query: any = { fileName: { $not: /^semester1-syllabus-working-blueprint/i } };
     if (semester) query.semester = parseInt(semester as string);
-    if (subject) query.subject = (subject as string).toUpperCase();
+    if (subject) query.subject = subject as string;
 
     const papers = await Paper.find(query)
       .skip(parseInt(skip as string))
@@ -195,8 +197,15 @@ app.get("/api/questions", async (req: Request, res: Response) => {
   try {
     const { semester, subject, type, search, skip = 0, limit = 50 } = req.query;
     const query: any = { ...READABLE_QUESTION_FILTER };
-    if (semester) query.semester = parseInt(semester as string);
-    if (subject) query.subject = (subject as string).toUpperCase();
+    if (semester) {
+      const semesterValues = (Array.isArray(semester) ? semester : [semester])
+        .flatMap((value) => String(value).split(','))
+        .map((value) => Number(value))
+        .filter((value) => Number.isInteger(value) && value >= 1 && value <= 6);
+      if (semesterValues.length === 1) query.semester = semesterValues[0];
+      if (semesterValues.length > 1) query.semester = { $in: [...new Set(semesterValues)] };
+    }
+    if (subject) query.subject = { $regex: `^${escapeRegex(subject as string)}$`, $options: "i" };
     if (type) query.type = (type as string).toUpperCase();
     if (search) {
       query.$or = [
@@ -210,16 +219,19 @@ app.get("/api/questions", async (req: Request, res: Response) => {
       Question.find(query).skip(offset).limit(pageSize).sort({ semester: 1, subject: 1, questionNumber: 1 }),
       Question.countDocuments(query),
     ]);
-    res.json({ questions, total, page: Math.floor(offset / pageSize) + 1 });
+    return res.json({ questions, total, page: Math.floor(offset / pageSize) + 1 });
   } catch (error) {
-    res.status(500).json({ error: (error as Error).message });
+    return res.status(500).json({ error: (error as Error).message });
   }
 });
 
 app.get("/api/questions/filters", async (_req: Request, res: Response) => {
   try {
-    const subjects = await Question.distinct("subject", { ...READABLE_QUESTION_FILTER, subject: { $nin: [null, ""] } });
-    res.json({ semesters: [1, 2, 3, 4, 5, 6], subjects: subjects.sort() });
+    const blueprintPapers = await Paper.find({ fileName: { $regex: /^semester1-syllabus-working-blueprint/i } }).select('_id').lean();
+    const rawSubjects = await Question.distinct("subject", { ...READABLE_QUESTION_FILTER, paperId: { $nin: blueprintPapers.map((paper) => paper._id) }, subject: { $nin: [null, ""] } });
+    const semester1Subjects = Object.values(SEMESTER1_SUBJECTS).filter((subject) => rawSubjects.includes(subject));
+    const subjects = rawSubjects.filter((subject) => !Object.values(SEMESTER1_SUBJECTS).includes(subject as any));
+    res.json({ semesters: [1, 2, 3, 4, 5, 6], subjects: [...new Set([...semester1Subjects, ...subjects])].sort() });
   } catch (error) {
     res.status(500).json({ error: (error as Error).message });
   }
@@ -231,9 +243,21 @@ app.get("/api/questions/:questionId", async (req: Request, res: Response) => {
     if (!mongoose.Types.ObjectId.isValid(req.params.questionId)) {
       return res.status(400).json({ error: "Invalid question ID" });
     }
-    const question = await Question.findOne({ _id: req.params.questionId, ...READABLE_QUESTION_FILTER });
+    const question = await Question.findOne({ _id: req.params.questionId, ...READABLE_QUESTION_FILTER }).lean();
     if (!question) return res.status(404).json({ error: "Question not found" });
-    return res.json({ question });
+    const paper = await Paper.findById(question.paperId).select('title year examMonth university subject semester fileName').lean();
+    const relatedQuestions = question.relatedQuestionIds?.length
+      ? await Question.find({ _id: { $in: question.relatedQuestionIds }, ...READABLE_QUESTION_FILTER })
+        .select('questionNumber questionText questionTextGu marks subject paperId')
+        .lean()
+      : [];
+    const relatedPaperIds = [...new Set(relatedQuestions.map((item: any) => String(item.paperId)))];
+    const relatedPapers = relatedPaperIds.length
+      ? await Paper.find({ _id: { $in: relatedPaperIds } }).select('title year examMonth university').lean()
+      : [];
+    const relatedPaperMap = new Map(relatedPapers.map((item: any) => [String(item._id), item]));
+    const related = relatedQuestions.map((item: any) => ({ ...item, paper: relatedPaperMap.get(String(item.paperId)) || null }));
+    return res.json({ question: { ...question, paper, relatedQuestions: related } });
   } catch (error) {
     return res.status(500).json({ error: (error as Error).message });
   }

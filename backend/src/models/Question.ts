@@ -8,6 +8,8 @@ export interface IQuestion extends Document {
   type: 'SHORT' | 'LONG' | 'MCQ' | 'CASE_STUDY' | 'DESCRIPTIVE';
   marks: number;
   questionText: string;
+  questionTextGu?: string;
+  relatedQuestionIds?: mongoose.Types.ObjectId[];
   options?: Array<{
     label: string;
     text: string;
@@ -32,7 +34,7 @@ export interface IQuestion extends Document {
     syllabusVersion: number;
     topicKey: string;
   }>;
-  reviewStatus?: 'draft' | 'published' | 'rejected';
+  reviewStatus?: 'draft' | 'published' | 'rejected' | 'review_required';
   publishedAt?: Date;
   createdAt: Date;
   updatedAt: Date;
@@ -78,6 +80,11 @@ const QuestionSchema = new Schema<IQuestion>(
       required: true,
       text: true, // Enable text search
     },
+  questionTextGu: {
+    type: String,
+    trim: true,
+  },
+    relatedQuestionIds: [{ type: Schema.Types.ObjectId, ref: 'Question' }],
     options: [
       {
         label: String,
@@ -119,7 +126,7 @@ const QuestionSchema = new Schema<IQuestion>(
       syllabusVersion: { type: Number, required: true, min: 1 },
       topicKey: { type: String, required: true, trim: true },
     }],
-    reviewStatus: { type: String, enum: ['draft', 'published', 'rejected'], default: 'published', index: true },
+    reviewStatus: { type: String, enum: ['draft', 'published', 'rejected', 'review_required'], default: 'published', index: true },
     publishedAt: Date,
   },
   {

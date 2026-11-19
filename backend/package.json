@@ -24,7 +24,9 @@
     "seed:gujarat-llb-2026": "tsx src/scripts/seedGujaratUniversityLlb2026.ts",
     "generate:semester1-syllabus": "tsx src/scripts/generateSyllabusQuestions.ts",
     "generate:flashcard-options": "tsx src/scripts/generateFlashcardOptions.ts",
-    "backfill:flashcard-options": "tsx src/scripts/backfillDraftFlashcardOptions.ts"
+    "backfill:flashcard-options": "tsx src/scripts/backfillDraftFlashcardOptions.ts",
+    "import:sem1-source-answers": "tsx src/scripts/importSem1SourceAnswers.ts",
+    "backfill:answers": "tsx src/scripts/backfillAnswersCoverage.ts"
   },
   "keywords": [
     "llb",

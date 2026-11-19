@@ -10,6 +10,11 @@ export interface CaseLawSeed {
   significance: string;
   applicableActs: string[];
   relatedTopics: string[];
+  caseNumber?: string;
+  judgmentDate?: string;
+  bench?: string;
+  sourceUrl?: string;
+  downloadUrl?: string;
 }
 
 /**
@@ -18,6 +23,24 @@ export interface CaseLawSeed {
  * populated consistently without requiring manual admin entry.
  */
 export const caseLaws: CaseLawSeed[] = [
+  {
+    name: 'J. Rajesh (Minor) through his Mother and Natural Guardian J. Gomathi v. M. Kumaran (Dead) through LRs & Others',
+    citation: '2026 INSC 1208',
+    court: 'Supreme Court of India',
+    year: 2026,
+    caseNumber: 'Civil Appeal No. 7020 of 2012',
+    judgmentDate: '6 November 2026',
+    bench: 'Justice Augustine George Masih and Justice Sunita Agarwal',
+    sourceUrl: 'https://www.sci.gov.in/view-pdf/?diary_no=44032011&from=latest_judgements_order&order_date=2026-11-06&type=j',
+    downloadUrl: '/judgments/2026-insc-1208-j-rajesh-v-m-kumaran.pdf',
+    facts: 'The minor appellant claimed a half share in property that had devolved on his living father after the grandfather’s intestate death and subsequent partition among the Class I heirs under Section 8 of the Hindu Succession Act, 1956.',
+    issue: 'Whether a grandson can claim a birthright or partition share in property inherited by his living father under Section 8 of the Hindu Succession Act, 1956.',
+    held: 'The appeal was dismissed. The property inherited by the father under Section 8 and allotted to him on partition was his individual property, and the grandson could not claim a birthright in it while his father was alive.',
+    ratio: 'Section 8 is a self-contained scheme of intestate succession. A son’s son is not a Class I heir when his father is alive; the father takes his share in his individual capacity and may deal with or alienate it.',
+    significance: 'A current Supreme Court authority distinguishing statutory succession under Section 8 from coparcenary survivorship and birthright claims.',
+    applicableActs: ['Hindu Succession Act, 1956 — Section 8', 'Hindu Succession Act, 1956 — Section 6'],
+    relatedTopics: ['Hindu succession', 'Class I heirs', 'Coparcenary', 'Ancestral property', 'Birthright'],
+  },
   {
     name: 'Carlill v Carbolic Smoke Ball Co.',
     citation: '[1893] 1 QB 256',

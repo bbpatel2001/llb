@@ -210,6 +210,11 @@ export interface ICaseLaw {
   relatedTopics?: string[];
   frequency?: number; // Times asked in papers
   lastAskedYear?: number;
+  caseNumber?: string;
+  judgmentDate?: string;
+  bench?: string;
+  sourceUrl?: string;
+  downloadUrl?: string;
   createdAt?: Date;
   updatedAt?: Date;
 }

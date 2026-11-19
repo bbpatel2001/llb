@@ -30,7 +30,8 @@ export function CaseLawCard({ caseLaw }: CaseLawCardProps) {
           <button type="button" className="rounded p-1 text-slate-400 hover:bg-slate-100" aria-label={`More actions for ${caseLaw.name}`}><MoreVertical className="h-4 w-4" /></button>
         </div>
 
-        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[10px] text-slate-500"><span>♜ {caseLaw.court}</span><span>◷ {caseLaw.year}</span></div>
+        <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[10px] text-slate-500"><span>♜ {caseLaw.court}</span><span>◷ {caseLaw.year}</span>{caseLaw.caseNumber && <span>§ {caseLaw.caseNumber}</span>}</div>
+        {(caseLaw.judgmentDate || caseLaw.bench) && <div className="mt-2 rounded-md bg-slate-50 px-2.5 py-2 text-[10px] leading-4 text-slate-500">{caseLaw.judgmentDate && <p><strong className="text-slate-700">Judgment:</strong> {caseLaw.judgmentDate}</p>}{caseLaw.bench && <p><strong className="text-slate-700">Bench:</strong> {caseLaw.bench}</p>}</div>}
         {topics.length > 0 && <div className="mt-3 flex flex-wrap gap-1.5">{topics.map((topic, index) => <span key={topic} className={`rounded-full px-2 py-1 text-[9px] font-medium ${index === 0 ? 'bg-sky-100 text-primary-700' : index === 1 ? 'bg-emerald-50 text-emerald-700' : 'bg-violet-50 text-violet-700'}`}>{topic}</span>)}</div>}
         <p className="mt-3 text-[11px] leading-5 text-slate-600">{excerpt(caseLaw.facts)}</p>
 
@@ -39,6 +40,8 @@ export function CaseLawCard({ caseLaw }: CaseLawCardProps) {
 
       <div className="flex items-center gap-4 border-t border-slate-100 px-4 py-2.5 text-[10px] font-semibold">
         <button type="button" onClick={() => setExpanded((value) => !value)} className="inline-flex items-center gap-1 text-primary-700 hover:text-primary-900">{expanded ? 'Hide Details' : 'View Details'} <ChevronRight className={`h-3.5 w-3.5 transition-transform ${expanded ? 'rotate-90' : ''}`} /></button>
+        {caseLaw.sourceUrl && <a href={caseLaw.sourceUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-primary-700 hover:text-primary-900">Official judgment</a>}
+        {caseLaw.downloadUrl && <a href={caseLaw.downloadUrl} download className="inline-flex items-center gap-1.5 text-primary-700 hover:text-primary-900">Download PDF</a>}
         <button type="button" className="ml-auto inline-flex items-center gap-1.5 text-slate-400 hover:text-primary-700"><Bookmark className="h-3.5 w-3.5" />Add to Library</button>
         <button type="button" onClick={() => void navigator.clipboard?.writeText(window.location.href)} className="inline-flex items-center gap-1.5 text-slate-400 hover:text-primary-700"><Share2 className="h-3.5 w-3.5" />Share</button>
       </div>

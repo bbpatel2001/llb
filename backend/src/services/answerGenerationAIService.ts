@@ -114,8 +114,8 @@ class AnswerGenerationAIService {
 
     Guidelines:
     1. Provide accurate, detailed answers based on legal principles and precedents
-    2. For long answers (20-25 marks), provide comprehensive explanations with examples
-    3. For short answers (5-10 marks), provide concise but complete answers
+    2. For 20-25 mark answers, write approximately 1,600-2,200 words (about 4-5 A4 pages), with headings, statutory provisions, and relevant case examples
+    3. For 15 mark answers, write approximately 900-1,200 words (about 3 A4 pages); for short notes, write approximately 350-500 words (about 1 A4 page)
     4. Cite relevant case laws and statutory provisions
     5. Structure answers with clear headings and bullet points where appropriate
     6. Include practical examples and real-world applications

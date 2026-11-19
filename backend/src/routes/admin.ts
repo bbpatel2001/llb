@@ -809,4 +809,57 @@ router.post('/imports/:batchId/promote', async (req: Request, res: Response) => 
   return res.json({ batch, paper, promotedCount });
 });
 
+router.post('/formatted-answers', async (req: Request, res: Response) => {
+  try {
+    const { questionNumber, questionText, questionTextGu, marks, year, university, subject, semester = 1, blocks } = req.body;
+    if (!questionTextGu || !Array.isArray(blocks) || blocks.length === 0 || !year || !university || !subject) {
+      return res.status(400).json({ error: 'questionTextGu, blocks, year, university, and subject are required' });
+    }
+    const normalizedSubject = String(subject).toUpperCase();
+    const normalizedUniversity = String(university).toUpperCase();
+    const paperFileName = `manual-${normalizedUniversity}-${year}-${normalizedSubject.toLowerCase().replace(/[^a-z0-9]+/gi, '-')}.paper`;
+    const paper = await Paper.findOneAndUpdate(
+      { fileName: paperFileName },
+      {
+        $setOnInsert: {
+          semester: Number(semester), subject: normalizedSubject, title: `${normalizedSubject} ${year} Manual Questions`,
+          fileName: paperFileName, year: Number(year), university: normalizedUniversity,
+          status: 'COMPLETED', questionsExtracted: true, reviewStatus: 'published', publishedAt: new Date(),
+        },
+      },
+      { upsert: true, new: true, setDefaultsOnInsert: true }
+    );
+    const normalizedBlocks = blocks.filter((block: any) => ['heading', 'paragraph', 'bold', 'line', 'table'].includes(block?.type));
+    const plainText = normalizedBlocks.map((block: any) => block.type === 'table' ? (block.rows || []).map((row: string[]) => row.join(' | ')).join('\n') : (block.text || '')).filter(Boolean).join('\n\n');
+    const question = await Question.findOneAndUpdate(
+      { paperId: paper._id, questionTextGu: String(questionTextGu).trim() },
+      {
+        $set: {
+          questionNumber: String(questionNumber || 'MANUAL'), questionText: String(questionText || questionTextGu).trim(), questionTextGu: String(questionTextGu).trim(),
+          type: 'LONG', marks: Number(marks || 25), semester: Number(semester), subject: normalizedSubject,
+          source: { fileName: paperFileName, year: Number(year), university: normalizedUniversity },
+          extractionQuality: 100, validationIssues: [], reviewStatus: 'published', publishedAt: new Date(),
+        },
+        $setOnInsert: { paperId: paper._id, tags: [normalizedSubject.toLowerCase()] },
+      },
+      { upsert: true, new: true, setDefaultsOnInsert: true }
+    );
+    const answer = await Answer.findOneAndUpdate(
+      { questionId: question._id, type: 'long', language: 'gu' },
+      {
+        $set: {
+          paperId: paper._id, text: plainText, formattedContent: normalizedBlocks, wordCount: plainText.split(/\s+/).filter(Boolean).length,
+          generatedBy: 'manual', qualityScore: 10, verified: true, difficulty: 'medium', keyPoints: [], studyTips: [],
+          sources: [{ type: 'article', title: 'Manual Gujarati answer entry', year: Number(year) }],
+        },
+      },
+      { upsert: true, new: true, setDefaultsOnInsert: true }
+    );
+    await Paper.findByIdAndUpdate(paper._id, { $inc: { totalQuestions: 1, totalMarks: Number(marks || 25) } });
+    return res.status(201).json({ success: true, paper, question, answer });
+  } catch (error) {
+    return res.status(500).json({ error: (error as Error).message });
+  }
+});
+
 export default router;

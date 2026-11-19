@@ -30,4 +30,5 @@ export { AdminBulkMappingPage } from './AdminBulkMappingPage';
 export { AdminAuditPage } from './AdminAuditPage';
 export { AdminFlashcardsPage } from './AdminFlashcardsPage';
 export { AdminDashboardPage } from './AdminDashboardPage';
+export { AdminAnswerComposerPage } from './AdminAnswerComposerPage';
 export { RecommendationsPage } from './RecommendationsPage';

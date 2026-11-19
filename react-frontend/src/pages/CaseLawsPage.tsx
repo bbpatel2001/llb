@@ -21,6 +21,27 @@ import { caseLawsApi } from '@/lib/api';
 import { CaseLaw } from '@/types';
 import { getErrorMessage } from '@/lib/utils';
 
+const featuredSupremeCourtCase: CaseLaw = {
+  _id: 'featured-j-rajesh-v-m-kumaran',
+  name: 'J. Rajesh (Minor) through his Mother and Natural Guardian J. Gomathi v. M. Kumaran (Dead) through LRs & Others',
+  citation: '2026 INSC 1208',
+  court: 'Supreme Court of India',
+  year: 2026,
+  caseNumber: 'Civil Appeal No. 7020 of 2012',
+  judgmentDate: '6 November 2026',
+  bench: 'Justice Augustine George Masih and Justice Sunita Agarwal',
+  sourceUrl: 'https://www.sci.gov.in/view-pdf/?diary_no=44032011&from=latest_judgements_order&order_date=2026-11-06&type=j',
+  downloadUrl: '/judgments/2026-insc-1208-j-rajesh-v-m-kumaran.pdf',
+  facts: 'The minor appellant claimed a half share in property that had devolved on his living father after the grandfather’s intestate death and subsequent partition among the Class I heirs under Section 8 of the Hindu Succession Act, 1956.',
+  issue: 'Whether a grandson can claim a birthright or partition share in property inherited by his living father under Section 8 of the Hindu Succession Act, 1956.',
+  held: 'The appeal was dismissed. The father’s share was his individual property, and the grandson could not claim a birthright in it while his father was alive.',
+  ratio: 'Section 8 is a self-contained scheme of intestate succession. A son’s son is not a Class I heir when his father is alive; the father takes his share in his individual capacity and may deal with or alienate it.',
+  significance: 'The decision distinguishes statutory succession under Section 8 from coparcenary survivorship and birthright claims.',
+  applicableActs: ['Hindu Succession Act, 1956 — Section 8'],
+  relatedTopics: ['Hindu succession', 'Class I heirs', 'Coparcenary', 'Birthright'],
+  createdAt: '2026-11-06T00:00:00.000Z',
+};
+
 export function CaseLawsPage() {
   const [searchParams] = useSearchParams();
   const [caseLaws, setCaseLaws] = useState<CaseLaw[]>([]);
@@ -92,7 +113,9 @@ export function CaseLawsPage() {
   const highCourtCases = caseLaws.filter((caseLaw) => caseLaw.court.toLowerCase().includes('high court')).length;
   const landmarkCases = caseLaws.filter((caseLaw) => (caseLaw.frequency || 0) >= 5).length;
   const totalPages = Math.max(1, Math.ceil(totalCases / 25));
-  const foundCount = yearFilter || subjectFilter || actFilter ? visibleCaseLaws.length : totalCases || visibleCaseLaws.length;
+  const featuredSearchableText = `${featuredSupremeCourtCase.name} ${featuredSupremeCourtCase.citation} ${featuredSupremeCourtCase.caseNumber} ${featuredSupremeCourtCase.relatedTopics?.join(' ')}`.toLowerCase();
+  const featuredMatchesSearch = !searchQuery || featuredSearchableText.includes(searchQuery.toLowerCase());
+  const foundCount = yearFilter || subjectFilter || actFilter ? visibleCaseLaws.length : totalCases || visibleCaseLaws.length || (featuredMatchesSearch ? 1 : 0);
 
   return (
     <div className="space-y-5">
@@ -123,6 +146,25 @@ export function CaseLawsPage() {
           <p className="mt-1 text-[10px] text-secondary">— Justice P. N. Bhagwati</p>
         </div>
         <Landmark className="ml-auto hidden h-14 w-14 shrink-0 text-primary-600/10 sm:block" aria-hidden="true" />
+      </section>
+
+      <section className="rounded-xl border border-amber-200 bg-gradient-to-br from-amber-50 to-white p-5 shadow-sm">
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-amber-700">Featured Supreme Court Judgment</p>
+            <h2 className="mt-1 text-lg font-bold leading-6 text-slate-900">{featuredSupremeCourtCase.name}</h2>
+            <p className="mt-1 text-xs font-semibold text-slate-500">{featuredSupremeCourtCase.citation} · {featuredSupremeCourtCase.caseNumber}</p>
+          </div>
+          <div className="flex flex-wrap gap-2"><a href={featuredSupremeCourtCase.sourceUrl} target="_blank" rel="noreferrer" className="rounded-lg border border-primary-200 bg-white px-3 py-2 text-xs font-semibold text-primary-700 hover:bg-light-blue">Read official judgment</a><a href={featuredSupremeCourtCase.downloadUrl} download className="rounded-lg bg-primary-600 px-3 py-2 text-xs font-semibold text-white hover:bg-primary-700">Download PDF</a></div>
+        </div>
+        <div className="mt-4 grid gap-3 text-xs text-slate-600 sm:grid-cols-3">
+          <p><strong className="text-slate-800">Court:</strong> {featuredSupremeCourtCase.court}</p>
+          <p><strong className="text-slate-800">Date:</strong> {featuredSupremeCourtCase.judgmentDate}</p>
+          <p><strong className="text-slate-800">Bench:</strong> {featuredSupremeCourtCase.bench}</p>
+        </div>
+        <div className="mt-4 rounded-lg border border-amber-200 bg-white p-4 text-sm leading-6 text-slate-700">
+          <strong className="text-slate-900">Legal principle:</strong> {featuredSupremeCourtCase.ratio}
+        </div>
       </section>
 
       <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_250px]">
@@ -157,7 +199,7 @@ export function CaseLawsPage() {
             </div>
           </div>
 
-          {loading ? <LoadingSpinner /> : error ? <ErrorMessage message={error} /> : <CaseLawList caseLaws={visibleCaseLaws} />}
+          {loading ? <LoadingSpinner /> : error ? <ErrorMessage message={error} /> : caseLaws.length === 0 && featuredMatchesSearch ? <p className="rounded-xl border border-slate-200 bg-white p-6 text-sm text-slate-500 shadow-sm">The featured judgment is shown above.</p> : <CaseLawList caseLaws={visibleCaseLaws} />}
         </div>
 
         <aside className="space-y-4">

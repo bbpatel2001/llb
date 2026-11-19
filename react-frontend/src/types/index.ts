@@ -16,6 +16,7 @@ export interface Paper {
   title: string;
   semester: number;
   year: number;
+  examMonth?: string;
   university: string;
   fileName: string;
   subject?: string;
@@ -31,6 +32,7 @@ export interface Question {
   paperId: string;
   questionNumber: string;
   questionText: string;
+  questionTextGu?: string;
   type: 'LONG' | 'SHORT' | 'MCQ' | 'CASE_STUDY' | 'DESCRIPTIVE';
   marks?: number;
   semester: number;
@@ -42,6 +44,9 @@ export interface Question {
   correctAnswer?: string;
   topicRefs?: Array<{ syllabusId: string; syllabusVersion: number; topicKey: string }>;
   createdAt: string;
+  paper?: Pick<Paper, 'title' | 'year' | 'examMonth' | 'university' | 'fileName'>;
+  relatedQuestions?: Array<Pick<Question, '_id' | 'questionNumber' | 'questionText' | 'questionTextGu' | 'marks' | 'subject' | 'paperId'> & { paper?: Pick<Paper, 'title' | 'year' | 'examMonth' | 'university'> | null }>;
+  reviewStatus?: 'draft' | 'published' | 'rejected' | 'review_required';
 }
 
 /**
@@ -64,6 +69,7 @@ export interface Answer {
   paperId: string;
   questionId?: string;
   type: 'short' | 'long' | 'standard' | 'mcq' | 'case_study' | 'flashcard' | 'case_law' | 'bare_act' | 'revision_note';
+  targetMarks?: 5 | 15 | 20 | 25;
   text?: string;
   question?: string;
   answer?: string;
@@ -74,6 +80,11 @@ export interface Answer {
   difficulty?: 'easy' | 'medium' | 'hard';
   metadata?: Record<string, unknown>;
   language?: 'en' | 'gu';
+  formattedContent?: Array<{ type: 'heading' | 'paragraph' | 'bold' | 'line' | 'table'; text?: string; rows?: string[][] }>;
+  reviewStatus?: 'approved' | 'review_required';
+  reviewNotes?: string;
+  ratingAverage?: number;
+  ratingCount?: number;
   createdAt: string;
 }
 
@@ -147,6 +158,11 @@ export interface CaseLaw {
   relatedTopics?: string[];
   frequency?: number;
   lastAskedYear?: number;
+  caseNumber?: string;
+  judgmentDate?: string;
+  bench?: string;
+  sourceUrl?: string;
+  downloadUrl?: string;
   createdAt: string;
 }
 

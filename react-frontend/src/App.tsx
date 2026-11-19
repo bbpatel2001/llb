@@ -22,6 +22,7 @@ import {
   AdminAuditPage,
   AdminFlashcardsPage,
   AdminDashboardPage,
+  AdminAnswerComposerPage,
   QuizHistoryPage,
   FlashcardHistoryPage,
   RecommendationsPage,
@@ -47,6 +48,7 @@ function App() {
             <Route path="/dashboard" element={<DashboardPage />} />
             <Route path="/my-study" element={<StudyStatePage />} />
             <Route path="/admin" element={<AdminDashboardPage />} />
+            <Route path="/admin/answers/new" element={<AdminAnswerComposerPage />} />
             <Route path="/admin/review" element={<AdminReviewPage />} />
             <Route path="/admin/syllabi" element={<AdminSyllabusPage />} />
             <Route path="/admin/mappings" element={<AdminBulkMappingPage />} />

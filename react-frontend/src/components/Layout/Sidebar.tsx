@@ -88,6 +88,7 @@ const navigationGroups: SidebarGroup[] = [
 const adminLinks: SidebarLink[] = [
   { label: 'Admin Dashboard', to: '/admin', icon: ShieldCheck },
   { label: 'Content Review', to: '/admin/review', icon: FileText },
+  { label: 'Create Gujarati Answer', to: '/admin/answers/new', icon: FileText },
   { label: 'Syllabus Admin', to: '/admin/syllabi', icon: GraduationCap },
   { label: 'Bulk Mapping', to: '/admin/mappings', icon: Scale },
   { label: 'Flashcard Diagnostics', to: '/admin/flashcards', icon: BookMarked },

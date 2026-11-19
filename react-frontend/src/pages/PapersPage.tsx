@@ -1,22 +1,24 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { BookOpenText, Building2, CalendarDays, ChevronRight, FileText, Grid2X2, GraduationCap, Hash, List, Plus, Quote, Sparkles } from 'lucide-react';
 import { ErrorMessage, LoadingSpinner, PaperFilters, PaperList } from '@/components';
 import { papersApi, questionsApi } from '@/lib/api';
 import { Paper } from '@/types';
 import { getErrorMessage } from '@/lib/utils';
+import { SEMESTER1_SUBJECTS } from '@/lib/semester1Subjects';
 
 export function PapersPage() {
+  const [searchParams] = useSearchParams();
   const [papers, setPapers] = useState<Paper[]>([]);
   const [subjects, setSubjects] = useState<string[]>([]);
   const [universities, setUniversities] = useState<string[]>([]);
   const [years, setYears] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [semester, setSemester] = useState<number | undefined>();
-  const [subject, setSubject] = useState('');
-  const [university, setUniversity] = useState('');
-  const [year, setYear] = useState('');
+  const [semester, setSemester] = useState<number | undefined>(() => searchParams.get('semester') ? Number(searchParams.get('semester')) : undefined);
+  const [subject, setSubject] = useState(() => searchParams.get('subject') || '');
+  const [university, setUniversity] = useState(() => searchParams.get('university') || '');
+  const [year, setYear] = useState(() => searchParams.get('year') || '');
   const [sortOrder, setSortOrder] = useState('relevant');
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -106,7 +108,7 @@ export function PapersPage() {
 
       <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_250px]">
         <div className="min-w-0 space-y-4">
-          <PaperFilters semester={semester} subject={subject} university={university} year={year} sort={sortOrder} subjects={subjects} universities={universities} years={years} onSemesterChange={setSemester} onSubjectChange={setSubject} onUniversityChange={setUniversity} onYearChange={setYear} onSortChange={setSortOrder} onSearch={setSearchQuery} onClear={clearFilters} />
+          <PaperFilters semester={semester} subject={subject} university={university} year={year} sort={sortOrder} subjects={semester === 1 ? [...SEMESTER1_SUBJECTS] : subjects} universities={universities} years={years} onSemesterChange={(value) => { setSemester(value); setSubject(''); }} onSubjectChange={setSubject} onUniversityChange={setUniversity} onYearChange={setYear} onSortChange={setSortOrder} onSearch={setSearchQuery} onClear={clearFilters} />
 
           <div className="flex flex-wrap items-center justify-between gap-3">
             <p className="text-xs text-secondary">Found <span className="font-bold text-main">{filteredPapers.length}</span> papers</p>

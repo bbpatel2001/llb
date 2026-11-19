@@ -46,6 +46,20 @@ export function capitalize(str: string) {
   return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 }
 
+/** Format fractional examination marks without floating-point noise. */
+export function formatMarks(marks: number | string): string {
+  const value = Number(marks);
+  if (!Number.isFinite(value)) return String(marks);
+  const fractions: Array<[number, string]> = [
+    [25 / 3, '8⅓'],
+    [12.5, '12½'],
+    [50 / 3, '16⅔'],
+  ];
+  const fraction = fractions.find(([numberValue]) => Math.abs(value - numberValue) < 0.01);
+  if (fraction) return fraction[1];
+  return Number.isInteger(value) ? String(value) : value.toFixed(2).replace(/0+$/, '').replace(/\.$/, '');
+}
+
 /**
  * Parse error message
  */

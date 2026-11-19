@@ -1,5 +1,7 @@
 import { Router, Request, Response } from 'express';
 import { Answer } from '../models/Answer';
+import { AnswerRating } from '../models/AnswerRating';
+import mongoose from 'mongoose';
 import { Question } from '../models/Question';
 import AnswerGenerationService from '../services/answerGenerationService';
 import AnswerGuidanceService from '../services/answerGuidanceService';
@@ -181,10 +183,51 @@ router.get('/:questionId([0-9a-fA-F]{24})', async (req: Request, res: Response):
     const languageQuery = language === 'en'
       ? { $or: [{ language: 'en' }, { language: { $exists: false } }] }
       : { language };
-    const [question, answers] = await Promise.all([
-      Question.findById(questionId),
-      Answer.find({ questionId, ...languageQuery }).sort({ type: 1 }),
-    ]);
+    const question = await Question.findById(questionId);
+    let answers = await Answer.find({ questionId, ...languageQuery }).sort({ type: 1 });
+    let languageFallback = false;
+    if (language === 'gu' && answers.length === 0) {
+      answers = await Answer.find({
+        questionId,
+        $or: [{ language: 'en' }, { language: { $exists: false } }],
+      }).sort({ type: 1 });
+      languageFallback = answers.length > 0;
+    }
+    // An imported paper can label a written explanatory prompt as MCQ. Once a
+    // real written answer exists, hide the placeholder MCQ review record.
+    const hasWrittenAnswer = answers.some((answer: any) =>
+      ['short', 'long', 'standard'].includes(answer.type)
+    );
+    if (hasWrittenAnswer) {
+      answers = answers.filter((answer: any) => !(
+        answer.type === 'mcq' && /Original question paper required for MCQ answer key|મૂળ પ્રશ્નપત્રથી MCQ જવાબની ચકાસણી જરૂરી/i.test(String(answer.sources?.[0]?.title || ''))
+      ));
+    }
+
+    // Old imports can contain several copies of the same answer type. Returning
+    // every copy made the UI appear to show repeated, interchangeable answers.
+    // Keep the strongest record for each type and language instead.
+    const answerRank = (answer: any): number => {
+      const sourceTitle = String(answer.sources?.[0]?.title || '');
+      return (answer.generatedBy === 'manual' ? 1000000 : 0)
+        + (answer.formattedContent?.length ? 100000 : 0)
+        + (answer.verified ? 10000 : 0)
+        + (answer.qualityScore || 0) * 100
+        + Math.min(Number(answer.wordCount) || 0, 5000)
+        - (/Question-specific answer guidance|Generated Answer/i.test(sourceTitle) ? 50000 : 0);
+    };
+    const bestByTypeAndMarks = new Map<string, any>();
+    for (const answer of answers) {
+      const marksKey = answer.targetMarks == null ? 'unmarked' : String(answer.targetMarks);
+      const key = `${answer.type}:${marksKey}`;
+      const current = bestByTypeAndMarks.get(key);
+      if (!current || answerRank(answer) > answerRank(current)) bestByTypeAndMarks.set(key, answer);
+    }
+    answers = Array.from(bestByTypeAndMarks.values()).sort((a, b) => {
+      const typeOrder = String(a.type).localeCompare(String(b.type));
+      return typeOrder || Number(a.targetMarks || 0) - Number(b.targetMarks || 0);
+    });
+
     const enrichedAnswers = answers.map((answer) => {
       if (!question || (answer.type !== 'short' && answer.type !== 'long')) {
         return answer;
@@ -195,7 +238,9 @@ router.get('/:questionId([0-9a-fA-F]{24})', async (req: Request, res: Response):
         ...answerObject,
         // Existing answers are enriched at read time, so older generic records
         // immediately receive question-specific writing guidance as well.
-        writingGuide: answerObject.writingGuide || AnswerGuidanceService.buildWritingGuide(question, answer.type, language),
+        writingGuide: answerObject.writingGuide?.sections?.length
+          ? answerObject.writingGuide
+          : AnswerGuidanceService.buildWritingGuide(question, answer.type, language),
       };
     });
 
@@ -203,6 +248,7 @@ router.get('/:questionId([0-9a-fA-F]{24})', async (req: Request, res: Response):
       success: true,
       answers: enrichedAnswers,
       count: enrichedAnswers.length,
+      languageFallback,
     });
   } catch (error) {
     return res.status(500).json({ error: (error as Error).message });
@@ -331,13 +377,17 @@ router.get('/search', async (req: Request, res: Response): Promise<any> => {
 router.patch('/:answerId/verify', authenticate, requireRole('admin', 'instructor'), async (req: Request, res: Response): Promise<any> => {
   try {
     const { answerId } = req.params;
-    const { verified, qualityScore } = req.body;
+    const { verified, qualityScore, reviewStatus, reviewNotes } = req.body;
 
     const answer = await Answer.findByIdAndUpdate(
       answerId,
       {
         verified: verified !== undefined ? verified : true,
         qualityScore: qualityScore || undefined,
+        reviewStatus: reviewStatus || (verified === false ? 'review_required' : 'approved'),
+        reviewNotes: typeof reviewNotes === 'string' ? reviewNotes : undefined,
+        reviewedAt: new Date(),
+        reviewedBy: req.user!.id,
       },
       { new: true }
     );
@@ -350,6 +400,63 @@ router.patch('/:answerId/verify', authenticate, requireRole('admin', 'instructor
   } catch (error) {
     return res.status(500).json({ error: (error as Error).message });
   }
+});
+
+/**
+ * Rate an answer and optionally leave a constructive review comment.
+ * One rating per signed-in user; later submissions update that rating.
+ * Automatic approval requires at least 3 ratings and an average of 4 or more.
+ */
+router.post('/:answerId/ratings', authenticate, async (req: Request, res: Response): Promise<any> => {
+  try {
+    const { answerId } = req.params;
+    const rating = Number(req.body.rating);
+    const comment = typeof req.body.comment === 'string' ? req.body.comment.trim().slice(0, 2000) : undefined;
+    if (!Number.isInteger(rating) || rating < 1 || rating > 5) return res.status(400).json({ error: 'Rating must be an integer from 1 to 5' });
+    const answer = await Answer.findById(answerId);
+    if (!answer) return res.status(404).json({ error: 'Answer not found' });
+    await AnswerRating.findOneAndUpdate(
+      { answerId, userId: req.user!.id },
+      { $set: { rating, comment } },
+      { upsert: true, new: true, setDefaultsOnInsert: true },
+    );
+    const summary = await AnswerRating.aggregate([
+      { $match: { answerId: answer._id } },
+      { $group: { _id: '$answerId', average: { $avg: '$rating' }, count: { $sum: 1 } } },
+    ]);
+    const average = Number(summary[0]?.average || 0);
+    const count = Number(summary[0]?.count || 0);
+    const autoApproved = count >= 3 && average >= 4;
+    answer.ratingAverage = Number(average.toFixed(2));
+    answer.ratingCount = count;
+    if (autoApproved && answer.reviewStatus !== 'approved') {
+      answer.reviewStatus = 'approved';
+      answer.verified = true;
+      answer.reviewNotes = 'Automatically approved after at least 3 ratings with an average of 4 or higher.';
+      answer.reviewedAt = new Date();
+    }
+    await answer.save();
+    return res.json({ success: true, ratingAverage: answer.ratingAverage, ratingCount: count, autoApproved });
+  } catch (error) { return res.status(500).json({ error: (error as Error).message }); }
+});
+
+router.get('/:answerId/ratings', async (req: Request, res: Response): Promise<any> => {
+  try {
+    const { answerId } = req.params;
+    if (!mongoose.isValidObjectId(answerId)) return res.status(400).json({ error: 'Invalid answer id' });
+    const summary = await AnswerRating.aggregate([{ $match: { answerId: new mongoose.Types.ObjectId(answerId) } }, { $group: { _id: '$answerId', average: { $avg: '$rating' }, count: { $sum: 1 } } }]);
+    return res.json({ success: true, ratingAverage: Number((summary[0]?.average || 0).toFixed?.(2) || 0), ratingCount: Number(summary[0]?.count || 0) });
+  } catch (error) { return res.status(500).json({ error: (error as Error).message }); }
+});
+
+/** Private reviewer feedback. Never expose comments through the public ratings endpoint. */
+router.get('/:answerId/ratings/reviews', authenticate, requireRole('admin', 'instructor'), async (req: Request, res: Response): Promise<any> => {
+  try {
+    const { answerId } = req.params;
+    if (!mongoose.isValidObjectId(answerId)) return res.status(400).json({ error: 'Invalid answer id' });
+    const comments = await AnswerRating.find({ answerId }).populate('userId', 'name email').sort({ createdAt: -1 }).limit(100).lean();
+    return res.json({ success: true, comments });
+  } catch (error) { return res.status(500).json({ error: (error as Error).message }); }
 });
 
 /**

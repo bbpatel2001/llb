@@ -31,6 +31,8 @@ export interface ArticleRecord {
   status: 'published';
 }
 
+import { bnsChapter2Article } from './bnsChapter2Article';
+
 export const articles: ArticleRecord[] = [
   {
     slug: 'how-to-read-a-law-topic',
@@ -182,4 +184,5 @@ export const articles: ArticleRecord[] = [
     relatedLinks: [{ label: 'Browse syllabus topics', href: '/syllabi' }, { label: 'Explore law mappings', href: '/law-mapping' }],
     status: 'published',
   },
+  bnsChapter2Article,
 ];

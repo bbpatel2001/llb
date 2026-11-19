@@ -38,12 +38,20 @@ export interface IAnswerWritingGuide {
   modelAnswer: string;
 }
 
+export interface IFormattedAnswerBlock {
+  type: 'heading' | 'paragraph' | 'bold' | 'line' | 'table';
+  text?: string;
+  rows?: string[][];
+}
+
 export interface IAnswer extends Document {
   questionId: mongoose.Types.ObjectId;
   paperId: mongoose.Types.ObjectId;
   type: 'short' | 'long' | 'standard' | 'mcq' | 'case_study';
+  targetMarks?: 5 | 15 | 20 | 25;
   language?: AnswerLanguage;
   text: string;
+  formattedContent?: IFormattedAnswerBlock[];
   wordCount: number;
   keyPoints: string[];
   casesReferred: ICaseReference[];
@@ -54,6 +62,12 @@ export interface IAnswer extends Document {
   generatedBy: 'ai' | 'manual' | 'both';
   qualityScore: number;
   verified: boolean;
+  reviewStatus?: 'approved' | 'review_required';
+  reviewNotes?: string;
+  reviewedAt?: Date;
+  reviewedBy?: mongoose.Types.ObjectId;
+  ratingAverage?: number;
+  ratingCount?: number;
   
   // MCQ specific fields
   mcqOptions?: IMCQOption[];
@@ -123,6 +137,7 @@ const AnswerSchema = new Schema<IAnswer>(
       default: 'standard',
       index: true,
     },
+    targetMarks: { type: Number, enum: [5, 15, 20, 25], index: true },
     language: {
       type: String,
       enum: ['en', 'gu'],
@@ -132,6 +147,7 @@ const AnswerSchema = new Schema<IAnswer>(
     text: {
       type: String,
     },
+    formattedContent: { type: Schema.Types.Mixed },
     wordCount: {
       type: Number,
       default: 0,
@@ -171,6 +187,17 @@ const AnswerSchema = new Schema<IAnswer>(
       type: Boolean,
       default: false,
     },
+    reviewStatus: {
+      type: String,
+      enum: ['approved', 'review_required'],
+      default: 'approved',
+      index: true,
+    },
+    reviewNotes: String,
+    reviewedAt: Date,
+    reviewedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+    ratingAverage: { type: Number, min: 0, max: 5, default: 0 },
+    ratingCount: { type: Number, min: 0, default: 0 },
     // MCQ specific
     mcqOptions: [MCQOptionSchema],
     mcqExplanation: String,
@@ -195,7 +222,10 @@ const AnswerSchema = new Schema<IAnswer>(
 );
 
 // Text index for searching
-AnswerSchema.index({ text: 'text', keyPoints: 'text' });
+// The answer language is stored in `language`, but MongoDB reserves that field
+// name as the default text-index language override. Disable that interpretation
+// so valid application values such as `gu` can be indexed safely.
+AnswerSchema.index({ text: 'text', keyPoints: 'text' }, { language_override: 'languageCode' });
 AnswerSchema.index({ type: 1, difficulty: 1 });
 AnswerSchema.index({ questionId: 1, type: 1, language: 1 });
 

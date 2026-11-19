@@ -14,6 +14,11 @@ export interface ICaseLaw extends Document {
   relatedTopics: string[];
   frequency: number;
   lastAskedYear: number;
+  caseNumber?: string;
+  judgmentDate?: string;
+  bench?: string;
+  sourceUrl?: string;
+  downloadUrl?: string;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -67,6 +72,11 @@ const CaseLawSchema = new Schema<ICaseLaw>(
       index: true,
     },
     lastAskedYear: Number,
+    caseNumber: String,
+    judgmentDate: String,
+    bench: String,
+    sourceUrl: String,
+    downloadUrl: String,
   },
   { timestamps: true }
 );

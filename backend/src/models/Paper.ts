@@ -6,6 +6,7 @@ export interface IPaper extends Document {
   title: string;
   fileName: string;
   year: number;
+  examMonth?: string;
   university: string;
   totalQuestions?: number;
   totalMarks?: number;
@@ -49,6 +50,7 @@ const PaperSchema = new Schema<IPaper>(
       required: true,
       index: true,
     },
+    examMonth: String,
     university: {
       type: String,
       required: true,
