@@ -1,5 +1,4 @@
 import fs from 'fs';
-import path from 'path';
 import dotenv from 'dotenv';
 import { connectDB, disconnectDB } from '../config/database';
 import { Question } from '../models/Question';

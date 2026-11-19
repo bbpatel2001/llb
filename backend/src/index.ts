@@ -375,7 +375,10 @@ async function startServer() {
   }
 }
 
-// Start the server
-startServer();
+// Start the server only when running as a normal Node process. Netlify imports
+// this app into one serverless function and owns the request lifecycle there.
+if (process.env.NETLIFY !== "true") {
+  startServer();
+}
 
 export default app;

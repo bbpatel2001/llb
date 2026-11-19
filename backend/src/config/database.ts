@@ -10,6 +10,9 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/llb';
  */
 export const connectDB = async () => {
   try {
+    if (mongoose.connection.readyState === 1 || mongoose.connection.readyState === 2) {
+      return mongoose.connection;
+    }
     await mongoose.connect(MONGODB_URI, {
       retryWrites: true,
       w: 'majority',
@@ -18,7 +21,7 @@ export const connectDB = async () => {
     return mongoose.connection;
   } catch (error) {
     console.error('❌ MongoDB connection failed:', error);
-    process.exit(1);
+    throw error;
   }
 };
 
