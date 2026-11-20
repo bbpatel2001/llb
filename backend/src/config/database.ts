@@ -3,7 +3,26 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/llb';
+const DEFAULT_DATABASE = process.env.MONGODB_DB_NAME || 'llb_platform';
+
+function getMongoUri() {
+  const configuredUri = process.env.MONGODB_URI || process.env.CONNECTION_STRING;
+  if (!configuredUri) {
+    return 'mongodb://localhost:27017/llb';
+  }
+
+  if (process.env.MONGODB_URI || !process.env.MONGODB_USERNAME || !process.env.MONGODB_PASSWORD) {
+    return configuredUri;
+  }
+
+  const uri = new URL(configuredUri);
+  uri.username = process.env.MONGODB_USERNAME;
+  uri.password = process.env.MONGODB_PASSWORD;
+  if (!uri.pathname || uri.pathname === '/') {
+    uri.pathname = `/${DEFAULT_DATABASE}`;
+  }
+  return uri.toString();
+}
 
 /**
  * Connect to MongoDB
@@ -13,9 +32,10 @@ export const connectDB = async () => {
     if (mongoose.connection.readyState === 1 || mongoose.connection.readyState === 2) {
       return mongoose.connection;
     }
-    await mongoose.connect(MONGODB_URI, {
+    await mongoose.connect(getMongoUri(), {
       retryWrites: true,
       w: 'majority',
+      dbName: process.env.MONGODB_DB_NAME || undefined,
     });
     console.log('✅ MongoDB connected successfully');
     return mongoose.connection;
