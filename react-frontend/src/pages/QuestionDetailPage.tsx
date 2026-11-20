@@ -618,7 +618,7 @@ export function QuestionDetailPage() {
                       : t('detailedAnswerMarks', { marks: question.marks || 0 })}
                 </p>
               </div>
-              {selectedBandMatchesQuestion && <button
+              {!primaryAnswer && selectedBandMatchesQuestion && <button
                 type="button"
                 disabled={preparing}
                 onClick={() => prepareAnswer(activeAnswerType)}
