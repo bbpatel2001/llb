@@ -1,5 +1,5 @@
 import { BrowserRouter, Navigate, Routes, Route, useLocation } from 'react-router-dom';
-import type { ReactNode } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { AuthProvider } from '@/context/AuthContext';
 import { useAuth } from '@/context/AuthContext';
 import { LocaleProvider } from '@/context/LocaleContext';
@@ -48,11 +48,43 @@ function AuthenticatedRoute({ children }: { children: ReactNode }) {
   return <>{children}</>;
 }
 
+function NonAdminClipboardGuard() {
+  const { user } = useAuth();
+
+  useEffect(() => {
+    if (!user || user.role === 'admin') return undefined;
+
+    const blockClipboardAction = (event: Event) => event.preventDefault();
+    const blockClipboardShortcut = (event: KeyboardEvent) => {
+      if ((event.ctrlKey || event.metaKey) && ['c', 'x', 'v'].includes(event.key.toLowerCase())) {
+        event.preventDefault();
+      }
+    };
+
+    document.addEventListener('copy', blockClipboardAction);
+    document.addEventListener('cut', blockClipboardAction);
+    document.addEventListener('paste', blockClipboardAction);
+    document.addEventListener('contextmenu', blockClipboardAction);
+    document.addEventListener('keydown', blockClipboardShortcut);
+
+    return () => {
+      document.removeEventListener('copy', blockClipboardAction);
+      document.removeEventListener('cut', blockClipboardAction);
+      document.removeEventListener('paste', blockClipboardAction);
+      document.removeEventListener('contextmenu', blockClipboardAction);
+      document.removeEventListener('keydown', blockClipboardShortcut);
+    };
+  }, [user]);
+
+  return null;
+}
+
 function App() {
   return (
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <LocaleProvider>
         <AuthProvider>
+          <NonAdminClipboardGuard />
           <AppShell>
             <Routes>
             <Route path="/" element={<Home />} />
