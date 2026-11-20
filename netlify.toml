@@ -6,6 +6,8 @@
 [build.environment]
   NODE_VERSION = "20"
 
+# Keep this deployment configuration change as a safe redeploy trigger.
+
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/api/:splat"
