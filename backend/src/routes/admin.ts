@@ -1,7 +1,6 @@
 import { createHash } from 'node:crypto';
 import express, { Router, Request, Response } from 'express';
 import mongoose from 'mongoose';
-import { PDFParse } from 'pdf-parse';
 import { authenticate, requireRole } from '../middleware/auth';
 import { ImportBatch } from '../models/ImportBatch';
 import { StagedQuestion } from '../models/StagedQuestion';
@@ -417,6 +416,10 @@ router.post('/syllabi', async (req: Request, res: Response) => {
 
 router.post('/syllabi/pdf', express.raw({ type: 'application/pdf', limit: MAX_SYLLABUS_PDF_BYTES }), async (req: Request, res: Response) => {
   try {
+    // pdf-parse loads pdfjs-dist, which expects browser globals such as
+    // DOMMatrix. Load it only for the PDF upload route so normal serverless
+    // API requests can start in a Node runtime.
+    const { PDFParse } = await import('pdf-parse');
     if (!Buffer.isBuffer(req.body) || req.body.length === 0) return res.status(400).json({ error: 'A non-empty application/pdf request body is required' });
     if (req.body.length > MAX_SYLLABUS_PDF_BYTES) return res.status(413).json({ error: 'PDF exceeds the 50 MB upload limit' });
     if (req.body.subarray(0, 5).toString('ascii') !== '%PDF-') return res.status(400).json({ error: 'The uploaded file is not a valid PDF' });
