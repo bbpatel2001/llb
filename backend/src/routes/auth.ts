@@ -3,6 +3,7 @@ import { createHash, randomBytes } from 'node:crypto';
 import { IUser, User } from '../models/User';
 import { authenticate, createAccessToken } from '../middleware/auth';
 import { sendPasswordResetEmail } from '../services/emailService';
+import { verifyTurnstile } from '../middleware/turnstile';
 
 const router = Router();
 
@@ -30,6 +31,7 @@ function hashResetToken(token: string): string {
 
 router.post('/register', async (req: Request, res: Response): Promise<any> => {
   try {
+    if (!(await verifyTurnstile(req, req.body.turnstileToken))) return res.status(400).json({ error: 'CAPTCHA verification failed' });
     const name = typeof req.body.name === 'string' ? req.body.name.trim() : '';
     const email = typeof req.body.email === 'string' ? req.body.email.trim().toLowerCase() : '';
     const password = req.body.password;
@@ -58,6 +60,7 @@ router.post('/register', async (req: Request, res: Response): Promise<any> => {
 
 router.post('/login', async (req: Request, res: Response): Promise<any> => {
   try {
+    if (!(await verifyTurnstile(req, req.body.turnstileToken))) return res.status(400).json({ error: 'CAPTCHA verification failed' });
     const email = typeof req.body.email === 'string' ? req.body.email.trim().toLowerCase() : '';
     const password = req.body.password;
 
@@ -95,6 +98,7 @@ router.post('/login', async (req: Request, res: Response): Promise<any> => {
 });
 
 router.post('/forgot-password', async (req: Request, res: Response): Promise<any> => {
+  if (!(await verifyTurnstile(req, req.body.turnstileToken))) return res.status(400).json({ error: 'CAPTCHA verification failed' });
   const email = typeof req.body.email === 'string' ? req.body.email.trim().toLowerCase() : '';
   const genericResponse = { message: 'If an account exists for that email, a password reset link has been sent.' };
   if (!validEmail(email)) return res.json(genericResponse);

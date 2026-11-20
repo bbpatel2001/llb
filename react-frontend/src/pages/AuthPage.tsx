@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '@/context/AuthContext';
 import { authApi } from '@/lib/api';
 import { getErrorMessage } from '@/lib/utils';
+import { TurnstileWidget } from '@/components/TurnstileWidget';
 
 interface AuthPageProps {
   mode: 'login' | 'register';
@@ -20,6 +21,7 @@ export function AuthPage({ mode }: AuthPageProps) {
   const [submitting, setSubmitting] = useState(false);
   const [forgotMode, setForgotMode] = useState(false);
   const [forgotMessage, setForgotMessage] = useState<string | null>(null);
+  const [turnstileToken, setTurnstileToken] = useState('');
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -27,8 +29,8 @@ export function AuthPage({ mode }: AuthPageProps) {
     setError(null);
 
     try {
-      if (isRegister) await register(name, email, password);
-      else await login(email, password);
+      if (isRegister) await register(name, email, password, turnstileToken);
+      else await login(email, password, turnstileToken);
       const destination = (location.state as { from?: string } | null)?.from || '/dashboard';
       navigate(destination, { replace: true });
     } catch (submitError) {
@@ -43,7 +45,7 @@ export function AuthPage({ mode }: AuthPageProps) {
     setForgotMessage(null);
     setError(null);
     try {
-      const response = await authApi.forgotPassword(email);
+      const response = await authApi.forgotPassword(email, turnstileToken);
       setForgotMessage(response.data.message);
     } catch (requestError) {
       setError(getErrorMessage(requestError));
@@ -83,6 +85,8 @@ export function AuthPage({ mode }: AuthPageProps) {
             <button type="button" onClick={handleForgotPassword} disabled={submitting || !email} className="mt-3 block rounded bg-primary-600 px-3 py-2 font-semibold text-white disabled:opacity-50">{submitting ? 'Sending…' : 'Send reset link'}</button>
           </div>
         )}
+
+        <TurnstileWidget onToken={setTurnstileToken} />
 
         {error && <p className="rounded bg-red-50 p-3 text-sm text-red-700">{error}</p>}
         {forgotMessage && <p className="rounded bg-green-50 p-3 text-sm text-green-700">{forgotMessage}</p>}

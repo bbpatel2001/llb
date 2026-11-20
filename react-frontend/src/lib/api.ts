@@ -53,13 +53,13 @@ const api = ApiClient.getInstance();
  * Authentication API
  */
 export const authApi = {
-  register: (name: string, email: string, password: string) =>
-    api.post('/api/auth/register', { name, email, password }),
-  login: (email: string, password: string) =>
-    api.post('/api/auth/login', { email, password }),
+  register: (name: string, email: string, password: string, turnstileToken: string) =>
+    api.post('/api/auth/register', { name, email, password, turnstileToken }),
+  login: (email: string, password: string, turnstileToken: string) =>
+    api.post('/api/auth/login', { email, password, turnstileToken }),
   me: () => api.get('/api/auth/me'),
   logout: () => api.post('/api/auth/logout'),
-  forgotPassword: (email: string) => api.post('/api/auth/forgot-password', { email }),
+  forgotPassword: (email: string, turnstileToken: string) => api.post('/api/auth/forgot-password', { email, turnstileToken }),
   resetPassword: (token: string, password: string) => api.post('/api/auth/reset-password', { token, password }),
 };
 
