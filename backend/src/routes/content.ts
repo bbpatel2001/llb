@@ -127,7 +127,7 @@ router.post('/flashcards/generate', authenticate, async (req: Request, res: Resp
  * Get all flashcard decks
  * GET /api/content/flashcards/decks
  */
-router.get('/flashcards/decks', async (req: Request, res: Response) => {
+router.get('/flashcards/decks', authenticate, async (req: Request, res: Response) => {
   try {
     const { subject, semester, limit = 20, skip = 0 } = req.query;
 
@@ -156,7 +156,7 @@ router.get('/flashcards/decks', async (req: Request, res: Response) => {
  * Get flashcards by deck
  * GET /api/content/flashcards/deck/:deckId
  */
-router.get('/flashcards/deck/:deckId', async (req: Request, res: Response): Promise<any> => {
+router.get('/flashcards/deck/:deckId', authenticate, async (req: Request, res: Response): Promise<any> => {
   try {
     const { deckId } = req.params;
     const { limit = 500 } = req.query;

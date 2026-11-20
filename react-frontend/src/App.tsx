@@ -16,6 +16,7 @@ import {
   QuestionsPage,
   QuestionDetailPage,
   AuthPage,
+  PasswordResetPage,
   QuizPage,
   StudyStatePage,
   AdminReviewPage,
@@ -23,6 +24,7 @@ import {
   AdminBulkMappingPage,
   AdminAuditPage,
   AdminFlashcardsPage,
+  AdminUsersPage,
   AdminDashboardPage,
   AdminAnswerComposerPage,
   QuizHistoryPage,
@@ -97,6 +99,7 @@ function App() {
             <Route path="/admin/mappings" element={<AdminBulkMappingPage />} />
             <Route path="/admin/audit" element={<AdminAuditPage />} />
             <Route path="/admin/flashcards" element={<AdminFlashcardsPage />} />
+            <Route path="/admin/users" element={<AdminUsersPage />} />
             <Route path="/recommendations" element={<RecommendationsPage />} />
             <Route path="/syllabi" element={<AuthenticatedRoute><SyllabusPage /></AuthenticatedRoute>} />
             <Route path="/syllabi/:syllabusId" element={<AuthenticatedRoute><SyllabusDetailPage /></AuthenticatedRoute>} />
@@ -112,14 +115,15 @@ function App() {
             <Route path="/papers/:paperId" element={<AuthenticatedRoute><StudyPage /></AuthenticatedRoute>} />
             <Route path="/study" element={<StudyHubPage />} />
             <Route path="/study/articles" element={<StudyArticlesPage />} />
-            <Route path="/flashcards" element={<FlashcardsPage />} />
-            <Route path="/flashcard-history" element={<FlashcardHistoryPage />} />
+            <Route path="/flashcards" element={<AuthenticatedRoute><FlashcardsPage /></AuthenticatedRoute>} />
+            <Route path="/flashcard-history" element={<AuthenticatedRoute><FlashcardHistoryPage /></AuthenticatedRoute>} />
             <Route path="/case-laws" element={<CaseLawsPage />} />
-            <Route path="/quizzes" element={<QuizPage />} />
-            <Route path="/quiz-history" element={<QuizHistoryPage />} />
-            <Route path="/quizzes/:quizId" element={<QuizPage />} />
+            <Route path="/quizzes" element={<AuthenticatedRoute><QuizPage /></AuthenticatedRoute>} />
+            <Route path="/quiz-history" element={<AuthenticatedRoute><QuizHistoryPage /></AuthenticatedRoute>} />
+            <Route path="/quizzes/:quizId" element={<AuthenticatedRoute><QuizPage /></AuthenticatedRoute>} />
             <Route path="/login" element={<AuthPage mode="login" />} />
             <Route path="/register" element={<AuthPage mode="register" />} />
+            <Route path="/reset-password" element={<PasswordResetPage />} />
             <Route path="*" element={<NotFound />} />
             </Routes>
           </AppShell>

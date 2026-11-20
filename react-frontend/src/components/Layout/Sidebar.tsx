@@ -93,6 +93,7 @@ const adminLinks: SidebarLink[] = [
   { label: 'Bulk Mapping', to: '/admin/mappings', icon: Scale },
   { label: 'Flashcard Diagnostics', to: '/admin/flashcards', icon: BookMarked },
   { label: 'Audit Log', to: '/admin/audit', icon: History },
+  { label: 'Registered Users', to: '/admin/users', icon: ShieldCheck },
 ];
 
 function LinkItem({ link, onClose }: { link: SidebarLink; onClose: () => void }) {

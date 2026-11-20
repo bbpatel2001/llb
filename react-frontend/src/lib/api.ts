@@ -59,6 +59,8 @@ export const authApi = {
     api.post('/api/auth/login', { email, password }),
   me: () => api.get('/api/auth/me'),
   logout: () => api.post('/api/auth/logout'),
+  forgotPassword: (email: string) => api.post('/api/auth/forgot-password', { email }),
+  resetPassword: (token: string, password: string) => api.post('/api/auth/reset-password', { token, password }),
 };
 
 /**
@@ -208,6 +210,9 @@ export const adminDashboardApi = {
  * Admin staged import and review API
  */
 export const adminApi = {
+  getUsers: (params: { skip?: number; limit?: number } = {}) => api.get('/api/admin/users', { params }),
+  updateUser: (userId: string, payload: { role?: string; active?: boolean }) => api.patch(`/api/admin/users/${userId}`, payload),
+  deleteUser: (userId: string) => api.delete(`/api/admin/users/${userId}`),
   getImports: (status?: string) => api.get('/api/admin/imports', { params: { status } }),
   getImport: (batchId: string) => api.get(`/api/admin/imports/${batchId}`),
   getImportQuestions: (batchId: string, status?: string) => api.get(`/api/admin/imports/${batchId}/questions`, { params: { status } }),

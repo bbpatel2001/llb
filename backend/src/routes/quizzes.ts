@@ -5,17 +5,8 @@ import { authenticate, isPrivileged, requireRole } from '../middleware/auth';
 
 const router = Router();
 
-// Quiz discovery is public so visitors can understand what practice is available.
-// Starting attempts, submitting answers, history, and management remain protected.
-router.use((req: Request, res: Response, next) => {
-  const isPublicRead = req.method === 'GET'
-    && (req.path === '/' || /^\/[0-9a-fA-F]{24}$/.test(req.path));
-  if (isPublicRead) {
-    next();
-    return;
-  }
-  authenticate(req, res, next);
-});
+// Practice tests and their content are available only to signed-in users.
+router.use(authenticate);
 
 async function assertAttemptOwnership(req: Request, res: Response, attemptId: string): Promise<boolean> {
   const attempt = await QuizAttempt.findOne({ _id: attemptId, userId: req.user!.id }).select('_id').lean();

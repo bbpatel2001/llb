@@ -246,6 +246,54 @@ function normalizeSyllabusInput(body: Record<string, unknown>) {
   };
 }
 
+router.get('/users', async (req: Request, res: Response) => {
+  try {
+    const skip = Math.max(0, Number(req.query.skip || 0));
+    const limit = Math.min(100, Math.max(1, Number(req.query.limit || 100)));
+    const [users, total] = await Promise.all([
+      User.find({})
+        .select('name email role active verified lastLoginAt createdAt')
+        .sort({ createdAt: -1 })
+        .skip(skip)
+        .limit(limit)
+        .lean(),
+      User.countDocuments(),
+    ]);
+
+    return res.json({ users, total, skip, limit });
+  } catch (error) {
+    return res.status(500).json({ message: error instanceof Error ? error.message : 'Failed to load registered users' });
+  }
+});
+
+router.patch('/users/:userId', async (req: Request, res: Response) => {
+  try {
+    if (req.user?.id === req.params.userId) return res.status(400).json({ message: 'You cannot modify your own administrator account here' });
+    const updates: Record<string, unknown> = {};
+    if (req.body.role !== undefined && ['student', 'instructor', 'admin'].includes(req.body.role)) updates.role = req.body.role;
+    if (req.body.active !== undefined && typeof req.body.active === 'boolean') updates.active = req.body.active;
+    if (Object.keys(updates).length === 0) return res.status(400).json({ message: 'Provide a valid role or active status' });
+    const user = await User.findByIdAndUpdate(req.params.userId, { $set: updates }, { new: true, runValidators: true })
+      .select('name email role active verified lastLoginAt createdAt')
+      .lean();
+    if (!user) return res.status(404).json({ message: 'User not found' });
+    return res.json({ user });
+  } catch (error) {
+    return res.status(500).json({ message: error instanceof Error ? error.message : 'Failed to update user' });
+  }
+});
+
+router.delete('/users/:userId', async (req: Request, res: Response) => {
+  try {
+    if (req.user?.id === req.params.userId) return res.status(400).json({ message: 'You cannot delete your own administrator account' });
+    const deleted = await User.findByIdAndDelete(req.params.userId).select('_id').lean();
+    if (!deleted) return res.status(404).json({ message: 'User not found' });
+    return res.json({ success: true });
+  } catch (error) {
+    return res.status(500).json({ message: error instanceof Error ? error.message : 'Failed to delete user' });
+  }
+});
+
 router.get('/overview', async (_req: Request, res: Response) => {
   try {
     const unreadableQuestionPattern = new RegExp(`[${String.fromCodePoint(0xe000)}-${String.fromCodePoint(0xf8ff)}${String.fromCodePoint(0xfffd)}]`);

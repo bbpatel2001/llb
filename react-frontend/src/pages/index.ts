@@ -11,6 +11,7 @@ export { QuestionsPage } from './QuestionsPage';
 export { QuestionDetailPage } from './QuestionDetailPage';
 export { NotFound } from './NotFound';
 export { AuthPage } from './AuthPage';
+export { PasswordResetPage } from './PasswordResetPage';
 export { QuizPage } from './QuizPage';
 export { QuizHistoryPage } from './QuizHistoryPage';
 
@@ -29,6 +30,7 @@ export { AdminSyllabusPage } from './AdminSyllabusPage';
 export { AdminBulkMappingPage } from './AdminBulkMappingPage';
 export { AdminAuditPage } from './AdminAuditPage';
 export { AdminFlashcardsPage } from './AdminFlashcardsPage';
+export { AdminUsersPage } from './AdminUsersPage';
 export { AdminDashboardPage } from './AdminDashboardPage';
 export { AdminAnswerComposerPage } from './AdminAnswerComposerPage';
 export { RecommendationsPage } from './RecommendationsPage';

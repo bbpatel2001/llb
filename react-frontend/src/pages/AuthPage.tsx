@@ -1,6 +1,7 @@
 import { FormEvent, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '@/context/AuthContext';
+import { authApi } from '@/lib/api';
 import { getErrorMessage } from '@/lib/utils';
 
 interface AuthPageProps {
@@ -17,6 +18,8 @@ export function AuthPage({ mode }: AuthPageProps) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  const [forgotMode, setForgotMode] = useState(false);
+  const [forgotMessage, setForgotMessage] = useState<string | null>(null);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -30,6 +33,20 @@ export function AuthPage({ mode }: AuthPageProps) {
       navigate(destination, { replace: true });
     } catch (submitError) {
       setError(getErrorMessage(submitError));
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
+  const handleForgotPassword = async () => {
+    setSubmitting(true);
+    setForgotMessage(null);
+    setError(null);
+    try {
+      const response = await authApi.forgotPassword(email);
+      setForgotMessage(response.data.message);
+    } catch (requestError) {
+      setError(getErrorMessage(requestError));
     } finally {
       setSubmitting(false);
     }
@@ -58,10 +75,20 @@ export function AuthPage({ mode }: AuthPageProps) {
           <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} required minLength={8} className="mt-1 w-full rounded border px-3 py-2" />
         </label>
 
+        {!isRegister && <button type="button" onClick={() => setForgotMode((value) => !value)} className="text-sm font-semibold text-primary-700 hover:underline">{forgotMode ? 'Back to sign in' : 'Forgot password?'}</button>}
+
+        {forgotMode && !isRegister && (
+          <div className="rounded bg-blue-50 p-3 text-sm text-blue-800">
+            Enter your email, then check your inbox for a reset link.
+            <button type="button" onClick={handleForgotPassword} disabled={submitting || !email} className="mt-3 block rounded bg-primary-600 px-3 py-2 font-semibold text-white disabled:opacity-50">{submitting ? 'Sending…' : 'Send reset link'}</button>
+          </div>
+        )}
+
         {error && <p className="rounded bg-red-50 p-3 text-sm text-red-700">{error}</p>}
-        <button type="submit" disabled={submitting} className="w-full rounded bg-primary-600 px-4 py-2 font-semibold text-white hover:bg-primary-700 disabled:opacity-50">
+        {forgotMessage && <p className="rounded bg-green-50 p-3 text-sm text-green-700">{forgotMessage}</p>}
+        {!forgotMode && <button type="submit" disabled={submitting} className="w-full rounded bg-primary-600 px-4 py-2 font-semibold text-white hover:bg-primary-700 disabled:opacity-50">
           {submitting ? 'Please wait…' : isRegister ? 'Create account' : 'Sign in'}
-        </button>
+        </button>}
       </form>
 
       <p className="mt-6 text-center text-sm text-gray-600">
