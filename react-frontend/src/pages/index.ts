@@ -12,6 +12,7 @@ export { QuestionDetailPage } from './QuestionDetailPage';
 export { NotFound } from './NotFound';
 export { AuthPage } from './AuthPage';
 export { PasswordResetPage } from './PasswordResetPage';
+export { ContactPage } from './ContactPage';
 export { QuizPage } from './QuizPage';
 export { QuizHistoryPage } from './QuizHistoryPage';
 

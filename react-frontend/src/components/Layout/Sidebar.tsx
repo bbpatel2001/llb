@@ -147,10 +147,7 @@ export function Sidebar({ open, onClose }: SidebarProps) {
         </nav>
 
         <div className="space-y-1 border-t border-slate-100 pt-3">
-          <a href="mailto:support@example.com?subject=LLB%20Platform%20feedback" className="flex items-center gap-3 rounded-lg px-3 py-2 text-[13px] font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900">
-            <MessageSquare className="h-4 w-4" aria-hidden="true" />
-            <span>Contact / Feedback</span>
-          </a>
+          <LinkItem link={{ label: 'Contact / Feedback', to: '/contact', icon: MessageSquare }} onClose={onClose} />
           <LinkItem link={{ label: 'Settings', to: '/my-study', icon: Settings }} onClose={onClose} />
           <label className="flex items-center gap-3 rounded-lg px-3 py-2 text-[13px] text-slate-600" htmlFor="sidebar-locale">
             <Globe2 className="h-4 w-4" aria-hidden="true" />

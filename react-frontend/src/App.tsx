@@ -17,6 +17,7 @@ import {
   QuestionDetailPage,
   AuthPage,
   PasswordResetPage,
+  ContactPage,
   QuizPage,
   StudyStatePage,
   AdminReviewPage,
@@ -124,6 +125,7 @@ function App() {
             <Route path="/login" element={<AuthPage mode="login" />} />
             <Route path="/register" element={<AuthPage mode="register" />} />
             <Route path="/reset-password" element={<PasswordResetPage />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="*" element={<NotFound />} />
             </Routes>
           </AppShell>

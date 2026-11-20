@@ -63,6 +63,10 @@ export const authApi = {
   resetPassword: (token: string, password: string) => api.post('/api/auth/reset-password', { token, password }),
 };
 
+export const contactApi = {
+  submit: (payload: { name: string; email: string; category: string; message: string; turnstileToken: string }) => api.post('/api/contact', payload),
+};
+
 /**
  * Flashcards API
  */

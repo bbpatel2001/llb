@@ -20,6 +20,7 @@ import syllabusRoutes from "./routes/syllabi";
 import lawMappingRoutes from "./routes/lawMapping";
 import articleRoutes from "./routes/articles";
 import blogRoutes from "./routes/blogs";
+import contactRoutes from "./routes/contact";
 import { requestContext, rateLimit, validatePaginationQuery } from "./middleware/security";
 import { authenticate } from "./middleware/auth";
 import { SEMESTER1_SUBJECTS } from "./utils/semester1Subjects";
@@ -77,6 +78,7 @@ app.use("/api/syllabi", authenticate, syllabusRoutes);
 app.use("/api/law-mappings", lawMappingRoutes);
 app.use("/api/articles", articleRoutes);
 app.use("/api/blogs", blogRoutes);
+app.use("/api/contact", rateLimit({ windowMs: 15 * 60_000, max: 5, name: 'contact', key: (req) => req.ip || 'unknown' }), contactRoutes);
 
 // ============================================================================
 // ROUTES - Content Generation
