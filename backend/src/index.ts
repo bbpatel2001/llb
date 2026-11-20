@@ -21,6 +21,7 @@ import lawMappingRoutes from "./routes/lawMapping";
 import articleRoutes from "./routes/articles";
 import blogRoutes from "./routes/blogs";
 import { requestContext, rateLimit, validatePaginationQuery } from "./middleware/security";
+import { authenticate } from "./middleware/auth";
 import { SEMESTER1_SUBJECTS } from "./utils/semester1Subjects";
 
 // Load environment variables
@@ -72,7 +73,7 @@ app.use(express.urlencoded({ limit: "256kb", extended: false, parameterLimit: 10
 app.use("/api/auth", rateLimit({ windowMs: 15 * 60_000, max: 30, name: 'auth', key: (req) => `${req.ip}:${String(req.body?.email || '').toLowerCase().slice(0, 120)}` }), authRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/study", studyRoutes);
-app.use("/api/syllabi", syllabusRoutes);
+app.use("/api/syllabi", authenticate, syllabusRoutes);
 app.use("/api/law-mappings", lawMappingRoutes);
 app.use("/api/articles", articleRoutes);
 app.use("/api/blogs", blogRoutes);
@@ -119,7 +120,7 @@ app.get("/api", (_req: Request, res: Response) => {
 });
 
 // Get all papers
-app.get("/api/papers", async (req: Request, res: Response) => {
+app.get("/api/papers", authenticate, async (req: Request, res: Response) => {
   try {
     const { semester, subject, skip = 0, limit = 20 } = req.query;
     
@@ -144,7 +145,7 @@ app.get("/api/papers", async (req: Request, res: Response) => {
 });
 
 // Get one paper's questions
-app.get("/api/papers/:paperId/questions", async (req: Request, res: Response) => {
+app.get("/api/papers/:paperId/questions", authenticate, async (req: Request, res: Response) => {
   try {
     if (!mongoose.Types.ObjectId.isValid(req.params.paperId)) {
       return res.status(400).json({ error: "Invalid paper ID" });
@@ -177,7 +178,7 @@ app.get("/api/papers/:paperId/questions", async (req: Request, res: Response) =>
 });
 
 // Get one paper
-app.get("/api/papers/:paperId", async (req: Request, res: Response) => {
+app.get("/api/papers/:paperId", authenticate, async (req: Request, res: Response) => {
   try {
     if (!mongoose.Types.ObjectId.isValid(req.params.paperId)) {
       return res.status(400).json({ error: "Invalid paper ID" });
@@ -193,7 +194,7 @@ app.get("/api/papers/:paperId", async (req: Request, res: Response) => {
 });
 
 // Get all questions with semester, subject, type, and text filters
-app.get("/api/questions", async (req: Request, res: Response) => {
+app.get("/api/questions", authenticate, async (req: Request, res: Response) => {
   try {
     const { semester, subject, type, search, skip = 0, limit = 50 } = req.query;
     const query: any = { ...READABLE_QUESTION_FILTER };
@@ -225,7 +226,7 @@ app.get("/api/questions", async (req: Request, res: Response) => {
   }
 });
 
-app.get("/api/questions/filters", async (_req: Request, res: Response) => {
+app.get("/api/questions/filters", authenticate, async (_req: Request, res: Response) => {
   try {
     const blueprintPapers = await Paper.find({ fileName: { $regex: /^semester1-syllabus-working-blueprint/i } }).select('_id').lean();
     const rawSubjects = await Question.distinct("subject", { ...READABLE_QUESTION_FILTER, paperId: { $nin: blueprintPapers.map((paper) => paper._id) }, subject: { $nin: [null, ""] } });
@@ -238,7 +239,7 @@ app.get("/api/questions/filters", async (_req: Request, res: Response) => {
 });
 
 // Get one question
-app.get("/api/questions/:questionId", async (req: Request, res: Response) => {
+app.get("/api/questions/:questionId", authenticate, async (req: Request, res: Response) => {
   try {
     if (!mongoose.Types.ObjectId.isValid(req.params.questionId)) {
       return res.status(400).json({ error: "Invalid question ID" });
@@ -264,7 +265,7 @@ app.get("/api/questions/:questionId", async (req: Request, res: Response) => {
 });
 
 // Get questions by semester
-app.get("/api/questions/semester/:semester", async (req: Request, res: Response) => {
+app.get("/api/questions/semester/:semester", authenticate, async (req: Request, res: Response) => {
   try {
     const { semester } = req.params;
     const { subject, type, skip = 0, limit = 50 } = req.query;

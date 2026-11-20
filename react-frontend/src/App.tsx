@@ -1,5 +1,7 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Navigate, Routes, Route, useLocation } from 'react-router-dom';
+import type { ReactNode } from 'react';
 import { AuthProvider } from '@/context/AuthContext';
+import { useAuth } from '@/context/AuthContext';
 import { LocaleProvider } from '@/context/LocaleContext';
 import { AppShell } from '@/components';
 import {
@@ -37,6 +39,15 @@ import {
   NotFound,
 } from '@/pages';
 
+function AuthenticatedRoute({ children }: { children: ReactNode }) {
+  const { user, loading } = useAuth();
+  const location = useLocation();
+
+  if (loading) return <div className="p-8 text-center text-gray-600">Checking sign-in…</div>;
+  if (!user) return <Navigate to="/login" replace state={{ from: location.pathname }} />;
+  return <>{children}</>;
+}
+
 function App() {
   return (
     <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
@@ -55,18 +66,18 @@ function App() {
             <Route path="/admin/audit" element={<AdminAuditPage />} />
             <Route path="/admin/flashcards" element={<AdminFlashcardsPage />} />
             <Route path="/recommendations" element={<RecommendationsPage />} />
-            <Route path="/syllabi" element={<SyllabusPage />} />
-            <Route path="/syllabi/:syllabusId" element={<SyllabusDetailPage />} />
+            <Route path="/syllabi" element={<AuthenticatedRoute><SyllabusPage /></AuthenticatedRoute>} />
+            <Route path="/syllabi/:syllabusId" element={<AuthenticatedRoute><SyllabusDetailPage /></AuthenticatedRoute>} />
             <Route path="/law-mapping" element={<LawMappingPage />} />
             <Route path="/law-mapping/:slug" element={<LawMappingDetailPage />} />
             <Route path="/articles" element={<ArticlesPage />} />
             <Route path="/articles/:slug" element={<ArticleDetailPage />} />
             <Route path="/blogs" element={<BlogsPage />} />
             <Route path="/blogs/:slug" element={<BlogDetailPage />} />
-            <Route path="/papers" element={<PapersPage />} />
-            <Route path="/questions" element={<QuestionsPage />} />
-            <Route path="/questions/:questionId" element={<QuestionDetailPage />} />
-            <Route path="/papers/:paperId" element={<StudyPage />} />
+            <Route path="/papers" element={<AuthenticatedRoute><PapersPage /></AuthenticatedRoute>} />
+            <Route path="/questions" element={<AuthenticatedRoute><QuestionsPage /></AuthenticatedRoute>} />
+            <Route path="/questions/:questionId" element={<AuthenticatedRoute><QuestionDetailPage /></AuthenticatedRoute>} />
+            <Route path="/papers/:paperId" element={<AuthenticatedRoute><StudyPage /></AuthenticatedRoute>} />
             <Route path="/study" element={<StudyHubPage />} />
             <Route path="/study/articles" element={<StudyArticlesPage />} />
             <Route path="/flashcards" element={<FlashcardsPage />} />
