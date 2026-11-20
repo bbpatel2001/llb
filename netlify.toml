@@ -1,5 +1,5 @@
 [build]
-  command = "npm --prefix backend install --no-audit --no-fund && npm --prefix react-frontend install --no-audit --no-fund && npm --prefix react-frontend run build"
+  command = "npm install --no-audit --no-fund && npm --prefix backend install --no-audit --no-fund && npm --prefix react-frontend install --no-audit --no-fund && npm --prefix react-frontend run build"
   publish = "react-frontend/dist"
   functions = "netlify/functions"
 
