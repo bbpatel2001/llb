@@ -259,6 +259,25 @@ router.get('/:questionId([0-9a-fA-F]{24})', async (req: Request, res: Response):
  * Get specific answer type for a question
  * GET /api/answers/:questionId/:type
  */
+router.get('/:answerId/ratings', async (req: Request, res: Response): Promise<any> => {
+  try {
+    const { answerId } = req.params;
+    if (!mongoose.isValidObjectId(answerId)) return res.status(400).json({ error: 'Invalid answer id' });
+    const summary = await AnswerRating.aggregate([{ $match: { answerId: new mongoose.Types.ObjectId(answerId) } }, { $group: { _id: '$answerId', average: { $avg: '$rating' }, count: { $sum: 1 } } }]);
+    return res.json({ success: true, ratingAverage: Number((summary[0]?.average || 0).toFixed?.(2) || 0), ratingCount: Number(summary[0]?.count || 0) });
+  } catch (error) { return res.status(500).json({ error: (error as Error).message }); }
+});
+
+/** Private reviewer feedback. Never expose comments through the public ratings endpoint. */
+router.get('/:answerId/ratings/reviews', authenticate, requireRole('admin', 'instructor'), async (req: Request, res: Response): Promise<any> => {
+  try {
+    const { answerId } = req.params;
+    if (!mongoose.isValidObjectId(answerId)) return res.status(400).json({ error: 'Invalid answer id' });
+    const comments = await AnswerRating.find({ answerId }).populate('userId', 'name email').sort({ createdAt: -1 }).limit(100).lean();
+    return res.json({ success: true, comments });
+  } catch (error) { return res.status(500).json({ error: (error as Error).message }); }
+});
+
 router.get('/:questionId/:type', async (req: Request, res: Response): Promise<any> => {
   try {
     const { questionId, type } = req.params;
@@ -437,25 +456,6 @@ router.post('/:answerId/ratings', authenticate, async (req: Request, res: Respon
     }
     await answer.save();
     return res.json({ success: true, ratingAverage: answer.ratingAverage, ratingCount: count, autoApproved });
-  } catch (error) { return res.status(500).json({ error: (error as Error).message }); }
-});
-
-router.get('/:answerId/ratings', async (req: Request, res: Response): Promise<any> => {
-  try {
-    const { answerId } = req.params;
-    if (!mongoose.isValidObjectId(answerId)) return res.status(400).json({ error: 'Invalid answer id' });
-    const summary = await AnswerRating.aggregate([{ $match: { answerId: new mongoose.Types.ObjectId(answerId) } }, { $group: { _id: '$answerId', average: { $avg: '$rating' }, count: { $sum: 1 } } }]);
-    return res.json({ success: true, ratingAverage: Number((summary[0]?.average || 0).toFixed?.(2) || 0), ratingCount: Number(summary[0]?.count || 0) });
-  } catch (error) { return res.status(500).json({ error: (error as Error).message }); }
-});
-
-/** Private reviewer feedback. Never expose comments through the public ratings endpoint. */
-router.get('/:answerId/ratings/reviews', authenticate, requireRole('admin', 'instructor'), async (req: Request, res: Response): Promise<any> => {
-  try {
-    const { answerId } = req.params;
-    if (!mongoose.isValidObjectId(answerId)) return res.status(400).json({ error: 'Invalid answer id' });
-    const comments = await AnswerRating.find({ answerId }).populate('userId', 'name email').sort({ createdAt: -1 }).limit(100).lean();
-    return res.json({ success: true, comments });
   } catch (error) { return res.status(500).json({ error: (error as Error).message }); }
 });
 
